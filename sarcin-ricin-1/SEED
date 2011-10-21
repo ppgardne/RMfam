@@ -1,0 +1,43 @@
+# STOCKHOLM 1.0
+
+#=GF ID   sarcin-ricin-1
+#=GF DE   Sarcin-ricin motif 1
+#=GF PI   S-motifs, loop E, bulged-G motif
+#=GF AU   Gardner PP
+#=GF SE   Gardner PP
+#=GF SS   Published; PMID:9784367
+#=GF GA   15.00
+#=GF DR   URL;http://rna.bgsu.edu/FR3D/MotifLibrary/LIB00005/instances.html
+#=GF DR   http://rnafrabase.cs.put.poznan.pl/?act=pdbdetails&id=1S72
+#=GF DR   http://rnafrabase.cs.put.poznan.pl/?act=pdbdetails&id=2J01
+#=GF RN   [1]
+#=GF RM   9784367
+#=GF RT   A common motif organizes the structure of multi‐helix loops in 16 S and 23 S ribosomal RNAs.
+#=GF RA   Leontis NB, Westhof E
+#=GF RL   J. Mol. Biol. 1998;283:571–583.
+#=GF RN   [2]
+#=GF RM   12907716
+#=GF RT   RNA structure comparison, motif search and discovery using a
+#=GF RT   reduced representation of RNA conformational space.
+#=GF RA   Duarte CM, Wadley LM, Pyle AM
+#=GF RL   Nucleic Acids Res. 2003;31:4755-4761.
+#=GF RN   [3]
+#=GF RM   17694311
+#=GF RT   FR3D: finding local and composite recurrent structural motifs in RNA 3D structures.
+#=GF RA   Sarver M, Zirbel CL, Stombaugh J, Mokdad A, Leontis NB
+#=GF RL   J Math Biol. 2008;56:215-52.
+
+2aw4_B/178-219         GCGAACCGGGGGAACUG...AAACA..UCUAAGUACCCCGAGGAAAA
+#=GR 2aw4_B/178-219 SS .....((((((.....(...........)......))))).).....
+#=GR 2aw4_B/178-219 MT ..........xxxxxx.............xxxxxxx...........
+1s72_0/147-188         AGGAACCCCGAGAACUG...AAACA..UCUCAGUAUCGGGAGGAACA
+#=GR 1s72_0/147-188 SS .....((((((.....(...........)......))))).).....
+#=GR 1s72_0/147-188 MT ..........xxxxxx.............xxxxxxx...........
+2j01_A/165-206         GGGAACCUGGGGAACUG...AAACA..UCUCAGUACCCAGAGGAGAG
+#=GR 2j01_A/165-206 SS .....((((((........................))))).).....
+#=GR 2j01_A/165-206 MT ..........xxxxxx.............xxxxxxx...........
+1s72_0/557-601         -CUCGACGAAUGACCGACGC.GCGAGCGUCCAGUAAGACUCACGGGA
+#=GR 1s72_0/557-601 SS -(..((....(....(((((.....))))).....)...))..)...
+#=GR 1s72_0/557-601 MT -.........xxxxxx.............xxxxxxx...........
+#=GC SS_cons           .....((((((....((...........)).....))))).).....
+//

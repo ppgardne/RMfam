@@ -1,0 +1,187 @@
+The RMfam database of RNA motifs
+--------------------------------
+
+This document describes the format of RMfam flat files.  
+
+
+Alignment format 
+---------------- 
+
+RMfam alignments are in a blocked format called Stockholm format.  This
+allows mark-ups of four types:
+
+  #=GF <featurename> <Generic per-file annotation, free text>
+
+  #=GC <featurename> <Generic per-column annotation, exactly 1
+       character per column>
+
+  #=GS <seqname> <featurename> <Generic per-sequence annotation, free
+       text>
+
+  #=GR <seqname> <featurename> <Generic per-sequence AND per-column
+       mark up, exactly 1 character per column>
+
+The full description of Stockholm format can be found at:
+
+  http://en.wikipedia.org/wiki/Stockholm_format
+
+RMfam alignments contain #=GC SS_cons lines describing the consensus
+secondary structure of the sequences in the family, and #=GC RF lines
+which describe the match/insert states of the model.  RMfam uses #=GF
+lines extensively to provide family mark-up and annotation in the
+fields described below.
+
+
+Compulsory fields
+-----------------
+
+  AC   Accession number:          RMFxxxxx
+
+       The RMfam accession numbers RMFxxxxx are the stable identifier
+       for each RMfam family.
+
+  ID   Identification:            15 characters or less
+
+       This field is designed to be a meaningful identifier for the
+       family.  The identifier is not necessarily stable between
+       releases.
+
+  DE   Description:               80 characters or less
+
+       A one line description of the family.
+
+  AU   Author:
+
+       Author of the entry -- format shown below.
+
+       AU   Bloggs JJ, Bloggs JE
+
+  SE   Source of seed alignment:    
+
+       Where RMfam has repackaged data from other sources, these
+       sources will be referenced here.  This field may also point to
+       key references for the alignment, or the name of the author of
+       the seed alignment.
+
+  SS   Source of secondary structure
+
+       This field indicates whether the secondary structure is
+       predicted or published.  Structure prediction software or
+       PUBMED identifier for a publication are shown.  Either may
+       be qualified with an author name.  Examples of format are
+       shown below:
+
+       SS   Predicted; PFOLD
+       SS   Published; PMID:11283358
+
+  GA   Gathering threshold:   
+
+       The bit score threshold above which all hits are considered
+       real.
+
+
+  SQ   Sequences:
+       
+       Number of sequences in the alignment.
+
+  //   End of record
+
+
+Non-compulsory fields
+---------------------
+
+  PI   Previous IDs:             Semi-colon list
+
+       The most recent names are stored on the left.
+
+  DR   Database Reference:       Reference to external database source.
+
+       All DR lines end in a semicolon.  For example:
+
+       DR   URL; http://jwbrown.mbio.ncsu.edu/RNaseP/home.html;
+
+  RN   Reference Number:         Digit in square brackets
+
+       Reference numbers are used to precede literature references,
+       which have multiple line entries
+
+       RN   [1]
+
+  RM   Reference Medline:        Eight digit number
+
+       An example RM line is shown below
+
+       RM   91006031
+
+       The number can be found as the UI number in pubmed
+       http://www.ncbi.nlm.nih.gov/PubMed/
+
+  RT   Reference Title:                    
+
+       Title of paper.
+
+  RA   Reference Author:
+
+       All RA lines use the following format
+
+       RA   Bateman A, Eddy SR, Mesyanzhinov VV;
+
+  RL   Reference Location:
+
+       The reference line is in the format below.
+       RL  Journal abbreviation year;volume:page-page.
+
+       RL   Virus Genes 1997;14:163-165.
+       RL   J Mol Biol 1994;242:309-320.
+
+       Journal abbreviations can be checked at
+       http://expasy.hcuge.ch/cgi-bin/jourlist?jourlist.txt. Journal
+       abbreviation have no full stops, and page numbers are not
+       abbreviated.
+
+  CC   Comment:
+ 
+       Comment lines provide annotation and other information.
+       Annotation in CC lines does not have a strict format.
+
+       Links to other RMfam families can be provided with the following
+       syntax:
+       RMFAM:RMFxxxxx.
+
+       Links to Rfam families can be provided with the following
+       syntax:
+       RFAM:RFxxxxx.
+
+       Links to EMBL sequences can be provided with the following
+       syntax:
+
+       EMBL:Accession.
+ 
+       Links to miRBase precursor familes can be provided with the 
+       following syntax:
+	
+       MIPF:MIPFxxxxxxx
+
+  WK   Links to relevent Wikipedia articles
+
+----------------------------------------------------------------------
+
+Stockholm formatted alignments that have been annotated by RMfam may
+also include:
+
+#=GF MT.x <RMfam ID>  
+      -Where 'x' is any alphanumeric character. This line provides a
+       mapping between the RMfam entry and a unique single character
+       that can be used to markup regions in a sequence that match a
+       motif.
+
+#=GR <Seq ID> MT.n ....
+      -Where 'n' is a number. This line marks the regions of a
+       sequence that match motif 'x' defined above.
+
+######################################################################
+
+
+
+
+

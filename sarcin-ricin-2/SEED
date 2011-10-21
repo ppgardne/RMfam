@@ -1,0 +1,50 @@
+# STOCKHOLM 1.0
+
+#=GF ID   sarcin-ricin-2
+#=GF DE   Sarcin-ricin motif 2
+#=GF PI   S-motifs, loop E, bulged-G motif
+#=GF AU   Gardner PP
+#=GF SE   Gardner PP
+#=GF SS   Published; PMID:9784367
+#=GF GA   15.00
+#=GF DR   URL;http://rna.bgsu.edu/FR3D/MotifLibrary/LIB00005/instances.html
+#=GF DR   URL;http://rnafrabase.cs.put.poznan.pl/?act=pdbdetails&id=1S72
+#=GF DR   URL;http://rnafrabase.cs.put.poznan.pl/?act=pdbdetails&id=2J01
+#=GF RN   [1]
+#=GF RM   9784367
+#=GF RT   A common motif organizes the structure of multi‐helix loops in 16 S and 23 S ribosomal RNAs.
+#=GF RA   Leontis NB, Westhof E
+#=GF RL   J. Mol. Biol. 1998;283:571–583.
+#=GF RN   [2]
+#=GF RM   12907716
+#=GF RT   RNA structure comparison, motif search and discovery using a
+#=GF RT   reduced representation of RNA conformational space.
+#=GF RA   Duarte CM, Wadley LM, Pyle AM
+#=GF RL   Nucleic Acids Res. 2003;31:4755-4761.
+#=GF RN   [3]
+#=GF RM   17694311
+#=GF RT   FR3D: finding local and composite recurrent structural motifs in RNA 3D structures.
+#=GF RA   Sarver M, Zirbel CL, Stombaugh J, Mokdad A, Leontis NB
+#=GF RL   J Math Biol. 2008;56:215-52.
+
+1s72_0/197-239           AUGUGAUGUCGUUAGUAAC.......CGCGA......GUGAACGCGAUACAGCCC
+#=GR 1s72_0/197-239 SS   .......(((((.....((..................))....))))).......
+#=GR 1s72_0/197-239 MT   ...........xxxxxxx....................xxxxxx...........
+1s72_0/2676-2715         AGAACGACCGUAUAGUAC.........GAGA-------GGAACUACGGUUGGUGG
+#=GR 1s72_0/2676-2715 MT ...........xxxxxxx.............-------xxxxxx...........
+#=GR 1s72_0/2676-2715 SS ....((((((((.....(.............-------)....))))))))....
+1s72_9/64-117            CAGCGUUCCGGGGAGUACUGGAGUGC.GCGAGCCUCUGGGAAACCCGGUUCGCCG
+#=GR 1s72_9/64-117 MT    ...........xxxxxxx....................xxxxxx...........
+#=GR 1s72_9/64-117 SS    .......(((((.....((((((.((.....))))))))....))))).......
+1un6_F/14-60             ACGGGGCCUGGUUAGUACCUGG.....GAAA...CCUGGGAAUACCAGGUGCCGG
+#=GR 1un6_F/14-60 MT     ...........xxxxxxx....................xxxxxx...........
+#=GR 1un6_F/14-60 SS     .....(((((((.....((.((............)).))....))))))).....
+2aw4_B/228-269           CCGAGAUUCCCCCAGUAGC.......GGCGA......GCGAACGGGGAGCAGCCC
+#=GR 2aw4_B/228-269 MT   ...........xxxxxxx....................xxxxxx...........
+#=GR 2aw4_B/228-269 SS   .......(((((.....((..................))....))))).......
+2j01_A/215-256           AAUCGACUCCCUGAGUAGC.......GGCGA......GCGAAAGGGGACCAGCCU
+#=GR 2j01_A/215-256 MT   ...........xxxxxxx....................xxxxxx...........
+#=GR 2j01_A/215-256 SS   .......(((((.....((..................))....))))).......
+#=GC SS_cons             ......((((((.....((((((.((.....))))))))....))))))......
+#=GC RF                  AaGaGaucCgguuAGUAcC.......gGCGA......GgGAAcaccGgauaGCCg
+//
