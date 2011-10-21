@@ -1,0 +1,65 @@
+RMfam: multiple alignments and probabilistic models of RNA motifs. 
+
+Release 0.1
+------------
+
+0. CONTENTS
+1. INTRODUCTION
+2. AVAILABILITY
+3. FILES
+4. HISTORY
+5. HOW TO CITE RMFAM
+
+
+1. INTRODUCTION
+
+RMfam is a database of annotated multiple sequence alignments and
+probabilistic models for a number of RNA motifs. For the purposes of
+this work an RNA motif is a recurring RNA sequence and/or secondary
+structure found within larger structures that can be modelled by
+either a covariance model or a profile HMM. RMfam is modelled loosely
+on the Rfam and Pfam databases and draws a lot of ideas from these
+resources. 
+
+RMfam is licensed under a Creative Commons Attribution 3.0 Unported License
+(http://creativecommons.org/licenses/by/3.0/).
+
+2. AVAILABILITY
+
+RMfam is available on the web at the following URL:
+
+https://github.com/ppgardne
+
+3. FILES
+
+README                 - this file
+USERMAN                - a description of the Rfam flatfile formats
+LICENSE                - Legalese stating RMfam's copyright is CC BY 3.0
+*/SEED                 - Annotated alignment files of motifs (named *)
+RMfam.cm               - a concatenated set of RMfam covariance models in ascii INFERNAL format
+Rfam.stk               - Rfam seed alignments in STOCKHOLM format that have been annotated with RMfam motifs
+PDB.gff                - Annotations of nucleotide sequences derived from PDB entries
+accessions.txt         - Tab-delimited file of RMfam accessions and corresponding IDs
+rmfam_scan.pl          - A script for annotating sequences and alignments with RMfam families
+
+4. HISTORY
+
+Version     Date        # families    # regions      Rfam
+-------     ----        ----------    ---------      -------
+
+  0.1       10/11       ?             ?              Rfam 10.1
+
+
+5. HOW TO CITE RFAM
+
+If you make use of RMfam in your work we ask that you cite the
+following publications:
+
+Gardner PP et al. (2011) Needles in a haystack: A profile database of
+RNA motifs. Unpublished.
+
+--------------------------------
+October 2011
+
+
+
