@@ -24,6 +24,7 @@ my( $local,
     $thresh,
     $evalueThresh,
     $outfile,
+    $fastaIn,
     $emblOut, 
     $gffOut, 
     $alnOut,
@@ -33,6 +34,10 @@ my( $local,
     $help
     );
 
+my $VERSION = '1.0';
+my $cmdline = $0.' '.join( ' ', @ARGV );
+my $starttime = `date`;
+chomp $starttime;
 my $idf               = 0.9; #value for esl-weight: filter sequences by $idf fraction identity 
 my $fractionMotifs    = 0.1; #fraction of sequences in a filtered alignment covered by a motif before inclusion
 my $minNumberHits     = 2;   #minimum number of sequences covered by a motif before inclusion
@@ -43,6 +48,7 @@ my $minNumberHits     = 2;   #minimum number of sequences covered by a motif bef
 	     "fm=s"          => \$fractionMotifs,
 	     "min=s"         => \$minNumberHits,
 	     "idf=s"         => \$idf,
+	     "f|fasta"       => \$fastaIn,
 	     "e|embl"        => \$emblOut,
 	     "g|gff"         => \$gffOut,
 	     "a|aln"         => \$alnOut,
@@ -68,12 +74,18 @@ elsif (not -e $cmfile or not -e $infile){
 
 $alnOut = 1 if ((not defined $gffOut) && (not defined $emblOut) && (not defined $alnOut));
 
-###############
-#IF STOCKHOLM FILE:
 my ($ffafile,$resfile, $cmsfile);
-($ffafile,$resfile, $cmsfile) = ($pid . '.filtered.fasta', $pid . '.tabfile', $pid . '.cmsearch' ) if (defined $pid);
-print STDERR "Filter and reformat alignment [$infile]\n"          if( $verbose );
-$ffafile = stockholm2filteredfasta($infile,$idf) if (not defined $pid);
+if (not defined $fastaIn){
+#IF STOCKHOLM FILE:
+    ($ffafile,$resfile, $cmsfile) = ($pid . '.filtered.fasta', $pid . '.tabfile', $pid . '.cmsearch' ) if (defined $pid);
+    print STDERR "Filter and reformat alignment [$infile]\n"          if( $verbose );
+    $ffafile = stockholm2filteredfasta($infile,$idf) if (not defined $pid);
+}
+else{
+#IF FASTA FILE:
+    $ffafile = $infile;
+}
+
 my $noSeqs = compute_number_of_seqs($ffafile);
 
 print STDERR "run infernal search [$cmfile] against [$ffafile]\n" if( $verbose );
@@ -84,21 +96,20 @@ my ($features,$motifLabels, $idCounts, $sumBits) = parse_infernal_table( $resfil
 ###############
 
 
-###############
-#IF FASTA FILE:
 
 
 ###############
 
 if( defined $gffOut ) {
     print "Working on GFF still!\n";
+    print_gff($infile,$features,$starttime,$VERSION,$cmdline,$cmfile);
 }
 
 if( defined $emblOut ) {
     print "Working on EMBL still!\n";
 }
 
-if(defined $alnOut){    
+if(defined $alnOut && not defined $fastaIn){    
     my $aOut = print_annotated_alignment($infile,$features,$motifLabels);
     system("esl-reformat pfam $aOut > $infile\.annotated.stk");
     print "created annotated alignment [$infile\.annotated.stk]\n" if( $verbose );
@@ -117,9 +128,8 @@ exit(0);
 sub stockholm2filteredfasta {
     my ($infile,$idf) = @_;
     
-    system "esl-weight -f --idf $idf $infile > $$.filtered.stk && 
-esl-reformat -r -u fasta $$.filtered.stk > $$.filtered.fasta"
-and die "FATAL: failed to run [esl-weight] or [esl-reformat]!\n[$!]";
+    system "esl-weight -f --idf $idf $infile > $$.filtered.stk && esl-reformat -r -u fasta $$.filtered.stk > $$.filtered.fasta"
+and die "FATAL: failed to run [esl-weight -f --idf $idf $infile > $$.filtered.stk && esl-reformat -r -u fasta $$.filtered.stk > $$.filtered.fasta]!\n[$!]";
 
 return "$$.filtered.fasta";
     
@@ -246,6 +256,38 @@ sub assign_motif_label {
     }   
 }
 
+sub print_gff {
+    my ($infile,$features,$starttime,$VERSION,$cmdline,$cmfile) = @_;
+    my $outfile = $infile . ".gff"; 
+    
+    my $endtime = `date`;
+    chomp $endtime;
+
+    open(F, "> $outfile");
+    print F "##gff-version 3
+# rfam_scan.pl (v$VERSION)
+# command line:     $cmdline
+# CM file:          $cmfile
+# query file:       $infile
+# start time:       $starttime
+# end time:         $endtime\n";
+
+    foreach my $seqid (keys %{$features}){
+	foreach my $f ( @{$features->{$seqid}} ){
+	    my ($start,$end, $char, $rmfamid, $score) = ($f->{'start'}, $f->{'end'}, $f->{'label'}, $f->{'rmfamid'}, $f->{'score'});
+	    my $strand = '+';
+	    
+	    if ($start > $end){
+		$strand = '-';
+		($start,$end) = ($end,$start);
+	    }	
+	    print F "$seqid\tCMSEARCH102\tmotif\t$start\t$end\t$score\t$strand\t.\tName=$rmfamid;\n";	    
+	}
+    }
+    close(F);
+    return $outfile;
+}
+
 sub print_annotated_alignment{
     my ($infile, $features, $motifLabels) = @_;
     
@@ -259,10 +301,9 @@ sub print_annotated_alignment{
     my %motiffedSeqLineNumbers;
     my $cnt=0;
     my $firstSeqLine;
-    foreach my $stk (@stk){
-	
-	#next if ($stk=~/^#/ or $stk=~/^\/\//);
 
+    foreach my $stk (@stk){
+	#next if ($stk=~/^#/ or $stk=~/^\/\//);
 	if($stk=~/^(\S+)\s+\S+$/){
 	    $positions2seqid{$cnt}=$1;
 	    $seqid2positions{$1}=$cnt;
@@ -376,9 +417,9 @@ sub print_annotated_alignment{
 
 sub print_network {
     my ($infile, $features, $idCounts, $sumBits, $noSeqs, $fractionMotifs, $minNumberHits) = @_;
-
+    my $outfile = $infile . ".network";
     my $aId = extract_id($infile);
-    open(F, "> $infile.network");
+    open(F, "> $outfile");
     foreach my $mId (sort keys %{$idCounts}){
 	next if ( $idCounts->{$mId}/$noSeqs < $fractionMotifs );
 	next if ( $idCounts->{$mId}         < $minNumberHits  );
@@ -386,7 +427,7 @@ sub print_network {
     }
     close(F);
     
-    return "$infile.network";
+    return $outfile;
 }
 
 
@@ -478,7 +519,7 @@ sub help {
 
 $0: search a fasta or stockholm file with RMfam covariance models
 
-Usage: $0 <options> cm_file fasta_file
+Usage: $0 <options> cm_file Stockholm_file/fasta_file
     Options
         -h              : show this help
 	-v              : verbose - prints lots of largely unimportant information
@@ -489,26 +530,31 @@ Usage: $0 <options> cm_file fasta_file
 	--global        : perform global mode search
 
     RMfam options:
+	-f|--fasta      : search database is in fasta format
+	For searching alignments:
 	-fm  <num>      : fraction of sequences a motif must hit before inclusion [DEFAULT: $fractionMotifs]
 	-min <num>      : number   of sequences a motif must hit before inclusion [DEFAULT: $minNumberHits]
 	-idf <num>      : filter out seqs w/ fractional ident > num [DEFAULT: $idf]
 	
     Output options:
+	-o              : output file
 	-e|--embl       : output in EMBL format
-	-g|--gff        : output in GFF format
-	-a|--aln        : output in annotated Stockholm format [DEFAULT]
+	-g|--gff        : output in GFF format                 [DEFAULT of fasta input]
+	-a|--aln        : output in annotated Stockholm format [DEFAULT of Stockholm input]
 	-n|--net        : output in tabular format for network visualisation
-
+	
     Miscellaneous options:
 	--pid           : restart a job using precomputed cmsearch results
 	
       TODO:
+        --sort out a sensible use for outfile
 	--use tree weighting on the sum of bit scores metric
 	--allow a threshold on the sumBits score
 	--add some more caveats to what gets summed for fm <a fuzzy alignment approach - window can be proportional to the specificity of the motif model>
 	--record model specificity in the alignment?
-	--add support for HMM and-or PSWMs
-        --add secondary structure information?
+	--add support for HMM and-or PWMs
+        --add secondary structure information to the alignment output?
+
 EOF
 }
 

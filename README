@@ -44,10 +44,9 @@ rmfam_scan.pl          - A script for annotating sequences and alignments with R
 
 4. HISTORY
 
-Version     Date        # families    # regions      Rfam
--------     ----        ----------    ---------      -------
-
-  0.1       10/11       ?             ?              Rfam 10.1
+Version     Date        # families    Rfam        PDB
+-------     ----        ----------    -------     -----
+  0.1       10/11       14            Rfam 10.1   ?
 
 
 5. HOW TO CITE RFAM
