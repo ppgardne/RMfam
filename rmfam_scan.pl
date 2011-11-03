@@ -74,12 +74,12 @@ elsif (not -e $cmfile or not -e $infile){
 
 $alnOut = 1 if ((not defined $gffOut) && (not defined $emblOut) && (not defined $alnOut));
 
-my ($ffafile,$resfile, $cmsfile);
+my ($ffafile,$resfile, $cmsfile,$weights,$sumWeights);
 if (not defined $fastaIn){
 #IF STOCKHOLM FILE:
     ($ffafile,$resfile, $cmsfile) = ($pid . '.filtered.fasta', $pid . '.tabfile', $pid . '.cmsearch' ) if (defined $pid);
     print STDERR "Filter and reformat alignment [$infile]\n"          if( $verbose );
-    $ffafile = stockholm2filteredfasta($infile,$idf) if (not defined $pid);
+    ($ffafile,$weights,$sumWeights) = stockholm2filteredfasta($infile,$idf) if (not defined $pid);
 }
 else{
 #IF FASTA FILE:
@@ -91,7 +91,7 @@ my $noSeqs = compute_number_of_seqs($ffafile);
 print STDERR "run infernal search [$cmfile] against [$ffafile]\n" if( $verbose );
 ($resfile, $cmsfile) = run_infernal_search( $cmfile, $ffafile, $thresh, $evalueThresh )   if( not defined $pid);
 print STDERR "parse infernal results [$resfile]\n"                if( $verbose );
-my ($features,$motifLabels, $idCounts, $sumBits) = parse_infernal_table( $resfile, $noSeqs, $fractionMotifs, $minNumberHits );
+my ($features,$motifLabels, $idCounts, $sumBits, $weightedSumBits) = parse_infernal_table( $resfile, $noSeqs, $fractionMotifs, $minNumberHits, $weights,$sumWeights );
 
 ###############
 
@@ -119,7 +119,7 @@ if( defined $netOut ) {
     #Print data for displaying as a network:
     #--alignment id, rmfam IDs, 
     #--scores: fraction seqs in alignment, sumBits, 
-    my $nOut = print_network($infile,$features,$idCounts,$sumBits, $noSeqs, $fractionMotifs, $minNumberHits); 
+    my $nOut = print_network($infile,$features,$idCounts,$sumBits,$weightedSumBits, $noSeqs, $fractionMotifs, $minNumberHits, $sumWeights); 
     print "Network data written to [$nOut]\n" if( $verbose );
 }
 
@@ -129,11 +129,31 @@ sub stockholm2filteredfasta {
     my ($infile,$idf) = @_;
     
     system "esl-weight -f --idf $idf $infile > $$.filtered.stk && esl-reformat -r -u fasta $$.filtered.stk > $$.filtered.fasta"
-and die "FATAL: failed to run [esl-weight -f --idf $idf $infile > $$.filtered.stk && esl-reformat -r -u fasta $$.filtered.stk > $$.filtered.fasta]!\n[$!]";
-
-return "$$.filtered.fasta";
+	and die "FATAL: failed to run [esl-weight -f --idf $idf $infile > $$.filtered.stk && esl-reformat -r -u fasta $$.filtered.stk > $$.filtered.fasta]!\n[$!]";
+    
+    my ($weights,$sum) = stockholm2weights("$$.filtered.stk"); 
+    
+    return ("$$.filtered.fasta",$weights,$sum);
     
 }
+
+#stockholm2weights: Use esl-weights to obtain Gerstein/Sonnhammer/Chothia tree weights for each sequence
+sub stockholm2weights {
+    my $infile = shift;
+    my $sum=0;
+    my %weights;
+    open(F, "esl-weight -g $infile | ") or die "FATAL: could not open pipe for [esl-weight -g $infile]\n[$!]";
+    while(my $w = <F>){
+	if($w=~/^#=GS\s+(\S+)\s+WT\s+(\S+)/){
+	    $weights{$1}=$2; 
+	    $sum+=$2;
+	}
+    }
+
+return \%weights, $sum;
+    
+}
+
 
 sub run_infernal_search {
     my ($cmfile, $fafile, $thresh, $evalueThresh) = @_;
@@ -148,7 +168,7 @@ sub run_infernal_search {
     else {
 	$options = " --ga ";
     }
-
+    
     if( $global ) {
 	$options .= " -g";
     }
@@ -161,12 +181,12 @@ sub run_infernal_search {
 }
 
 sub parse_infernal_table {
-    my ($file, $noSeqs, $fractionMotifs, $minNumberHits) = @_;
+    my ($file, $noSeqs, $fractionMotifs, $minNumberHits, $weights,$sum) = @_;
     my $fh;
     my %f2;
     my $rmfamid;
     my %idCounts;
-    my %sumBits;
+    my (%sumBits,%weightedSumBits);
     my %seenSeqidRmfam;
     my %motifLabels;
     my %taken; 
@@ -185,6 +205,9 @@ sub parse_infernal_table {
 	            (( $seqid, $start, $end, $modst, $moden, $bits, $evalue, $gc ) =
 	            /^\s*(\S+)\s+(\d+)\s+(\d+)\s+(\d+)\s+(\d+)\s+(\S+)\s+(\S+)\s+(\d+)$/) ) {
 	    $sumBits{$rmfamid}+=$bits;
+	    $weights->{$seqid} = 1.0 if (not defined $weights->{$seqid});
+	    $weightedSumBits{$rmfamid}+=$bits*$weights->{$seqid};
+	    
 	    $idCounts{$rmfamid}++ if (not defined $seenSeqidRmfam{$seqid}{$rmfamid});
 	    $seenSeqidRmfam{$seqid}{$rmfamid}++;
 	    
@@ -241,8 +264,8 @@ sub parse_infernal_table {
     $fh->close;
     
 #    print "f2:[[[" . Dumper(%f2) . "]]]";
-    
-    return (\%f2, \%motifLabels, \%idCounts, \%sumBits);
+	
+    return (\%f2, \%motifLabels, \%idCounts, \%sumBits, \%weightedSumBits);
 }
 
 sub assign_motif_label {
@@ -416,14 +439,24 @@ sub print_annotated_alignment{
 }
 
 sub print_network {
-    my ($infile, $features, $idCounts, $sumBits, $noSeqs, $fractionMotifs, $minNumberHits) = @_;
+    my ($infile, $features, $idCounts, $sumBits, $weightedSumBits, $noSeqs, $fractionMotifs, $minNumberHits, $sumWeights) = @_;
     my $outfile = $infile . ".network";
     my $aId = extract_id($infile);
+    my $aAc = extract_acc($infile);
     open(F, "> $outfile");
+    
+    #becomes a mean if weights is not defined:
+    $sumWeights = $noSeqs if (not defined $sumWeights);
+    $sumWeights = 1.0     if ($sumWeights < 1.0);
+    foreach my $fId (keys %{$weightedSumBits}){
+	$weightedSumBits->{$fId} = $weightedSumBits->{$fId}/$sumWeights; 	
+    }
+    
     foreach my $mId (sort keys %{$idCounts}){
 	next if ( $idCounts->{$mId}/$noSeqs < $fractionMotifs );
 	next if ( $idCounts->{$mId}         < $minNumberHits  );
-	printf F "$aId\t$mId\t%0.2f\t%0.2f\n", $idCounts->{$mId}/$noSeqs, $sumBits->{$mId};
+	printf F "%10s %20s %20s " . " "x10 . "%0.2f" . " "x10 . " %0.2f" . " "x10 . " %0.2f\n", 
+	$aAc,$aId,$mId, $idCounts->{$mId}/$noSeqs, $sumBits->{$mId}, $weightedSumBits->{$mId};
     }
     close(F);
     
@@ -513,6 +546,34 @@ sub extract_id {
     return $aFile;
 }
 
+######################################################################
+#Extract an accession from a file, if not found then use filename
+sub extract_acc {
+    my $aFile=shift;
+    open(F, "< $aFile");
+    
+    while(my $l = <F>){
+	if($l=~/\#=GF\s+AC\s+(\S+)/){
+	    return $1;
+	}
+    }
+    return $aFile;
+}
+
+######################################################################
+#Extract a GA threshold from a file, if not found then use filename
+sub extract_ga {
+    my $aFile=shift;
+    open(F, "< $aFile");
+    
+    while(my $l = <F>){
+	if($l=~/\#=GF\s+GA\s+(\S+)/){
+	    return $1;
+	}
+    }
+    return 0.0;
+}
+
 
 sub help {
     print STDERR <<EOF;
@@ -553,8 +614,8 @@ Usage: $0 <options> cm_file Stockholm_file/fasta_file
 	--add some more caveats to what gets summed for fm <a fuzzy alignment approach - window can be proportional to the specificity of the motif model>
 	--record model specificity in the alignment?
 	--add support for HMM and-or PWMs
-        --add secondary structure information to the alignment output?
-
+        --add secondary structure information to the annotated alignment?
+	
 EOF
 }
 

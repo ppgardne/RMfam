@@ -482,8 +482,8 @@ Termite-leu	T-loop	0.72	289.22
 Termite-leu	Terminator1	0.67	324.50
 Termite-leu	Terminator2	0.67	313.02
 Termite-leu	U-turn	0.78	430.15
-TwoAYGGAY	Csr-Rsm	0.71	1928.47
-TwoAYGGAY	T-loop	0.27	627.96
+   RF01731            TwoAYGGAY              Csr-Rsm           0.71           1928.47           10.76
+   RF01731            TwoAYGGAY               T-loop           0.27           627.96           3.56
 asd	Csr-Rsm	0.20	39.28
 asd	GNRA	0.20	36.84
 asd	Terminator1	0.20	53.98
@@ -634,4 +634,4 @@ sraA	T-loop	0.70	188.30
 sraA	Terminator1	0.65	225.46
 sraA	Terminator2	0.75	233.62
 sraA	U-turn	0.50	131.77
-tpke11	GNRA	0.36	88.22
+   RF02031               tpke11                 GNRA           0.36           88.22           3.46

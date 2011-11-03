@@ -38,6 +38,13 @@ LICENSE                - Legalese stating RMfam's copyright is CC BY 3.0
 */SEED                 - Annotated alignment files of motifs (named *)
 RMfam.cm               - a concatenated set of RMfam covariance models in ascii INFERNAL format
 Rfam.stk               - Rfam seed alignments in STOCKHOLM format that have been annotated with RMfam motifs
+Rfam.tab               - A table of mappings between RMfam and Rfam. The format is:
+		          --column 1: rfam_id                
+		          --column 2: rmfam_id  
+		          --column 3: fraction of sequences in Rfam seed that contain the RMfam motif          
+		          --column 4: sum of bit scores
+			  --column 4: weighted sum of bit scores (using GSC tree weights from esl-weights, weight the sum of bits, 
+			              normalise with the total weights). I.e. (\sum_i (w_i * bits_i))/( \sum_i w_i )
 PDB.gff                - Annotations of nucleotide sequences derived from PDB entries
 accessions.txt         - Tab-delimited file of RMfam accessions and corresponding IDs
 rmfam_scan.pl          - A script for annotating sequences and alignments with RMfam families
