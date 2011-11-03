@@ -10,7 +10,6 @@ Release 0.1
 4. HISTORY
 5. HOW TO CITE RMFAM
 
-
 1. INTRODUCTION
 
 RMfam is a database of annotated multiple sequence alignments and
@@ -43,8 +42,9 @@ Rfam.tab               - A table of mappings between RMfam and Rfam. The format 
 		          --column 2: rmfam_id  
 		          --column 3: fraction of sequences in Rfam seed that contain the RMfam motif          
 		          --column 4: sum of bit scores
-			  --column 4: weighted sum of bit scores (using GSC tree weights from esl-weights, weight the sum of bits, 
-			              normalise with the total weights). I.e. (\sum_i (w_i * bits_i))/( \sum_i w_i )
+			  --column 4: weighted sum of bit scores (using GSC tree weights from esl-weights, 
+			              weight the sum of bits, normalise with the total weights). 
+				      I.e. (\sum_i (w_i * bits_i))/( \sum_i w_i )
 PDB.gff                - Annotations of nucleotide sequences derived from PDB entries
 accessions.txt         - Tab-delimited file of RMfam accessions and corresponding IDs
 rmfam_scan.pl          - A script for annotating sequences and alignments with RMfam families
@@ -53,7 +53,7 @@ rmfam_scan.pl          - A script for annotating sequences and alignments with R
 
 Version     Date        # families    Rfam        PDB
 -------     ----        ----------    -------     -----
-  0.1       10/11       14            Rfam 10.1   ?
+  0.1       10/11       14            Rfam 10.1   03/11/11
 
 
 5. HOW TO CITE RFAM
@@ -65,7 +65,4 @@ Gardner PP et al. (2011) Needles in a haystack: A profile database of
 RNA motifs. Unpublished.
 
 --------------------------------
-October 2011
-
-
-
+November 2011
