@@ -32,7 +32,7 @@ https://github.com/ppgardne
 3. FILES
 
 README                 - this file
-USERMAN                - a description of the Rfam flatfile formats
+USERMAN                - a description of the RMfam flatfile formats
 LICENSE                - Legalese stating RMfam's copyright is CC BY 3.0
 */SEED                 - Annotated alignment files of motifs (named *)
 RMfam.cm               - a concatenated set of RMfam covariance models in ascii INFERNAL format
@@ -57,7 +57,7 @@ Version     Date        # families    Rfam        PDB
   0.1       10/11       14            Rfam 10.1   03/11/11
 
 
-5. HOW TO CITE RFAM
+5. HOW TO CITE RMfam
 
 If you make use of RMfam in your work we ask that you cite the
 following publications:

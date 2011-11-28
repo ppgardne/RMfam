@@ -161,6 +161,7 @@
    RF00257              mir-194          Terminator2           0.24           77.45           2.53
    RF00261           IRES_L-myc                 GNRA           0.22           15.31           1.58
    RF00262                  sar              Csr-Rsm           0.40           16.60           1.79
+   RF00265              SNORA69           RBS_E_coli           0.47           131.68           6.25
    RF00280              SNORD51          Terminator2           0.15           25.33           2.95
    RF00286              SCARNA8             k-turn-1           0.62           140.37           7.47
    RF00291              snoR639                 GNRA           0.29           16.59           2.77
@@ -168,6 +169,7 @@
    RF00304    snoZ279_R105_R108          Terminator2           0.18           35.49           2.08
    RF00320              snoZ185                 GNRA           0.67           14.52           5.29
    RF00322              SNORA31              Csr-Rsm           0.50           17.48           4.12
+   RF00336               snoJ26         RBS_H_pylori           0.50           40.44           8.21
    RF00336               snoJ26          Terminator2           0.50           22.58           6.73
    RF00337              snoZ112          Terminator2           0.60           30.79           5.00
    RF00345                snoR1          Terminator2           0.17           21.84           1.55
@@ -225,6 +227,7 @@
    RF00495           IRES_Hsp70               U-turn           0.40           40.94           2.98
    RF00495           IRES_Hsp70                 UNCG           0.20           20.98           1.70
    RF00500               TCV_H5                 GNRA           1.00           24.45           8.15
+   RF00503               RNAIII       RBS_B_subtilis           0.40           39.01           12.49
    RF00506           Thr_leader                 GNRA           0.29           41.50           1.15
    RF00506           Thr_leader          Terminator1           1.00           440.09           24.81
    RF00506           Thr_leader          Terminator2           1.00           359.94           20.49
@@ -430,6 +433,7 @@
    RF01472                rli40          Terminator1           0.75           56.01           14.15
    RF01472                rli40          Terminator2           1.00           65.83           16.29
    RF01473                rli41                 GNRA           0.50           14.65           4.25
+   RF01473                rli41       RBS_B_subtilis           0.75           52.59           12.43
    RF01473                rli41          Terminator1           0.75           34.17           9.05
    RF01478                rli47          Terminator2           0.40           21.50           3.72
    RF01481                rli53          Terminator2           0.50           20.67           5.17
@@ -445,8 +449,10 @@
    RF01527               CC3510              Csr-Rsm           1.00           21.12           10.56
    RF01529               CC3552                 GNRA           1.00           39.36           19.68
    RF01529               CC3552               U-turn           1.00           36.50           18.25
+   RF01570                DdR20           RBS_E_coli           1.00           37.40           18.70
    RF01581               RUF6-5          Terminator1           0.31           54.36           4.55
    RF01581               RUF6-5          Terminator2           0.19           34.45           1.83
+   RF01582                 RUF4           RBS_E_coli           1.00           28.72           14.36
    RF01601    plasmodium_snoR26          Terminator1           0.67           22.44           6.49
    RF01601    plasmodium_snoR26          Terminator2           0.67           20.40           5.90
    RF01657              ceN74-2                 UNCG           0.67           45.70           7.76
