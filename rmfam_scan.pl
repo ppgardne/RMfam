@@ -586,7 +586,6 @@ Usage: $0 <options> cm_file Stockholm_file/fasta_file
 	-v              : verbose - prints lots of largely unimportant information
     Cmsearch options:
 	-t <bits>       : specify cutoff in bits      [DEFAULT is to use curated GA thresholds]
-	--bt <bits>     : specify blast evalue cutoff [DEFAULT is to use curated GA thresholds]
 	--local         : perform local mode search   [DEFAULT]
 	--global        : perform global mode search
 
