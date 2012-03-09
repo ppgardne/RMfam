@@ -27,6 +27,21 @@
 #=GF RT   Classification and energetics of the base-phosphate interactions in RNA.
 #=GF RA   Zirbel CL, Sponer JE, Sponer J, Stombaugh J, Leontis NB
 #=GF RL   Nucleic Acids Res. 2009;37:4898-918.
+#=GF RN   [4]
+#=GF RM   20562215
+#=GF RT   A structural database for k-turn motifs in RNA.
+#=GF RA   Schroeder KT, McPhee SA, Ouellet J, Lilley DM
+#=GF RL   RNA. 2010;16:1463-8.
+#=GF RN   [5]
+#=GF RM   21169337
+#=GF RT   Folding of the lysine riboswitch: importance of peripheral elements for transcriptional regulation.
+#=GF RA   Blouin S, Chinnappan R, Lafontaine DA
+#=GF RL   Nucleic Acids Res. 2010;
+#=GF RN   [6]
+#=GF RM   22336704
+#=GF RT   A structural module in RNase P expands the variety of RNA kinks.
+#=GF RA   Meyer M, Westhof E, Masquida B
+#=GF RL   RNA Biol. 2012;9:[Epub ahead of print].
 
 2aw4_B/1197-1252          GUUCUGUAAGCCUGCGA.AGGUGUGCU......................................GUGAGGCAUGCUGGAGGU.AUCAGAAGUGCG
 #=GR 2aw4_B/1197-1252 SS  (((((....(((.......((((((((..........................................))))))))...)))...))))).....

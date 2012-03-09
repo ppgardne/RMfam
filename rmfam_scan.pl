@@ -88,20 +88,14 @@ else{
 
 my $noSeqs = compute_number_of_seqs($ffafile);
 
-print STDERR "run infernal search [$cmfile] against [$ffafile]\n" if( $verbose );
+print STDERR "run infernal search [$cmfile] against [$ffafile]\n"                         if( $verbose );
 ($resfile, $cmsfile) = run_infernal_search( $cmfile, $ffafile, $thresh, $evalueThresh )   if( not defined $pid);
-print STDERR "parse infernal results [$resfile]\n"                if( $verbose );
-my ($features,$motifLabels, $idCounts, $sumBits, $weightedSumBits) = parse_infernal_table( $resfile, $noSeqs, $fractionMotifs, $minNumberHits, $weights,$sumWeights );
-
-###############
-
-
-
+print STDERR "parse infernal results [$resfile]\n"                                        if( $verbose );
+my ($features,$motifLabels, $idCounts, $sumBits, $weightedSumBits) = parse_infernal_table( $resfile, $noSeqs, $fractionMotifs, $minNumberHits, $weights,$sumWeights, $fastaIn );
 
 ###############
 
 if( defined $gffOut ) {
-    print "Working on GFF still!\n";
     print_gff($infile,$features,$starttime,$VERSION,$cmdline,$cmfile);
 }
 
@@ -181,7 +175,7 @@ sub run_infernal_search {
 }
 
 sub parse_infernal_table {
-    my ($file, $noSeqs, $fractionMotifs, $minNumberHits, $weights,$sum) = @_;
+    my ($file, $noSeqs, $fractionMotifs, $minNumberHits, $weights,$sum,$fastaIn) = @_;
     my $fh;
     my %f2;
     my $rmfamid;
@@ -192,11 +186,13 @@ sub parse_infernal_table {
     my %taken; 
     
     #Accounting loop:
+    #(only really needed for annotating alignments)
     $fh = IO::File->new( $file );
     while(<$fh>) {
 	if( /^\#\s+CM:\s+(\S+)/ ) {
 	    $rmfamid = $1;
 	}
+	
 	next if( /^\#/ );
 		
 	my( $model, $seqid, $start, $end, $modst, $moden, $bits, $evalue, $gc );
@@ -212,21 +208,23 @@ sub parse_infernal_table {
 	    $seenSeqidRmfam{$seqid}{$rmfamid}++;
 	    
 	}
-    }    
+    }
+    $fh->close;
     
     $fh = IO::File->new( $file );
     while(<$fh>) {
 	if( /^\#\s+CM:\s+(\S+)/ ) {
 	    $rmfamid = $1;
 	}
+	
 	next if( /^\#/ );
-
-	next if ($idCounts{$rmfamid} < $noSeqs*$fractionMotifs);
-	next if ($idCounts{$rmfamid} < $minNumberHits); 
-
+	#filters (only really needed for annotating alignments):
+	next if (($idCounts{$rmfamid} < $noSeqs*$fractionMotifs) && (not defined $fastaIn));
+	next if (($idCounts{$rmfamid} < $minNumberHits) && (not defined $fastaIn)); 
+	
 	$motifLabels{$rmfamid} = assign_motif_label($rmfamid,\%taken) if not defined $motifLabels{$rmfamid};
 	$taken{$motifLabels{$rmfamid}}=1;
-
+	
 	my( $model, $seqid, $start, $end, $modst, $moden, $bits, $evalue, $gc );
 	if( (( $model, $seqid, $start, $end, $modst, $moden, $bits, $evalue, $gc ) =
 	    /^\s*(\S+)\s+(\S+)\s+(\d+)\s+(\d+)\s+(\d+)\s+(\d+)\s+(\S+)\s+(\S+)\s+(\d+)$/) || 
@@ -238,7 +236,7 @@ sub parse_infernal_table {
 		( $start, $end ) = ( $end, $start );
 		$strand = -1;
 	    }
-
+	    
 	    my $printEval = 'NA';
 	    if( $evalue =~ /[0-9]/ ) {
 		$printEval = $evalue;
@@ -264,7 +262,7 @@ sub parse_infernal_table {
     $fh->close;
     
 #    print "f2:[[[" . Dumper(%f2) . "]]]";
-	
+    
     return (\%f2, \%motifLabels, \%idCounts, \%sumBits, \%weightedSumBits);
 }
 
@@ -285,7 +283,7 @@ sub print_gff {
     
     my $endtime = `date`;
     chomp $endtime;
-
+    
     open(F, "> $outfile");
     print F "##gff-version 3
 # rfam_scan.pl (v$VERSION)
@@ -599,8 +597,8 @@ Usage: $0 <options> cm_file Stockholm_file/fasta_file
     Output options:
 	-o              : output file
 	-e|--embl       : output in EMBL format
-	-g|--gff        : output in GFF format                 [DEFAULT of fasta input]
-	-a|--aln        : output in annotated Stockholm format [DEFAULT of Stockholm input]
+	-g|--gff        : output in GFF format                 [DEFAULT for fasta input]
+	-a|--aln        : output in annotated Stockholm format [DEFAULT for Stockholm input]
 	-n|--net        : output in tabular format for network visualisation
 	
     Miscellaneous options:
@@ -614,7 +612,8 @@ Usage: $0 <options> cm_file Stockholm_file/fasta_file
 	--record model specificity in the alignment?
 	--add support for HMM and-or PWMs
         --add secondary structure information to the annotated alignment?
-	
+	--add an unstranded option (removes --toponly from cmsearch)
+	--for fasta files present a better summary. Eg. sumBits (not clans), list motifs, ...
 EOF
 }
 

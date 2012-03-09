@@ -1,0 +1,42 @@
+# STOCKHOLM 1.0
+
+#=GF ID   C-loop
+#=GF AU   Gardner PP
+#=GF SE   Gardner PP
+#=GF SS   Published; PMID:21976732
+#=GF GA   10.00
+#=GF DR   URL;http://rnafrabase.cs.put.poznan.pl/?act=pdbdetails&id=1S72
+#=GF DR   URL;http://rnafrabase.cs.put.poznan.pl/?act=pdbdetails&id=1J5E
+#=GF RN   [1]
+#=GF RM   21976732
+#=GF RT   Clustering RNA structural motifs in ribosomal RNAs using secondary
+#=GF RT   structural alignment.
+#=GF RA   Zhong C, Zhang S
+#=GF RL   Nucleic Acids Res. 2012;40:1307-17.
+
+#           <<<<<---<<<<_________________________________>>>>-..>>>>>
+#         1 cugagCACuGguGgaguGuuuGuuucaGAgAGgAguuGgCacauagcCag..cucag 55      
+#           ::: G+  :G::  AGUGU++G++UC+GAGAGGAGU+GGCAC+  ::C:   C :::
+#       960 GACCGAUUGGUCU-AGUGUCCGCCUCCGAGAGGAGUCGGCACGGGGGCCCacCAGCC 1015    
+#>strand_3
+#GCUGGCUACuAUGCCAGCUGGUGGAUUGCUCGGCUCAGGCGCUGAUGAAGGACGUGCCAAGCUGCGAUAAGCCAUGGGGAGCCGCACGGAGGCGAAGAACCAUGGAUUUCCGAAUGAGAAUCUCUACACUAAUUGCUUCGCGCAAUGAGGAACCCCGAGAACUGAAACAUCUCAGUAUCGGGAGGAACAGAAAACGCAAUGUGAUGUCGUUAGUAACCGCGAGUGAACGCGAUACAGCCCAAACCGAAGCCCUCACGGGCAAUGUGGUGUCAGGGCUACCUCUCAUCAGCCGACCGUCUCGACGAAGUCUCUUGGAACAGAGCGUGAUACAGGGUGACAACCCCGUACUCGAGACCAGUACGACGUGCGGUAGUGCCAGAGUAGCGGGGGUUGGAUAUCCCUCGCGAAUAACGCAGGCAUCGACUGCGAAGGCUAAACACAACCUGAGACCGAUAGUGAACAAGUAGUGUGAACGAACGCUGCAAAGUACCCUCAGAAGGGAGGCGAAAUAGAGCAUGAAAUCAGUUGGCGAUCGAGCGACAGGGCAUACAAGGUCCCUCGACGAAUGACCGACGCGCGAGCGUCCAGUAAGACUCACGGGAAGCCGAUGUUCUGUCGUACGUUUUGAAAAACGAGCCAGGGAGUGUGUCUGCAUGGCAAGUCUAACCGGAGUAUCCGGGGAGGCACAGGGAAACCGACAUGGCCGCAGGGCUUUGCCCGAGGGCCGCCGUCUUCAAGGGCGGGGAGCCAUGUGGACACGACCCGAAUCCGGACGAUCUACGCAUGGACAAGAUGAAGCGUGCCGAAAGGCACGUGGAAGUCUGUUAGAGUUGGUGUCCUACAAUACCCUCUCGUGAUCUAUGUGUAGGGGUGAAAGGCCCAUCGAGUCCGGCAACAGCUGGUUCCAAUCGAAACAUGUCGAAGCAUGACCUCCGCCGAGGUAGUCUGUGAGGUAGAGC
+GACCGAUUGGUUGUCCGCCUCCGAGAGGAGUCGGCACGCC
+UGUCAAACUCCAAACUUACAGACGCCGUUUGACGCGGGGAUUCCGGUGCGCGGGGUAAGCCUGUGUACCAGGAGGGGAACAACCCAGAGAUAGGUUAAGGUCCCCAAGUGUGGAUUAAGUGUAAUCCUCUGAAGGUGGUCUCGAGCCCUAGACAGCCGGGAUGUUGGCUUAGAAGCAGCCAUCAUUUAAAGAGUGCGUAACAGCUCACCGGCCGAGGUUUGAGGCGCCCAAAAUGAUCGGGACUCAAAUCCACCACCGAGACCUGUCCGUACCACUCAUACUGGUAAUCGAGUAGAUUGGCGCUCUAAUUGGAUGGAAGUAGGGGUGAAAACUCCUAUGGACCGAUUAGUGACGAAAAUCCUGGCCAUAGUAGCAGCGAUAGUCGGGUGAGAACCCCGACGGCCUAAUGGAUAAGGGUUCCUCAGCACUGCUGAUCAGCUGAGGGUUAGCCGGUCCUAAGUCAUACCGCAACUCGACUAUGACGAAAUGGGAAACGGGUUAAUAUUCCCGUGCCACUAUGCAGUGAAAGUUGACGCCCUGGGGUCGAUCACGCUGGGCAUUCGCCCAGUCGAACCGUCCAACUCCGUGGAAGCCGUAAUGGCAGGAAGCGGACGAACGGCGGCAUAGGGAAACGUGAUUCAACCUGGGGCCCAUGAAAAGACGAGCAUAGUGUCCGUACCGAGAACCGACACAGGUGUCCAUGGCGGCGAAAGCCAAGGCCUGUCGGGAGCAACCAACGUUAGGGAAUUCGGCAAGUUAGUCCCGUACCUUCGGAAGAAGGGAUGCCUGCUCCGGAACGGAGCAGGUCGCAGUGACUCGGAAGCUCGGACUGUCUAGUAACAACAUAGGUGACCGCAAAUCCGCAAGGACUCGUACGGUCACUGAAUCCUGCCCAGUGCAGGUAUCUGAACACCUCGUACAAGAGGACGAAGGACCUGUCAACGGCGGUAGCGUAGUACCUUGCCGCAUCAGUAGCGGCUUGCAUGAAUGGAUUAACCAGAGCUUCACUGUCCCAACGUUGGGCCCGGUGAACUGUACAUUCCAGUGCGGAGUCUGGAGACACCCAGGGGGAAGCGAAGACCCUAUGGAGCUUUACUGCAGGCUGUCGCUGAGGGGAUGCGUAGGAUAGGUGGGAGCGCAAGCGCCGGUGAAAUACCACCCUUCCCGACUCUCACUCCGGGAGGAGGACACCGAUAGCCGGGCAGUUUGACUGGGGCGGUACGCGCUCGAAAAGAUAUCGAGCGCGCCCUAUGGCUAUCUCAGCCGGGGACCCGGCGAAGAGUGCAAGAGCAAAAGAUAGCUUGACAGUGUUCUUCCCAACGAGGAACGCUGACGCGAAAGCGUGGUCUAGCGAACCAAUUAGCCUGCUUGAUGCGGGCAAUUGAUGACAGAAAAGCUACCCUAGGGAUAACAGAGUCGUCACUCGCAAGAGCACAUAUCGACCGAGUGGCUUGCUACCUCGAUGUCGGUUCCCUCCAUCCUGCCCGUGCAGAAGCGGGCAAGGGUGAGGUUGUUCGCCUAUUAAAGGAGGUCGUGAGCUGGGUUUAGACCGUCGUGAGACAGGUCGGCUGCUAUCUACUGGGUGUGUAAUGGUGUCUGACAAGAACGACCGUAUAGUACGAGAGGAACUACGGUUGGUGGCCACUGGUGUACCGGUUGUUCGAGAGAGCACGUGCCGGGUAGCCACGCCACACGGGGUAAGAGCUGAACGCAUCUAAGCUCGAAACCCACUUGGAAAAGAGACACCGCCGAGGUCCCGCGUACAAGACGCGGUCGAUAGACUCGGGGUGUGCGCGUCGAGGUAACGAGACGUUAAGCCCACGAGCACUAACAGACCAACCGAUGUGCAGCAUAGGUAGGAGUCGUUACAGAGGUACCCGCGCUAGCGGGCCACCCAGACAACAGUGAAAUACUACCCGUCGGUGACUGCG
+#---------...(((((((((.....(((..((((((((.(((.(....((((((.[[..[[.)))....(((((((...(((]]..]].)))......)))))).).)))...)(((...)))()..---(((((.....))))).))...((((((.....(...[..)......))))).).........((.....))...(((((.....((.]...))....)))))...((((...((..((((......)))....))).....((((((((......(..(.....(((((((....([((((......)))))((......{{{....]))}}}....)))))))......)..)...)))))).)).)....(((((((........)))))))......(((((.[[[[[[)))))..)))......)..)))))).))...............((....))....))......(...(((.....))).............)).....)))))))))......(.((((((((((....((((((..((....(....(((((....))))).....)...))..))))..)).)))))))))).[.(((........))).((((((....(((((((((((((..(((...((((.....))))...)))...((....))..(..((((...((((..-))))...)))))((((........))))...)))))))))))))..((.(...((((((.....(((((((((..((((...(((((((....)))))))...).)))....(((..((.((........)))).)))....))))))))).(.(((.....)))...)..))))))......).))..((((((....(((((....)))))..((((((....((.(((((((((...(((.
+....((..(..---------------------------.)
+..))...)).)...)))))))))))........)))))).....((((((((((.....))))))))))....(((......)))...(((((((...((((((...[.[[[[[[.....[[...........(((.((((((((((.......(((((.(((..(((.........)))..))).....(...((......)).).)))))...)))))))))))))..........)))]]....]]]]]]])))...)))))))(((((((.......)))))..))....))))))(.(.((((((((......((((((((....))))))))...)))))))).)..).....))))))((.....((.......((((((.......))))))((((....((((..((..(((((((...((.....)).))))))....(([[[.((...((((((.((.....))..)))))).....))...(((((........)))))))((((((((.......(((...((((((((...((((((((((((..-...))))))(...(((((....(((((....(((.....))).....))))).....)))))....)......))))))...))))))))(...)....)))..)))))))).]]].))).....((......)).))))..(((.......)))..))))...((((.....((((((((.((..(....(.......(((((....(.[..).....)))))(((((((((.....)))))))))(...).......(((((((((...((.........))...(((((((.....(((....))).......))))))).].(((.(((..(((((((..(((.....((((......)))).....))))))))..)))))....((..........(((((.......)))))..)..)....)))....)).))))))).)..))).)))))))).))))))....)))((..{{{{{.....]))}}}}}..(((((((..(((.((......((((.((((((..(((((.((((((((.....((((.(......(..[[[[[..((....))..........).]]]]]).))))........(((......))).....))))))))..)))))..(((......[)).)((((((..........]))))))(([[...[[[[[[[.(.((((((..))))))...).[[)(.(((]]....]]]]]]]...(((((((((.........))))))))).(((....))).]]))).).....(((((.(((((.]]]]]]))))))))))....).....))))..)))))).......((((.((((((((...((.......))...)))))))..)))).).......(((((.((((((..(((((((((......))))))..)))..((((.....))))......)))))..)...))).))....(((((((....))).))))....))..))).)))))))(..---[[[[[[...((((..((((((((.....(....)....))))))))(((((...((((...((((((((((....)))))...))))).{.)))).)))))..(((....((((.............))))....))).))))..)....]]]]]].....(((((((((.......)))))....(((.((((((((....(((((..(....)..)))))...))))}))))..)))...))))..--------------------------------------------------------------------------------------------
+#>strand_4
+#ACGuUAGGCGGCCACAGCGGUGGGGUUGCCUCCCGUACCCAUCCCGAACACGGAAGAUAAGCCCACCAGCGUUCCGGGGAGUACUGGAGUGCGCGAGCCUCUGGGAAACCCGGUUCGCCGCCACC
+#---...((((((....((((((((......((((((...(.....)...))))..))....)))))).))...(((((.....((((((.((....))))))))....)))))...))))))...
+
+1s1i_3/960-1015        .GACCGAUUGGUCU-AGUGUCCGCCUCCGAGAGGAGUCGGCACGGGGGCCCa.cCAGCC.
+1J5E/362-389           .UUCCGCAAUGGGC..............GCAA...............GCCUG..ACGGA.
+#=GR 1J5E/362-389 SS   .(.(((...(((((.................................))))...))))).
+1S72/1418-1443         CCUCAGCACUG...............CUG.AU.................CAG..CUGAGG
+#=GR 1S72/1418-1443 SS ((((((...((......................................))...))))))
+1S72/954-1010          .GAGCGACCGAUUGGUGUGUCCGCCUCCG.AGAGGAGUCGGCACAcCUGUCAAACUCC..
+#=GR 1S72/954-1010 SS  .(((.....((..((.-------------.---------------))..))...)).)..
+1S72/2711-2766         .GUGGCCACUGGUGUACCGGUUGUUCGAG.AGAGCACGUGCCGGGUAGCCAC..GCCAC.
+#=GR 1S72/2711-2766 SS .(((((...((((...((((((((((.....)))))...)))))...))))...))))).
+#=GC SS_cons           .(((((...((((..................................))))...))))).
+//
