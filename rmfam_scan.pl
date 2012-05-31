@@ -34,7 +34,7 @@ my( $local,
     $help
     );
 
-my $VERSION = '1.0';
+my $VERSION = '0.01';
 my $cmdline = $0.' '.join( ' ', @ARGV );
 my $starttime = `date`;
 chomp $starttime;
@@ -286,7 +286,7 @@ sub print_gff {
     
     open(F, "> $outfile");
     print F "##gff-version 3
-# rfam_scan.pl (v$VERSION)
+# rmfam_scan.pl (v$VERSION)
 # command line:     $cmdline
 # CM file:          $cmfile
 # query file:       $infile
@@ -295,14 +295,16 @@ sub print_gff {
 
     foreach my $seqid (keys %{$features}){
 	foreach my $f ( @{$features->{$seqid}} ){
-	    my ($start,$end, $char, $rmfamid, $score) = ($f->{'start'}, $f->{'end'}, $f->{'label'}, $f->{'rmfamid'}, $f->{'score'});
+	    my ($start,$end, $char, $rmfamid, $score, $evalue) = ($f->{'start'}, $f->{'end'}, $f->{'label'}, $f->{'rmfamid'}, $f->{'score'}, $f->{'evalue'});
 	    my $strand = '+';
 	    
 	    if ($start > $end){
 		$strand = '-';
 		($start,$end) = ($end,$start);
 	    }	
-	    print F "$seqid\tCMSEARCH102\tmotif\t$start\t$end\t$score\t$strand\t.\tName=$rmfamid;\n";	    
+	    my $eString='';
+	    $eString="Evalue=$evalue;" if (defined($evalue) && $evalue ne '-' && $evalue ne 'NA');
+	    print F "$seqid\tCMSEARCH102\tmotif\t$start\t$end\t$score\t$strand\t.\tName=$rmfamid;$eString\n";	    
 	}
     }
     close(F);
@@ -349,7 +351,7 @@ sub print_annotated_alignment{
 		    my ($lid,$lseq)=($1,$2);
 		    #sanity check:
 		    if($lid ne $seqid){
-			print "WARNING: seqId:[$seqid] and alnSeq:[$alnSeq] don't match!";
+			print "WARNING: seqId:[$seqid] and alnSeq:[$alnSeq] don't match!\n";
 			next;
 		    }
 		    
@@ -357,8 +359,8 @@ sub print_annotated_alignment{
 		    my @alnSeq = split(//, $alnSeq);
 		    #sanity check:
 		    if(scalar(@alnSeq) != $alnLength){
-			print "WARNING: the length [$alnLength] for seqId:[$seqid] and alnSeq:[$alnSeq] don't match!";
-			next;
+			printf "WARNING: the lengths [$alnLength]!=[%d] computed from seqId [$seqid] and alnSeq:\n[$alnSeq]\ndon't match!\n", scalar(@alnSeq);
+			#next;
 		    }
 		    
 		    my ($aCnt,$sCnt)=(0,0); 
@@ -614,6 +616,10 @@ Usage: $0 <options> cm_file Stockholm_file/fasta_file
         --add secondary structure information to the annotated alignment?
 	--add an unstranded option (removes --toponly from cmsearch)
 	--for fasta files present a better summary. Eg. sumBits (not clans), list motifs, ...
+	
+	--test unfiltered runs
+	--try multiple CMs for each family with eg. base-triples, pseudoknots, ...
+	--only report the highest scoring terminator motif (eg. compete "clans")
 EOF
 }
 

@@ -55,7 +55,7 @@ rmfam_scan.pl          - A script for annotating sequences and alignments with R
 Version     Date        # families    Rfam        PDB
 -------     ----        ----------    -------     -----
   0.1       10/11       14            Rfam 10.1   03/11/11
-
+  0.2       05/12       24            Rfam 10.1   03/11/11
 
 5. HOW TO CITE RMfam
 
