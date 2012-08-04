@@ -169,8 +169,9 @@ sub run_infernal_search {
     elsif( $local ) {
 	# default in infernal 1.0
     }
-
-    system "cmsearch --toponly --tabfile $$.tabfile $options $cmfile $fafile > $$.cmsearch" and die "FATAL: failed to execute [cmsearch --toponly --tabfile $$.tabfile $options $cmfile $fafile > $$.cmsearch]\n[$!]";
+    my $exe = "cmsearch --toponly --tabfile $$.tabfile $options $cmfile $fafile > $$.cmsearch";
+    print "$exe\n" if (defined $verbose);
+    system "$exe" and die "FATAL: failed to execute [$exe]\n[$!]";
     return ("$$.tabfile", "$$.cmsearch");
 }
 
@@ -359,7 +360,7 @@ sub print_annotated_alignment{
 		    my @alnSeq = split(//, $alnSeq);
 		    #sanity check:
 		    if(scalar(@alnSeq) != $alnLength){
-			printf "WARNING: the lengths [$alnLength]!=[%d] computed from seqId [$seqid] and alnSeq:\n[$alnSeq]\ndon't match!\n", scalar(@alnSeq);
+			printf "WARNING: the lengths [$alnLength]!=[%d] computed from seqId [$seqid] and alnSeq:\n[$alnSeq]\ndon't match! [CHECK: could be a gap-only column]\n", scalar(@alnSeq);
 			#next;
 		    }
 		    
@@ -620,6 +621,10 @@ Usage: $0 <options> cm_file Stockholm_file/fasta_file
 	--test unfiltered runs
 	--try multiple CMs for each family with eg. base-triples, pseudoknots, ...
 	--only report the highest scoring terminator motif (eg. compete "clans")
+	
+	--add a double-strand option...
+	--add a test for concordance with the consensus structure
+	
 EOF
 }
 

@@ -7,6 +7,7 @@
 #=GF SS   Published; PMID:19528080
 #=GF GA   9.20
 #=GF DR   URL;http://rna.bgsu.edu/FR3D/MotifLibrary/Hairpins/LIB70005_HL_T_Loop.html
+#=GF DR   URL;http://rna.bgsu.edu/rna3dhub/motif/view/HL_05993.1
 #=GF DR   URL;http://rnafrabase.cs.put.poznan.pl/?act=pdbdetails&id=2J01
 #=GF DR   RFAM:RF00005
 #=GF RN   [1]
@@ -200,5 +201,5 @@ thi-Box                 ..CCU.GAUC..U..G....G.AUA.AUG.C...CA....GCGU..AGG..
 2zzn_C/48-64            ......G..U..G..G....G.UUC.AAAUC...CC....A..C.......
 1j4y_A/1-17             ......G..G..G..G....A.UUG.AAAAU...CC....C..C.......
 2zue_B/51-67            ......C..G..G..G....G.UUC.AAAUC...CC....C..G.......
-#=GC SS_cons            (((((.(..(..(..(....(.........)...))....)..)..)))))
+#=GC SS_cons            (((((.(..(..(..(....(.[.....].)...))....)..)..)))))
 //

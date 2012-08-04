@@ -16,7 +16,7 @@ endobj
 /Type /Page
 /Parent 3 0 R
 /Resources 9 0 R
-/MediaBox [0 0 54.029371 130.740587]
+/MediaBox [0 0 54.029371 139.356587]
 /Contents 7 0 R
 >>
 endobj
@@ -28,7 +28,7 @@ BT
 /FH 12 Tf
  0 Tr
 0 130.740587 Td
-()Tj
+(k-turn-1)Tj
 ET
 8.96 w
 1 J
@@ -441,7 +441,7 @@ endobj
 << /Font <</FH 5 0 R>> /ProcSet[/PDF/Text/ImageC]/XObject << >>/ExtGState<</GS0 10 0 R>>/Properties<</MC0<</Color[20224.0 -32768.0 -1.0]/Title(Layer 1)/Visible true/Preview true/Editable true/Printed true/Dimmed true>>>>>>
 endobj
 8 0 obj
-6975
+6983
 endobj
 1 0 obj
 <<
@@ -466,21 +466,21 @@ endobj
 xref
 0 11
 0000000000 65535 f 
-0000007665 00000 n 
-0000007788 00000 n 
-0000007730 00000 n 
+0000007673 00000 n 
+0000007796 00000 n 
+0000007738 00000 n 
 0000000116 00000 n 
 0000000009 00000 n 
 0000000152 00000 n 
 0000000269 00000 n 
-0000007645 00000 n 
-0000007407 00000 n 
-0000007295 00000 n 
+0000007653 00000 n 
+0000007415 00000 n 
+0000007303 00000 n 
 trailer
 <<
 /Size 11
 /Root 1 0 R
 >>
 startxref
-7834
+7842
 %%EOF
