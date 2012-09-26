@@ -77,7 +77,7 @@ $alnOut = 1 if ((not defined $gffOut) && (not defined $emblOut) && (not defined 
 my ($ffafile,$resfile, $cmsfile,$weights,$sumWeights);
 if (not defined $fastaIn){
 #IF STOCKHOLM FILE:
-    ($ffafile,$resfile, $cmsfile) = ($pid . '.filtered.fasta', $pid . '.tabfile', $pid . '.cmsearch' ) if (defined $pid);
+    ($ffafile,$resfile, $cmsfile) = ($pid . '.filtered.fasta', $pid . '.tblout', $pid . '.cmscan' ) if (defined $pid);
     print STDERR "Filter and reformat alignment [$infile]\n"          if( $verbose );
     ($ffafile,$weights,$sumWeights) = stockholm2filteredfasta($infile,$idf) if (not defined $pid);
 }
@@ -160,7 +160,7 @@ sub run_infernal_search {
 	$options = " -E $evalueThresh ";
     }
     else {
-	$options = " --ga ";
+	$options = " --cut_ga ";
     }
     
     if( $global ) {
@@ -169,17 +169,19 @@ sub run_infernal_search {
     elsif( $local ) {
 	# default in infernal 1.0
     }
-    my $exe = "cmsearch --toponly --tabfile $$.tabfile $options $cmfile $fafile > $$.cmsearch";
+#    my $exe = "cmsearch --toponly --tabfile $$.tabfile $options $cmfile $fafile > $$.cmsearch";
+#    my $exe = "cmsearch --toponly --tblout $$.tabfile $options $cmfile $fafile > $$.cmsearch";
+    my $exe = "cmscan --max --toponly --tblout $$.tblout $options $cmfile $fafile > $$.cmscan";
+ 
     print "$exe\n" if (defined $verbose);
     system "$exe" and die "FATAL: failed to execute [$exe]\n[$!]";
-    return ("$$.tabfile", "$$.cmsearch");
+    return ("$$.tblout", "$$.cmsearch");
 }
 
 sub parse_infernal_table {
     my ($file, $noSeqs, $fractionMotifs, $minNumberHits, $weights,$sum,$fastaIn) = @_;
     my $fh;
     my %f2;
-    my $rmfamid;
     my %idCounts;
     my (%sumBits,%weightedSumBits);
     my %seenSeqidRmfam;
@@ -190,17 +192,24 @@ sub parse_infernal_table {
     #(only really needed for annotating alignments)
     $fh = IO::File->new( $file );
     while(<$fh>) {
-	if( /^\#\s+CM:\s+(\S+)/ ) {
-	    $rmfamid = $1;
-	}
+#	if( /^\#\s+CM:\s+(\S+)/ ) {
+#	    $rmfamid = $1;
+#	}
 	
 	next if( /^\#/ );
 		
-	my( $model, $seqid, $start, $end, $modst, $moden, $bits, $evalue, $gc );
-	if( (( $model, $seqid, $start, $end, $modst, $moden, $bits, $evalue, $gc ) =
-	    /^\s*(\S+)\s+(\S+)\s+(\d+)\s+(\d+)\s+(\d+)\s+(\d+)\s+(\S+)\s+(\S+)\s+(\d+)$/) || 
-	            (( $seqid, $start, $end, $modst, $moden, $bits, $evalue, $gc ) =
-	            /^\s*(\S+)\s+(\d+)\s+(\d+)\s+(\d+)\s+(\d+)\s+(\S+)\s+(\S+)\s+(\d+)$/) ) {
+	my( $rmfamid, $model, $seqid, $start, $end, $modst, $moden, $bits, $evalue, $gc );
+#	if( (( $model, $seqid, $start, $end, $modst, $moden, $bits, $evalue, $gc ) =
+#	    /^\s*(\S+)\s+(\S+)\s+(\d+)\s+(\d+)\s+(\d+)\s+(\d+)\s+(\S+)\s+(\S+)\s+(\d+)$/) || 
+#	            (( $seqid, $start, $end, $modst, $moden, $bits, $evalue, $gc ) =
+#	            /^\s*(\S+)\s+(\d+)\s+(\d+)\s+(\d+)\s+(\d+)\s+(\S+)\s+(\S+)\s+(\d+)$/) ) {
+	
+	my @fields = split(/\s+/, $_);
+	if(defined($fields[15]) && $fields[15]){
+#1                   2         3                          4         5   6          7      8          9      10     11    12     13  14    15      16      17  18                   
+#target name         accession query name                 accession mdl mdl from   mdl to seq from   seq to strand trunc pass   gc  bias  score   E-value inc description of target
+#sarcin-ricin-2       -         CP000002.3/3366091-3365915 -          cm        1       61       18       82      +    no    1 0.55   0.0   19.5    0.0035 !   Sarcin-ricin motif 2
+	    ($rmfamid,$seqid,$bits)=($fields[0],$fields[2],$fields[14]);
 	    $sumBits{$rmfamid}+=$bits;
 	    $weights->{$seqid} = 1.0 if (not defined $weights->{$seqid});
 	    $weightedSumBits{$rmfamid}+=$bits*$weights->{$seqid};
@@ -214,23 +223,32 @@ sub parse_infernal_table {
     
     $fh = IO::File->new( $file );
     while(<$fh>) {
-	if( /^\#\s+CM:\s+(\S+)/ ) {
-	    $rmfamid = $1;
-	}
+	# if( /^\#\s+CM:\s+(\S+)/ ) {
+	#     $rmfamid = $1;
+	# }
 	
 	next if( /^\#/ );
 	#filters (only really needed for annotating alignments):
-	next if (($idCounts{$rmfamid} < $noSeqs*$fractionMotifs) && (not defined $fastaIn));
-	next if (($idCounts{$rmfamid} < $minNumberHits) && (not defined $fastaIn)); 
 	
-	$motifLabels{$rmfamid} = assign_motif_label($rmfamid,\%taken) if not defined $motifLabels{$rmfamid};
-	$taken{$motifLabels{$rmfamid}}=1;
 	
-	my( $model, $seqid, $start, $end, $modst, $moden, $bits, $evalue, $gc );
-	if( (( $model, $seqid, $start, $end, $modst, $moden, $bits, $evalue, $gc ) =
-	    /^\s*(\S+)\s+(\S+)\s+(\d+)\s+(\d+)\s+(\d+)\s+(\d+)\s+(\S+)\s+(\S+)\s+(\d+)$/) || 
-	            (( $seqid, $start, $end, $modst, $moden, $bits, $evalue, $gc ) =
-	            /^\s*(\S+)\s+(\d+)\s+(\d+)\s+(\d+)\s+(\d+)\s+(\S+)\s+(\S+)\s+(\d+)$/) ) {
+	my @fields = split(/\s+/, $_);
+
+	my( $rmfamid, $model, $seqid, $start, $end, $strand, $modst, $moden, $bits, $evalue, $printEval, $gc );
+#	if( (( $model, $seqid, $start, $end, $modst, $moden, $bits, $evalue, $gc ) =
+#	    /^\s*(\S+)\s+(\S+)\s+(\d+)\s+(\d+)\s+(\d+)\s+(\d+)\s+(\S+)\s+(\S+)\s+(\d+)$/) || 
+#	            (( $seqid, $start, $end, $modst, $moden, $bits, $evalue, $gc ) =
+#	            /^\s*(\S+)\s+(\d+)\s+(\d+)\s+(\d+)\s+(\d+)\s+(\S+)\s+(\S+)\s+(\d+)$/) ) {
+	if(defined($fields[15]) && $fields[15]){
+#1                   2         3                          4         5   6          7      8          9      10     11    12     13  14    15      16      17  18                   
+#target name         accession query name                 accession mdl mdl from   mdl to seq from   seq to strand trunc pass   gc  bias  score   E-value inc description of target
+#sarcin-ricin-2       -         CP000002.3/3366091-3365915 -          cm        1       61       18       82      +    no    1 0.55   0.0   19.5    0.0035 !   Sarcin-ricin motif 2
+	    
+	    ($rmfamid, $seqid, $start, $end, $strand, $bits, $evalue)=($fields[0],$fields[2],$fields[7],$fields[8],$fields[9],$fields[14],$fields[15]);
+	    
+	    next if (($idCounts{$rmfamid} < $noSeqs*$fractionMotifs) && (not defined $fastaIn));
+	    next if (($idCounts{$rmfamid} < $minNumberHits) && (not defined $fastaIn)); 
+	    $motifLabels{$rmfamid} = assign_motif_label($rmfamid,\%taken) if not defined $motifLabels{$rmfamid};
+	    $taken{$motifLabels{$rmfamid}}=1;
 	    
 	    my $strand = 1;
 	    if( $end < $start ) {

@@ -1,0 +1,47 @@
+# STOCKHOLM 1.0
+
+#=GF ID   CUYG
+#=GF DE   CUYG tetraloop
+#=GF AU   Gardner PP
+#=GF SE   Gardner PP
+#=GF SS   Published; PMID:7578046
+#=GF GA   19.00
+#=GF DR   URL;http://bioinfosu.okstate.edu/pve_rcn/N1/N14213.html
+#=GF RN   [1]
+#=GF RM   2236056
+#=GF RT   Architecture of ribosomal RNA: constraints on the sequence of "tetra-loops".
+#=GF RA   Woese CR, Winker S, Gutell RR
+#=GF RL   Proc Natl Acad Sci U S A. 1990;87:8467-71.
+#=GF RN   [2]
+#=GF RM   1374559
+#=GF RT   The nature of preferred hairpin structures in 16S-like rRNA variable regions.
+#=GF RA   Wolters J
+#=GF RL   Nucleic Acids Res. 1992;20:1843-50.
+#=GF RN   [3]
+#=GF RM   7578046
+#=GF RT   Solution structure of the CUUG hairpin loop: a novel RNA tetraloop motif.
+#=GF RA   Jucker FM, Pardi A
+#=GF RL   Biochemistry. 1995;34:14416-27.
+#=GF RN   [4]
+#=GF RM   1719483
+#=GF RT   A thermodynamic study of unusually stable RNA and DNA hairpins.
+#=GF RA   Antao VP, Lai SY, Tinoco I
+#=GF RL   Nucleic Acids Res. 1991;19:5901-5.
+
+1J5E_A/170-207           ...C.CCCAUGUGG........ACCCGCCCCUUGGGGUGUGUCCAAAGGG..
+#=GR 1J5E_A/170-207 SS   ...(.((....(((........((.(((((....))))).)))))..)))..
+2QAL_A/66-100            ...CGGU..AACAG.........GAAGAAGCUUGCUUCUUUGCUG..ACG..
+#=GR 2QAL_A/66-100 SS    ...(.((....(((.........((((((((..)))))))).)))..))...
+2ZJR_X/1544-1558         .........................GCUUCCUCGGAAGC.............
+#=GR 2ZJR_X/1544-1558 SS .........................(.(((....))).).............
+3zvo_A/171-207           .....CCCAUGUGG........ACCCGCCCCUUGGGGUGUGUCCAAAGGG..
+#=GR 3zvo_A/171-207 SS   ............((.........(.(.(.(....).).).).))........
+1voz_A/57-100            GUCGUGCGGAUACG........CGCGGCCCCUUGGGGCCGUGCGUCAGCGGC
+#=GR 1voz_A/57-100 SS    (((..((.....((.........((..((......))..)).))...)))))
+1j5a_A/245-271           ............CC.....AAACCGAAACGCUUGCGUUUCGGGG........
+3iz9_A/580-610           ...........CGCCGAAAGGC..GUGCCCCUCGGGGCAC.UGCG.......
+#=GR 3iz9_A/580-610 SS   ...........((((....)))..((((((....))))))..).........
+2f1q_A/17-41             ............CG.......CUUGCGCCACUUGUGGUGCAGUG........
+#=GR 2f1q_A/17-41 SS     ............((.......(..)))((((..)))))))))))........
+#=GC SS_cons             .....((....(((........(((((((((..))))))))))))..))...
+//

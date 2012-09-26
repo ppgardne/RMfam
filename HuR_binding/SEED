@@ -1,0 +1,24 @@
+# STOCKHOLM 1.0
+
+#=GF ID   HuR_binding
+#=GF DE   HuR binding site
+#=GF AU   Gardner PP
+#=GF SE   Published; PMID:14981256
+#=GF SS   Published; PMID:14981256
+#=GF GA   12.00
+#=GF RN   [1]
+#=GF RM   14981256
+#=GF RT   Identification of a target RNA motif for RNA-binding protein HuR.
+#=GF RA   López de Silanes I, Zhan M, Lal A, Yang X, Gorospe M
+#=GF RL   Proc Natl Acad Sci U S A. 2004;101:2987-92.
+
+PTMA         GGAAAUUUGUUUGUAUUUUU
+MTA1         UUGAAG--GUGCCAUUUUAA
+PPP1CB       GUUUAA---UUAUUUUGAGC
+FKBP1A       UUCAUU---UUGG-GGUGAA
+UBE2N        GGGGUG---UGGG-UGUUUU
+FLJ10300     UGUAUA---UUC--UGUAUA
+PC4          UUAAUG---UGCAUUAUUAA
+TFPI2        UGGUGA---UUUAUUCACCA
+#=GC SS_cons ((((((........))))))
+//
