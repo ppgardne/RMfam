@@ -1,0 +1,90 @@
+# STOCKHOLM 1.0
+
+#=GF ID   k-turn-1
+#=GF DE   Kink turn, 3' bulge
+#=GF AU   Gardner PP
+#=GF SE   Gardner PP
+#=GF SS   Published; PMID:19528080
+#=GF GA   9.00
+#=GF DR   URL;http://rna.bgsu.edu/FR3D/MotifLibrary/LIB00007/instances.html
+#=GF DR   URL;http://scor.berkeley.edu/structure.jsp?parse=makeListWithElement&dagId=UStk_sharp_backbone_turnDAGCODE-913401195
+#=GF DR   URL;http://rnafrabase.cs.put.poznan.pl/?act=pdbdetails&id=1S72
+#=GF DR   URL;http://rnafrabase.cs.put.poznan.pl/?act=pdbdetails&id=1T0K
+#=GF DR   URL;http://rnafrabase.cs.put.poznan.pl/?act=pdbdetails&id=2GIS
+#=GF DR   URL;http://rnafrabase.cs.put.poznan.pl/?act=pdbdetails&id=2J01
+#=GF DR   URL;http://www.dundee.ac.uk/biocentre/nasg/kturn/sites/BoxCDkturnSite.html
+#=GF DR   URL;http://www.dundee.ac.uk/biocentre/nasg/kturn/sites/BoxHACAktSite.html
+#=GF DR   URL;http://www.dundee.ac.uk/biocentre/nasg/kturn/sites/J9reverseKtSite.html
+#=GF DR   URL;http://www.dundee.ac.uk/biocentre/nasg/kturn/sites/Kt7site.html
+#=GF RN   [1]
+#=GF RM   17694311
+#=GF RT   FR3D: finding local and composite recurrent structural motifs in RNA 3D structures.
+#=GF RA   Sarver M, Zirbel CL, Stombaugh J, Mokdad A, Leontis NB
+#=GF RL   J Math Biol. 2008;56:215-52.
+#=GF RN   [2]
+#=GF RM   15121895
+#=GF RT   Three-dimensional motifs from the SCOR, structural classification of RNA database: extruded strands, base triples, tetraloops and U-turns.
+#=GF RA   Klosterman PS, Hendrix DK, Tamura M, Holbrook SR, Brenner SE
+#=GF RL   Nucleic Acids Res. 2004;32:2342-52.
+#=GF RN   [3]
+#=GF RM   19528080
+#=GF RT   Classification and energetics of the base-phosphate interactions in RNA.
+#=GF RA   Zirbel CL, Sponer JE, Sponer J, Stombaugh J, Leontis NB
+#=GF RL   Nucleic Acids Res. 2009;37:4898-918.
+#=GF RN   [4]
+#=GF RM   20562215
+#=GF RT   A structural database for k-turn motifs in RNA.
+#=GF RA   Schroeder KT, McPhee SA, Ouellet J, Lilley DM
+#=GF RL   RNA. 2010;16:1463-8.
+#=GF RN   [5]
+#=GF RM   21169337
+#=GF RT   Folding of the lysine riboswitch: importance of peripheral elements for transcriptional regulation.
+#=GF RA   Blouin S, Chinnappan R, Lafontaine DA
+#=GF RL   Nucleic Acids Res. 2010;
+#=GF RN   [6]
+#=GF RM   22336704
+#=GF RT   A structural module in RNase P expands the variety of RNA kinks.
+#=GF RA   Meyer M, Westhof E, Masquida B
+#=GF RL   RNA Biol. 2012;9:[Epub ahead of print].
+#=GF RN   [7]
+#=GF RM   15860776
+#=GF RT   Recurrent structural RNA motifs, Isostericity Matrices and sequence alignments.
+#=GF RA   Lescoute A, Leontis NB, Massire C, Westhof E
+#=GF RL   Nucleic Acids Res. 2005;33:2395-409.
+#=GS lysC SS Published; PMID:21169337
+
+3BBO_A/74-108             ....CUUCGGG.GAGUU.GAAAAUA.........................................................................AGCAGA.GAUCCGGAG..
+#=GR 3BBO_A/74-108 SS     ......(((......((.................................................................................)).........)))....
+1s72_0/70-104             GCCA..UGGGG..AGCCGCACGG..........................................................................AGGCGAA.GAA.CCAU.GG
+#=GR 1s72_0/70-104 SS     .(((..(((.....(((.................................................................................)))........)))).))
+2j01_A/74-108             GCCA..GGGGG..AGCCGGUAGC..........................................................................GGGCGUG.GAU.CCCU.GG
+#=GR 2j01_A/74-108 SS     .(((..(((.....(((.................................................................................)))........)))).))
+1t0k_C:1t0k_D             ...G..ACCGG..AGUGU.CCGG..........................................................................ACGCAGA.GAU.GGUC...
+#=GR 1t0k_C:1t0k_D SS     ...(..(((.....((((..--...........................................................................))))........))))...
+2gis_A/11-43              GA.GA.GGUGG..AGGG--ACUG..........................................................................GCCCGAU.GAA.ACCC.GG
+#=GR 2gis_A/11-43 SS      ...(..(((.....(((--...............................................................................)))........))))...
+1rlg_C/1-25               ---G..CUCUG..ACC...GAAA............................................................................GGCGU.GAU.GAGC.--
+#=GR 1rlg_C/1-25 SS       ---(-.(.(.....((...................................................................................))........).)).--
+2hvy_E/16-42              GCCC..GGGUG..AG....AAG..............................................................................CAU..GAU.CCCGgGU
+#=GR 2hvy_E/16-42 SS      ((((-.(((.....-----...............................................................................----.......)))))))
+lysC                      -GCC..UUUGG..AGAAAGAUGG..........................................................................AUUCUGU.GAA.AAAG.GC
+#=GR lysC SS              -(((..(((((..((((.................................................................................)))....))).)))).))
+1u6b_B:1u6b_C             -----.-AGGG..AGUGGCGaaA.........................................................................GCCACACA.AAC.CAG.---
+#=GR 1u6b_B:1u6b_C SS     -----.-.((....(((((.............................................................................)))))......).)...---
+3cc2_0/71-105             GCUG-.UGGGG..AGCCGCACGG........................................................................--AGGCGAA.GAA.CCAC-AG
+#=GR 3cc2_0/71-105 SS     .(((..(((.....(((.................................................................................)))........)))).))
+2wh1_A/230-289            .CCGCGUCCCAUCAGCUAGUUGGUGGGGUA.....................................................AUGGCCCACCAAGGCGACGAC.GGG.UAGCCGG
+#=GR 2wh1_A/230-289 SS    .......(((....(((..((((((((............................................................))))))))))).......)))........
+2wh1_A/662-695            UCCC..GGAGU..AGCGGUGAAA...........................................................................UGCGCA.GAU.ACCG.GG
+#=GR 2wh1_A/662-695 SS    .(((..((......((...................................................................................)).........))).))
+3cc2_0/243-268            .......ACCG.AAGCCCUCACG...........................................................................GGCAAUGU.G.GU.....
+#=GR 3cc2_0/243-268 SS    ........((...((((.................................................................................)))....).).)......
+3cc2_0/930-1039           CCUC..CGCCG..AGGUAGUCUGUGAGGUAGAGCGACCGAUUGGUGUGUCCGCCUCCGAGAGGAGUCGGCACACCUGUCAAACUCCAAACUUACAGACGCUGUUUGAC.GCGG.GG
+#=GR 3cc2_0/930-1039 SS   ........(.....(((.(((((((((...(((.....((..((.----------------------------))..))...)).)...))))))))))))........)......
+3cc2_0/1583-1612          ..UC..CGUGG.AAGCCGUAAU............................................................................GGCAG..GAA.GCGG.A.
+#=GR 3cc2_0/1583-1612 SS  ..((..(((.....(((.................................................................................)))........)))).).
+#=GC SS_cons              .(((..(((.....(((.................................................................................)))........)))).))
+#=GC tHS                  .........<<...............................................................................................>>........
+#=GC tSH                  .............<...........................................................................................>..........
+#=GC tSS                  .............<A......................................................................................>....a.........
+//

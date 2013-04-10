@@ -1,0 +1,55 @@
+# STOCKHOLM 1.0
+
+#=GF ID   vapC_target
+#=GF DE   vapC ribonuclease target
+#=GF AU   Gardner PP
+#=GF SE   Gardner PP
+#=GF SS   Published; PMID:22366418
+#=GF GA   13.00
+#=GF RN   [1]
+#=GF RM   22366418
+#=GF RT   A VapBC Toxin-Antitoxin Module is a Post-Transcriptional Regulator of Metabolic Flux in Mycobacteria.
+#=GF RA   McKenzie JL, Robson J, Berney M, Smith TC, Ruthe A, Gardner PP, Arcus VL, Cook GM
+#=GF RL   J Bacteriol. 2012;
+
+CP000480.1/2202608-2202766            AUAAG..CGUAU.GGU.CCAGA.UCACAUU......................CGACAUUAU....CGA..............................AUGU.CAUCC..GACAUUACCGUGAU
+CP000480.1/2199363-2199403            AUAU-..-UCG-..GC..--AC.GGUC-...........................ACAGAC....CCC..............................C.GA.-CGU-...GC-.CGGACGCCG
+CP000480.1/3046833-3046903            AUAUC.CUGAUC.GGC..CAGC.UGGCAAC......................AGGAUUGAG....CCUCGGCUC.................GAUCCUGUUGC.UGGCC...GCA.CUCGGCCAU
+CP000480.1/1772908-1772955            AUAU-..CGAGU..AC..-CGC.G.GCA...........................AGUCCG....CCC..............................AUGC.-CGCC...GCCUAUCCGGGCU
+CP000480.1/6710230-6710282            AUAAA.AGGAA-..UC..UUUC.A.GCG...........................CGACAA....CCAUA..........................UUCGGC.-UGAC...GAG.UUUCGGGCG
+CP000480.1/6609395-6609454            AUAUU..CGCAC..GC.UCACC.G.CCG...........................ACGAAC....UCUAC.........................CGCCAGG.UCGGUUUCGUGCUGCAGCCCU
+CP000480.1/5160634-5160677            AUAUG.CCGUG-..GC.GCGCC.U.GC-...........................AGUU--....---..............................-.CC.CGGGCA.AGC-.AACUGGCCG
+CP000480.1/5158811-5158853            AUAUU..UCACG..GC..GGCG.G.--G...........................GAUCA-....---..............................-.--.-CCGCUGAGCCGGUGAGUCGU
+CP000480.1/5158426-5158490            AUAUCUGUUGG-..GCCUCAGC.G.ACAUCG....................GCGAGGUGAC....CCUGCC........................GGAU.--.CCGCUCUCGC-.CCGUGGCCG
+CP000480.1/4414464-4414548            AUAUCGUUGCAG..GU..GAGC.C.UCGGUACGGCGAAU.....ACAAGUACGCC------....---AUCAACAAC...........UCGUUCGGGUUCGG.CGGCC...ACAAUGUGGCUCU
+CP000480.1/4160962-4160997            AUAUC.ACUGAC.GAC..GUGC.U.---...........................------....---..............................-.--.CAGCC...GCA.UCGAGCCCU
+CP000480.1/4125271-4125309            AUAU-..UGCAUCUCC..--GC.G.AC-...........................GAUGG-....---..............................-.--.CCGC-...GGA.CGCCGGGCG
+CP000480.1/3994159-3994188            AUAUC..UUCGC..GC..GUG-.-.---...........................------....---..............................-.--.---CC..AGCC.CGGAGCCCG
+CP000480.1/3441389-3441432            AUAUC..UACCC..GU..UGCC.G.GC-...........................------....CCG..............................U.GCAUCGGC...ACUGGGUUGGUCC
+CP000480.1/3384752-3384805            AUAUGGGCCAU-..GC.GCAAC.A.G-G...........................CGUGGCGGGAUCU..............................A.-C.CUGUC..GGCA.CUGUGAAGA
+CP000480.1/3386004-3386062            AUAUC.CCAAC-..GC..GCGCAGUGCGUUUUG................AAGUGU------....---GU.........................ACCGGGC.CCGCC...GCG.GUCCGGUUC
+CP000480.1/2785957-2786037            AUAUC..UGCAC..GC.UCUGC.G.--GGAGGGCACGGUGCCGCUGCAAUUCCUG------....---UUCAGCGG..............CACCGUGUU.--.-CACC..CGCGGUGCAGUUCG
+CP000480.1/2621314-2621363            AUAUU.UCGCGC..AC..CCGC.U.G--...........................AGUCGU....UCCA............................CG.AC.CGGCA...GCA.CGCUCAUGG
+CP000480.1/2202652-2202711            AUAAG..CGUAU.GGU.CCAGA.UCACAUU......................CGACAUUAU....CGA..............................AUGU.CAUCC..GACAUUACCGGCUU
+CP000480.1/1771530-1771575            AUAUG..CGGC-..AC..UGGU.GUGC-...........................GAUCA-....CCU..............................-.GC.GCGCC...GUC.ACCGGUCCG
+CP000480.1/1319564-1319625            AUAUA..CAGG-..CU..GCGG.A.CCA...........................GUUCGC....UGAAAGGC...................UCGCGGAUGCUAUCCG...AGAACUUCGCAGC
+CP000480.1/153900-153928              AUAU-..-GAGU..AC..--U-.-.---...........................GUUCA-....---..............................-.--.---G-...GUU.CUCCGCUCG
+CP000480.1/74319-74376                AUAUU..CGCCU.CGCGUACCG.CCGG-...........................GGUGGC....---AAUG......................GCAAU.CC.CGCGC..AGCA.GGCGGCGCC
+CP000480.1/1311592-1325180/820-867    AUAUG.UUGAC-..GC..UUG-.-.---...........................AGUCGG....CCUUCCA.....................AAGCUU.--.---CG...GCA.GUCGGGAGA
+CP000480.1/1785177-1770891/2227-2274  AUAU-..CGAGU..AC..-CGC.G.GCA...........................AGUCCG....CCC..............................AUGC.-CGCC...GCCUAUCCGGAGC
+CP000480.1/2202762-2197775/56-115     AUAAG..CGUAU.GGU.CCAGA.UCACAUU......................CGACAUUAU....CGA..............................AUGU.CAUCC..GACAUUACCGACCG
+CP000480.1/2202762-2197775/3364-3401  AUAUU.CGGCAC.GGU..--C-.-.---...........................ACAGAC....CCC..............................C.--.---G-...ACG.UGCCGGACG
+CP000480.1/2344455-2340538/40-113     AUAUC..CUCGC..CU.AUGC-.-.GCGGAUG..................CCUAU------....---CGCUUUCGCGCA.....AUUCCUGUCCGGAUUGC.---GCA.AAGAUAGGUGCUCU
+CP000480.1/3375185-3387127/820-878    AUAUC.CCAAC-..GC..GCGCAGUGCGUUUUGA...............AGUGUG------....---UA..........................CCGGGC.CCGCC...GCG.GUCCGGUUC
+CP000480.1/4001317-3993123/7134-7163  AUAUC..UUCGC..GC..GUG-.-.---...........................------....---..............................-.--.---CC..AGCC.CGGAGCACA
+CP000480.1/4001317-3993123/232-304    AUAUC.CCGAAA..UC..--UC.G.UCACUUCGGGGACAG..AAAACCAGGGACG------....---AAAGU....................UCGUGGUGA.-CGG-...GAC.UUCGGUCCC
+CP000480.1/4407487-4417418/6978-7062  AUAUCGUUGCAG..GU..GAGC.C.UCGGUACGGCGAAU....ACAAGUACGCCA------....---UCAACAACU............CGUUCGGGUUCGG.CGGCC...ACAAUGUGGCUCU
+CP000480.1/5078986-5069935/2392-2453  AUAUC..GGCCU.ACC..UGGU.C.AC-...........................CGUGGC....CGUGCUGAUC................CCCGCCAC.--.CGGCU...GGAUGGCCGACCG
+CP000480.1/5164005-5158280/5157-5199  AUAUU..UCACG..GC..GGCG.G.--G...........................GAUCA-....---..............................-.--.-CCGCUGAGCCGGUGAGCGCG
+CP000480.1/5164005-5158280/3333-3376  AUAUG.CCGUG-..GC.GCGCC.U.GC-...........................AGUU--....---..............................-.CC.CGGGCA.AGC-.AACUGCUGA
+CP000480.1/6612275-6604958/2826-2885  AUAUU..CGCAC..GC.UCACC.G.CCG...........................ACGAAC....UCUAC.........................CGCCAGG.UCGGUUUCGUGCUGCAGGACA
+CP000480.1/6714430-6709774/4153-4205  AUAAA.AGGAA-..UC..UUUC.A.GCG...........................CGACAA....CCAUA..........................UUCGGC.-UGAC...GAG.UUUCGCCGG
+CP000480.1/6714430-6709774/286-331    AUAUC.CGCCAUCGCC..AUGC.UCAC-...........................CGUCG-....---..............................-.--.CGGCC...GGGGUGGCCGUCG
+#=GC SS_cons                          :::::..<<<<-..<<..-<<<.<.<<_...........................______....___.............................._.>>.->>>>...>>-.>>>>:::::
+#=GC RF                               AUAUc..cgcgc..GC..cgGC.g.GCG...........................ggUcAc....CCu..............................u.GC.CcGCc...GCa.cgccGgcCg
+//

@@ -1,0 +1,60 @@
+# STOCKHOLM 1.0
+
+#=GF ID   sarcin-ricin-1
+#=GF DE   Sarcin-ricin motif 1
+#=GF PI   S-motifs, loop E, bulged-G motif, G-bulged, G-bulge
+#=GF AU   Gardner PP
+#=GF SE   Gardner PP
+#=GF SS   Published; PMID:9784367
+#=GF GA   15.00
+#=GF DR   URL;http://rna.bgsu.edu/FR3D/MotifLibrary/LIB00005/instances.html
+#=GF DR   URL;http://rna.bgsu.edu/rna3dhub/motif/view/IL_85647.2
+#=GF DR   http://rnafrabase.cs.put.poznan.pl/?act=pdbdetails&id=1S72
+#=GF DR   http://rnafrabase.cs.put.poznan.pl/?act=pdbdetails&id=2J01
+#=GF RN   [1]
+#=GF RM   9784367
+#=GF RT   A common motif organizes the structure of multi‐helix loops in 16 S and 23 S ribosomal RNAs.
+#=GF RA   Leontis NB, Westhof E
+#=GF RL   J. Mol. Biol. 1998;283:571–583.
+#=GF RN   [2]
+#=GF RM   12907716
+#=GF RT   RNA structure comparison, motif search and discovery using a
+#=GF RT   reduced representation of RNA conformational space.
+#=GF RA   Duarte CM, Wadley LM, Pyle AM
+#=GF RL   Nucleic Acids Res. 2003;31:4755-4761.
+#=GF RN   [3]
+#=GF RM   17694311
+#=GF RT   FR3D: finding local and composite recurrent structural motifs in RNA 3D structures.
+#=GF RA   Sarver M, Zirbel CL, Stombaugh J, Mokdad A, Leontis NB
+#=GF RL   J Math Biol. 2008;56:215-52.
+#cWW-cWW-tSH-tHH-cSH-tWH-tHS-cWW
+
+2zkr_0/7-48             GGCGACCCGCUGAAUUUAA....GCA....UAUUAGUCAGCGGAGGAAAA..
+3IZF_A/22-63            .AGUACCCGCUGAACUUAA....GCA....UAUCAAUAAGCGGAGGAAAA..
+3BBO_A/163-204          .ACAACCUGGCGAACUGAA....ACA....UCUUAGUAGCCAGAGGAAAA..
+1J5A_A/155-196          .GGAACUCAGGGAACUGAA....ACA....UCUCAGUACCUGAAGGAGAA..
+2aw4_B/178-219          GCGAACCGGGGGAACUGAA....ACA....UCUAAGUACCCCGAGGAAAA..
+#=GR 2aw4_B/178-219 SS  .....((((((.....(..............)......))))).).......
+#=GR 2aw4_B/178-219 MT  ..........xxxxx.x..............x.xxxxxx.............
+1s72_0/147-188          AGGAACCCCGAGAACUGAA....ACA....UCUCAGUAUCGGGAGGAACA..
+#=GR 1s72_0/147-188 SS  .....((((((.....(..............)......))))).).......
+#=GR 1s72_0/147-188 MT  ..........xxxxx.x...............xxxxxxx.............
+2j01_A/165-206          GGGAACCUGGGGAACUGAA....ACA....UCUCAGUACCCAGAGGAGAG..
+#=GR 2j01_A/165-206 SS  .....((((((...........................))))).).......
+#=GR 2j01_A/165-206 MT  ..........xxxxx.x..............x.xxxxxx.............
+1s72_0/557-601          -CUCGACGAAUGACC.GACGC..GCGAGCGUC.CAGUAAGAC..UCACGGGA
+#=GR 1s72_0/557-601 SS  -(..((....(.....(((((......)))))......).....))..)...
+#=GR 1s72_0/557-601 MT  -.........xxxxx.x..............x.xxxxxx.............
+3CPW_0/556-601          .CCCGACGAAUGACC.GACGC..GCGAGCGUC.CAGUAAGAC..UCACGGGA
+#=GR 3CPW_0/556-601 SS  .((((.......((..(((((......)))))...))..........)))).
+1YHQ_0/557-602          .CUUGACGAAUGACC.GAGAC..GCGAGUCUC.CAGUAAGAC..UCACGGGA
+#=GR 1YHQ_0/557-602 SS  .(.(((....(.....(((((......)))))......).....))).)...
+1FFK_0/556-601          .CUCGACGAAUGACC.GACGC..GCGAGCGUC.CAGUAAGAC..UCACGGGA
+#=GR 1FFK_0/556-601 SS  .(..((....(.....(((((......)))))......).....))..)...
+#=GC SS_cons            ....((((((([[[[.((............)).]].]]))))).))......
+#=GC tHS                ..............<..................>..................
+#=GC tHH                .............<....................>.................
+#=GC cHS                ...................................<>...............
+#=GC tHW                ............<.......................>...............
+#=GC tSH                ...........<.........................>..............
+//

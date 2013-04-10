@@ -1,0 +1,54 @@
+# STOCKHOLM 1.0
+
+#=GF ID   UAA_GAN
+#=GF AU   Gardner PP
+#=GF SE   Gardner PP
+#=GF SS   Published; PMID:16828489
+#=GF GA   20.00
+#=GF DR   URL;http://www.rna.icmb.utexas.edu/SIM/4B/UAA_GAN/
+#=GF DR   URL;http://rnafrabase.cs.put.poznan.pl/?act=pdbdetails&id=1JJ2
+#=GF DR   URL;http://rnafrabase.cs.put.poznan.pl/?act=pdbdetails&id=1NBS
+#=GF RN   [1]
+#=GF RM   16828489
+#=GF RT   The UAA/GAN internal loop motif: a new RNA structural element
+#=GF RT   that forms a cross-strand AAA stack and long-range tertiary
+#=GF RT   interactions.
+#=GF RA   Lee JC, Gutell RR, Russell R
+#=GF RL   J Mol Biol. 2006;360:978-88.
+
+1NBS_A/5-27               ....CCUAGC.GAA..G---.....---UC--------......---A...UAA-.GCUAGG..
+#=GR 1NBS_A/5-27 SS       ....((((((......(---...........................)......-.))))))..
+#=GR 1NBS_A/5-27 MT       .........x.xxx..x...........................---x...xxx-.x.......
+1JJ2_0/1571-1622          ....ACCGUC.CAAc.UCCGuggaaGCCGUAAUGGCAGga..agCGGA..cGAAC.GGCGGC..
+#=GR 1JJ2_0/1571-1622 SS  ....((((((......(((((....(((.....))).......)))))........))))))..
+#=GR 1JJ2_0/1571-1622 MT  .........x.xxxx.x..............................x..xxxxx.x.......
+1JJ2_0/2767-2804          ....--CGGGgUAA..GAGC.....UGAACGCAUCUAA......GCUC...GAAA.CCCA--..
+#=GR 1JJ2_0/2767-2804 SS  .......(((......((((........................))))........))).....
+#=GR 1JJ2_0/2767-2804 MT  .........xxxxx..x..............................x...xxxx.x.......
+1JJ2_0/1896-1938          gcagGUAUCU.GAAcaCCUC.....---GUACAA----......GAGGa.cGAA-.GGACCUgu
+#=GR 1JJ2_0/1896-1938 SS  (((((..(((......((((........................))))........))))))))
+#=GR 1JJ2_0/1896-1938 MT  .........x.xxxxxx..............................xx.xxxx..x.......
+1JJ2_0/1452-1490          ....---UCC.UAA..GUCA....uACCGCAACUCGACu....aUGAC...GAAAuGGG---..
+#=GR 1JJ2_0/1452-1490 SS  .......(((......((((....((.((.....))..)....)))))........))).....
+#=GR 1JJ2_0/1452-1490 MT  .........x.xxx..x..............................x...xxxxxx.......
+1yhq_0/1451-1494          ....CGGUCC.UAA..GUCU....cACCGCAACUCGACu....gAGAC...GAAAuGGGAAA..
+1giy_A/2746-2786          ....GAAGGGaUAA..CCGC.....UGAAAGCAUCUAA......GCGG...GAAG.CCCGCC..
+1j5a_A/2713-2751          ....AACGGA.UAA..CCGC.....UGAAAGCAUCUAA......GCGG...GAA-.GCCAGC..
+1c2w_B/2732-2772          ....GAAGAGaUAA..GUGC.....UGAAAGCAUCUAA......GCAC...GAAA.CUUGCC..
+2gya_0/2588-2628          ....GGAGAGaUAA..GUGC.....UGAAAGCAUCUAA......GCAC...GAAA.CUUGCC..
+3oxd_A/33-71              ....AACGAG.CAA..GCUC.....UGCGGAAACGCA-......GAGU...GAAA.CUCUGA..
+#=GR 3oxd_A/33-71 SS      ......((((......((((.....((((....)))).......))))........))).)...
+3iz9_A/3099-3137          ....GCCGGA.UUA..UGAC.....UGAACGCCUCUAA......GUCA...GAA-.UCCAAG..
+#=GR 3iz9_A/3099-3137 SS  .......((.......((((........................)))).........)).....
+2zkr_0/2763-2801          ....GUGGGA.UUA..UGAC.....UGAACGCCUCUAA......GUCA...GAA-.UCCCGC..
+1nkw_9/20-67              ....ACUGUG.GAAccACCC....cACCCCAUGCCGAAc....uGGGUcguGAAA.CACAGC..
+#=GR 1nkw_9/20-67 SS      .....((.((......((((....(...................)))..)).....)).))...
+3oxb_A/33-71              ....AAGGAG.CAA..GCUC.....UGCGGAAACGCA-......GAGU...GAAA.CUCCCA..
+1vsa_w/1513-1559          ....GUAGGC.AAA.uCCGC....cUCCCAAAAGCUCUgc.gugGUGG..gGAA-.GCCCGU..
+3owi_A/33-71              ....AAGGAG.CAA..GCUC.....UGCGGAAACGCA-......GAGU...GAAA.CUCUCA..
+3izf_A/3098-3136          ....GCUGGA.UUA..UGGC.....UGAACGCCUCUAA......GUCA...GAA-.UCCAUG..
+1giy_A/1535-1582          ....GUAGGC.AAA.uCCGC....cUCCCAACAAGCUCugcgugGUGG..gGAA-.GCCCGU..
+1ffk_0/2767-2806          ....ACGGGG.UAA..GAGC.....UGAACGCAUCUAA......GCUC...GAAA.CCCACU..
+#=GC SS_cons              ....(((<<<.---..<<<<....._____________......>>>>...----.>>>)))..
+#=GC RF                   ....accgcC.uAA..gccc.....accGcAaaucuAa......gggc...GAAA.Ggcagu..
+//

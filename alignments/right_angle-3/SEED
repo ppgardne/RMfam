@@ -1,0 +1,45 @@
+# STOCKHOLM 1.0
+
+#=GF ID   right_angle-3
+#=GF DE   Right angle motif 3
+#=GF AU   Gardner PP
+#=GF SE   Published; PMID:22999957
+#=GF SS   Published; PMID:22999957
+#=GF GA   20.00
+#=GF DR   URL;http://rnafrabase.ibch.poznan.pl/index.php?act=pdbdetails&id=2J01
+#=GF DR   URL;http://rnafrabase.ibch.poznan.pl/index.php?act=pdbdetails&id=2AWB
+#=GF DR   URL;http://rnafrabase.ibch.poznan.pl/index.php?act=pdbdetails&id=1J5E
+#=GF DR   URL;http://rnafrabase.ibch.poznan.pl/index.php?act=pdbdetails&id=2AVY
+#=GF RN   [1]
+#=GF RM   22999957
+#=GF RT   The right angle (RA) motif: a prevalent ribosomal RNA structural pattern found in group I introns.
+#=GF RA   Grabow WW, Zhuang Z, Swank ZN, Shea JE, Jaeger L
+#=GF RL   J Mol Biol. 2012;
+
+2J01/603-682         CAC.GGUCGUGGGC..GAGCUUAAGCCGUUGAGGCGGAGGCGUAGGGAAACCGA...............................GUCCGAACAGGGCGC.............GUCCGCG.GCCGUG
+#=GR 2J01/603-682 SS (((.((((((((((....(((...(((.....)))...)))...((....)).................................((((.....))))...............))))))).))))))
+#=GR 2J01/603-682 MT ...........................................xxx....xxxx...............................xx.........xxxx...........................
+2AWB/588-668         UAU.AUUCUGUAGC....AAGGUUAACCGAAUAGGGGAGCCGAAGGGAAACCGA...............................GUCUUAACUGGGCGU..UAA........GUUGCAG.GGUAUA
+#=GR 2AWB/588-668 SS (((.((((((((((......(((...((.....))...)))...((....)).................................((((.....))))...............))))))).))))))
+#=GR 2AWB/588-668 MT ...........................................xxx....xxxx...............................xx.........xxxx...........................
+1JJ2/644-758         GUG.UCUGCAUGGCAAGUCUAACCGGAGUAUCCGGGGAGGCACAGGGAAACCGACAUGGCCGCAGGGCUUUgCCCGAGGGCCGCCGUCUUCAA.GGGCGG..GGA........GCCAUGU.GGACAC
+#=GR 1JJ2/644-758 SS (((.((((((((((..(((...((((.....))))...)))...((....))..(..((((...((((..-))))...)))))((((((.....)))))).............))))))).))))))
+#=GR 1JJ2/644-758 MT ...........................................xxx....xxxx...............................xx.........xxxx...........................
+1vsa_w/613-694       CAC.GGUCGUGGGC..GAGCUUAAGCCGUUGAGGCGGAGGCGUAGGGAAACCGA...............................GUCCGAACAGGGCGU..CUA........GUCCGCG.GCCGUG
+2qex_0/644-756       GUG.UCUGCAUGGCaaGUCUAACCGGAGUAUCCGGGGAGGCACAGGGAAACCGAcauggccgcagggcu.ugcccgagggccgccGUCUUCAA-GGGCGG..GGA........GCCAUGU.GGACAC
+1ffk_0/645-758       GUG.UCUGCAUGGCaaGUCUAACCGGAGUAUCCGGGGAGGCACAGGGAAACCGAcauggccgcagggcuuugcccgagggccgccGUCUUCAA-GGGCGG..GGA........GCCAUGU.GGACAC
+1c2w_B/589-668       UAU.AUUCUGUAGC..--AAGGUUAACCGAAUAGGGGAGCCGAAGGGAAACCGA...............................GUCUUAACUGGGCGU..UAA........GUUGCAG.GGUAUA
+2j01_A/604-682       CAC.GGUCGUGGGC..GAGCUUAAGCCGUUGAGGCGGAGGCGUAGGGAAACCGA...............................GUCCGAACAGGGCGC..---........GUCCGCG.GCCGUG
+1yhq_0/646-759       GUG.UCUGUAUGGCaaGUCUAACCGGAGUAUCCGGGGAGGCACAGGGAAACCGAcauggccgcagggcuuugcccgagggccgccGUCUUCAA-GGGCGG..GGA........GCCAUGU.GGACAC
+2gya_0/532-605       UAU.AUUCUGUAGC..-------AAGGUUAACCGGGGAGCCGAAGGGAAACCGA...............................GUCUUAAC-GGGCGU..UAA........GUUGCAG.GGUAUA
+3i9c_A/605-694       CAC.GGUCGUGGGC..GAGCUUAAGCCGUUGAGGCGGAGGCGUAGGGAAACCGA...............................GUCCGAACAGGGCGC..AAAcgcgaaaaGUCCGCG.GCCGUG
+3i9e_A/609-691       -AC.GGUCGUGGGC..GAGCUUAAGCCGUUGAGGCGGAGGCGUAGGGAAACCGA...............................GUCCGAACAGGGCGC..AAAc......gGCCCGCGgGCCGA-
+3i8f_A/610-693       CAC.GGUCGUGGGC..GAGCUUAAGCCGUUGAGGCGGAGGCGUAGGGAAACCGA...............................GUCCGAACAGGGCGC..AAAc......gGCCCGCA.CGCGGG
+1giy_A/616-697       ---.GGUCGUGGGC..GAGCUUAAGCCGUUGAGGCGGAGGCGUAGGGAAACCGA...............................GUCCGAACAGGGCGC..AAGcgg..gccGCACGCG.GCC---
+3bbo_A/599-679       CAU.AGGCAGUGGC..UUGGUUAAGGGAACCCACCGGAGCCGUAGCGAAAGCGA...............................GUCUUCAUAGGGCAA..UU-........GUCACUG.CUUAUG
+1j5a_A/598-681       UAGaCCUGACGUGC..GAGCUUAAGUUGAA-AAACGGAGGCGGAGCGAAAGCGA...............................GUCCGAAUAGGGCGGcaUUA........GUACGUC.GGGCUA
+#=GC SS_cons         (((.((((((((((..............................((....)).................................((((.....))))...............))))))).))))))
+//
+
+
+

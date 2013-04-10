@@ -1,0 +1,39 @@
+# STOCKHOLM 1.0
+
+#=GF ID   UMAC
+#=GF DE   UMAC tetraloop
+#=GF AU   Gardner PP
+#=GF SE   Gardner PP
+#=GF SS   Published; PMID:22605553
+#=GF GA   12.00
+#=GF DR   URL;http://rnafrabase.cs.put.poznan.pl/?act=pdbdetails&id=1JJ2
+#=GF DR   URL;http://www.rna.icmb.utexas.edu/CAR/1A/
+#=GF RN   [1]
+#=GF RM   22605553
+#=GF RT   UNAC tetraloops: to what extent do they mimic GNRA tetraloops?
+#=GF RA   Zhao Q, Huang HC, Nagaswamy U, Xia Y, Gao X, Fox GE
+#=GF RL   Biopolymers. 2012;97:617-28.
+#=GF RN   [2]
+#=GF RM   11869452
+#=GF RT   The comparative RNA web (CRW) site: an online database of comparative sequence and structure information for ribosomal, intron, and other RNAs.
+#=GF RA   Cannone JJ, Subramanian S, Schnare MN, Collett JR, D'Souza LM, Du Y, Feng B, Lin N, Madabusi LV, Müller KM, Pande N, Shang Z, Yu N, Gutell RR
+#=GF RL   BMC Bioinformatics. 2002;3:2.
+
+
+4A4S_A/1-22                                                     GGAC..CCGGCUCACGCUG....GGUCC
+4A4R_A/1-22                                                     NGAC..CCGGCUAACGCUG....GGUCC
+ECOL_16S                                                        ----..GGAGCUAACGCGU....U----
+1JJ2_0/242-266                                                  --CCgaAGCCCUCACGGGCaaugUGG--
+00004::Aquifex_aeolicus.::AE000709_AE000751                     ----..GCAGCUAACGCGU....U----
+01020::Arthrobacter_globiformis::M23411                         ----..GUAGCUAACGCAU....U----
+00185::Borrelia_burgdorferi.::M88329                            ----..GAAGCUAACGUGU....U----
+01088::Bacillus_halodurans.::AB013373                           ----..GAAGUUAACACAU....U----
+01382::Clostridium_perfringens::M69264                          ----..GCCGCUAACGCAU....U----
+00401::Comamonas_testosteroni::M11224                           ----..GAAGCUAACGCGU....G----
+00904::Desulfovibrio_desulfuricans::M34113                      ----..GUAGUUAACGCGU....U----
+00563::Dichelobacter_nodosus::M35016                            ----..GAAGCUAACGCAA....U----
+00896::Haemophilus_influenzae::U32741_U32744_U32755_U32847_U326 ----..GUAGCUAACGUGA....U----
+00186::Leptospira_borgpetersenii::X17547                        ----..GAACCUAACGGAU....U----
+#=GC SS_cons                                                    <<<<..<<<<<____>>>>....>>>>>
+#=GC RF                                                         GGcC..cgcGCUaACGCgc....gGgCC
+//

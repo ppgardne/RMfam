@@ -1,0 +1,26 @@
+# STOCKHOLM 1.0
+
+#=GF ID   AUF1_binding
+#=GF DE   AUF1 binding site
+#=GF AU   Gardner PP
+#=GF SE   Published; PMID:14981256
+#=GF SS   Published; PMID:14981256
+#=GF GA   16.00
+#=GF RN   [1]
+#=GF RM   19033365
+#=GF RT   Identification of a signature motif in target mRNAs of RNA-binding protein AUF1.
+#=GF RA   Mazan-Mamczarz K, Kuwano Y, Zhan M, White EJ, Martindale JL, Lal A, Gorospe M
+#=GF RL   Nucleic Acids Res. 2009;37:204-14.
+
+ARHI              UGACAUAUACUAAAUAAAAAAAUGAAUAUGUUGAUCAUU
+SWAP70            UUAUACUGAGUAGUAGAAAGA---AGCUAAUUUGAAAUA
+XRN2              AGUUUUUAA-UAAAACUA------CAGUACUUUGUGUAU
+LOC84661          UUUUGGAUGUAUCAAGAA------CCUUCCGGACAACAG
+C20orf4           GUGUGGACCCUGGCCUCA------GAGGCCUUGCUGGUG
+RYBP              UUACAUAAGCACUCAUGA------AAAUAUGGUAUUCUG
+H2AFY             UGACUUAGUGUAACCUAG-------GAGAUUUUAUAGUU
+MGC1223           UUAUUGAGACCAUCAUAG------AGAUCGAUUCUUGUA
+#=GC SS_cons      .((..(.(...((.((..........))..))))...))
+//
+
+
