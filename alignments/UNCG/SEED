@@ -7,9 +7,9 @@
 #=GF SE   Published; PMID:19528080
 #=GF SS   Published; PMID:19528080
 #=GF GA   8.00
-#=GF DR   URL;http://rna.bgsu.edu/FR3D/MotifLibrary/Hairpins/LIB70001_HL_UNCG.html
-#=GF DR   URL;http://en.wikipedia.org/wiki/Tetraloop
-#=GF DR   URL;http://bioinfosu.okstate.edu/pve_rcn/N1/N14211.html
+#=GF DR   URL; http://rna.bgsu.edu/FR3D/MotifLibrary/Hairpins/LIB70001_HL_UNCG.html
+#=GF DR   URL; http://en.wikipedia.org/wiki/Tetraloop
+#=GF DR   URL; http://bioinfosu.okstate.edu/pve_rcn/N1/N14211.html
 #=GF RN   [1]
 #=GF RM   17694311
 #=GF RT   FR3D: finding local and composite recurrent structural motifs in RNA 3D structures.

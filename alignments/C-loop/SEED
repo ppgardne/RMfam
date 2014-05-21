@@ -6,9 +6,9 @@
 #=GF SE   Gardner PP
 #=GF SS   Published; PMID:21976732
 #=GF GA   10.00
-#=GF DR   URL;http://rnafrabase.cs.put.poznan.pl/?act=pdbdetails&id=1S72
-#=GF DR   URL;http://rnafrabase.cs.put.poznan.pl/?act=pdbdetails&id=1J5E
-#=GF DR   URL;http://rna.bgsu.edu/rna3dhub/motif/view/IL_54307.1
+#=GF DR   URL; http://rnafrabase.cs.put.poznan.pl/?act=pdbdetails&id=1S72
+#=GF DR   URL; http://rnafrabase.cs.put.poznan.pl/?act=pdbdetails&id=1J5E
+#=GF DR   URL; http://rna.bgsu.edu/rna3dhub/motif/view/IL_54307.1
 #=GF RN   [1]
 #=GF RM   21976732
 #=GF RT   Clustering RNA structural motifs in ribosomal RNAs using secondary

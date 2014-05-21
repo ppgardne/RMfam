@@ -7,16 +7,16 @@
 #=GF SE   Gardner PP
 #=GF SS   Published; PMID:19528080
 #=GF GA   9.00
-#=GF DR   URL;http://rna.bgsu.edu/FR3D/MotifLibrary/LIB00007/instances.html
-#=GF DR   URL;http://scor.berkeley.edu/structure.jsp?parse=makeListWithElement&dagId=UStk_sharp_backbone_turnDAGCODE-913401195
-#=GF DR   URL;http://rnafrabase.cs.put.poznan.pl/?act=pdbdetails&id=1S72
-#=GF DR   URL;http://rnafrabase.cs.put.poznan.pl/?act=pdbdetails&id=1T0K
-#=GF DR   URL;http://rnafrabase.cs.put.poznan.pl/?act=pdbdetails&id=2GIS
-#=GF DR   URL;http://rnafrabase.cs.put.poznan.pl/?act=pdbdetails&id=2J01
-#=GF DR   URL;http://www.dundee.ac.uk/biocentre/nasg/kturn/sites/BoxCDkturnSite.html
-#=GF DR   URL;http://www.dundee.ac.uk/biocentre/nasg/kturn/sites/BoxHACAktSite.html
-#=GF DR   URL;http://www.dundee.ac.uk/biocentre/nasg/kturn/sites/J9reverseKtSite.html
-#=GF DR   URL;http://www.dundee.ac.uk/biocentre/nasg/kturn/sites/Kt7site.html
+#=GF DR   URL; http://rna.bgsu.edu/FR3D/MotifLibrary/LIB00007/instances.html
+#=GF DR   URL; http://scor.berkeley.edu/structure.jsp?parse=makeListWithElement&dagId=UStk_sharp_backbone_turnDAGCODE-913401195
+#=GF DR   URL; http://rnafrabase.cs.put.poznan.pl/?act=pdbdetails&id=1S72
+#=GF DR   URL; http://rnafrabase.cs.put.poznan.pl/?act=pdbdetails&id=1T0K
+#=GF DR   URL; http://rnafrabase.cs.put.poznan.pl/?act=pdbdetails&id=2GIS
+#=GF DR   URL; http://rnafrabase.cs.put.poznan.pl/?act=pdbdetails&id=2J01
+#=GF DR   URL; http://www.dundee.ac.uk/biocentre/nasg/kturn/sites/BoxCDkturnSite.html
+#=GF DR   URL; http://www.dundee.ac.uk/biocentre/nasg/kturn/sites/BoxHACAktSite.html
+#=GF DR   URL; http://www.dundee.ac.uk/biocentre/nasg/kturn/sites/J9reverseKtSite.html
+#=GF DR   URL; http://www.dundee.ac.uk/biocentre/nasg/kturn/sites/Kt7site.html
 #=GF RN   [1]
 #=GF RM   17694311
 #=GF RT   FR3D: finding local and composite recurrent structural motifs in RNA 3D structures.

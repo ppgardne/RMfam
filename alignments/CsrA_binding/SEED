@@ -10,11 +10,11 @@
 #=GF DR   SO:0000377 SO:CsrB_RsmB_RNA
 #=GF DR   GO:0006401 GO:RNA catabolic process
 #=GF DR   GO:0006109 GO:regulation of carbohydrate metabolic process
-#=GF DR   RFAM:RF00018
-#=GF DR   RFAM:RF00084
-#=GF DR   RFAM:RF00166
-#=GF DR   RFAM:RF00195
-#=GF DR   RFAM:RF02144
+#=GF DR   RFAM; RF00018
+#=GF DR   RFAM; RF00084
+#=GF DR   RFAM; RF00166
+#=GF DR   RFAM; RF00195
+#=GF DR   RFAM; RF02144
 #=GF RN   [1]
 #=GF RM   97362239
 #=GF RT   The RNA molecule CsrB binds to the global regulatory protein CsrA and

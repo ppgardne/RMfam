@@ -9,7 +9,7 @@
 #=GF GA   7.00
 #=GF DR   GO:0006401 GO:RNA catabolic process
 #=GF DR   GO:0006109 GO:regulation of carbohydrate metabolic process
-#=GF DR   RFAM:RF01675
+#=GF DR   RFAM; RF01675
 #=GF RN   [1]
 #=GF RM   20080802
 #=GF RT   Small RNA as global regulator of carbon catabolite repression in Pseudomonas aeruginosa.
