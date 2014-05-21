@@ -7,11 +7,11 @@
 #=GF SE   Published; PMID:19528080
 #=GF SS   Published; PMID:19528080
 #=GF GA   9.20
-#=GF DR   URL;http://rna.bgsu.edu/FR3D/MotifLibrary/Hairpins/LIB70005_HL_T_Loop.html
-#=GF DR   URL;http://rna.bgsu.edu/rna3dhub/motif/view/HL_72498.5
-#=GF DR   URL;http://rna.bgsu.edu/rna3dhub/motif/view/HL_05993.1
-#=GF DR   URL;http://rnafrabase.cs.put.poznan.pl/?act=pdbdetails&id=2J01
-#=GF DR   RFAM:RF00005
+#=GF DR   URL; http://rna.bgsu.edu/FR3D/MotifLibrary/Hairpins/LIB70005_HL_T_Loop.html
+#=GF DR   URL; http://rna.bgsu.edu/rna3dhub/motif/view/HL_72498.5
+#=GF DR   URL; http://rna.bgsu.edu/rna3dhub/motif/view/HL_05993.1
+#=GF DR   URL; http://rnafrabase.cs.put.poznan.pl/?act=pdbdetails&id=2J01
+#=GF DR   RFAM; RF00005
 #=GF RN   [1]
 #=GF RM   17694311
 #=GF RT   FR3D: finding local and composite recurrent structural motifs in RNA 3D structures.

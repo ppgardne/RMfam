@@ -8,8 +8,8 @@
 #=GF SS   CMfinder
 #=GF GA   10.00
 #=GF DR   GO:0008380 GO:RNA splicing
-#=GF DR   RFAM:RF00026
-#=GF DR   RFAM:RF00029
+#=GF DR   RFAM; RF00026
+#=GF DR   RFAM; RF00029
 #=GF RN   [1]
 #=GF RM   16428604
 #=GF RT   Structure of a self-splicing group II intron catalytic effector

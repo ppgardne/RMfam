@@ -7,9 +7,9 @@
 #=GF SE   Published; PMID:19528080
 #=GF SS   Published; PMID:19528080
 #=GF GA   20.00
-#=GF DR   URL;http://scor.berkeley.edu/structure.jsp?parse=makeListWithElement&dagId=ANYADAGCODE1465974881
-#=GF DR   URL;http://rnafrabase.cs.put.poznan.pl/?act=pdbdetails&id=2C51
-#=GF DR   URL;http://en.wikipedia.org/wiki/Tetraloop
+#=GF DR   URL; http://scor.berkeley.edu/structure.jsp?parse=makeListWithElement&dagId=ANYADAGCODE1465974881
+#=GF DR   URL; http://rnafrabase.cs.put.poznan.pl/?act=pdbdetails&id=2C51
+#=GF DR   URL; http://en.wikipedia.org/wiki/Tetraloop
 #=GF RN   [1]
 #=GF RM   9461079
 #=GF RT   Crystal structure of an RNA aptamer-protein complex at 2.8 A

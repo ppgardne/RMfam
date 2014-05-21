@@ -8,11 +8,11 @@
 #=GF SE   Gardner PP
 #=GF SS   Published; PMID:9784367
 #=GF GA   15.00
-#=GF DR   URL;http://rna.bgsu.edu/FR3D/MotifLibrary/LIB00005/instances.html
-#=GF DR   URL;http://rna.bgsu.edu/rna3dhub/motif/view/IL_85647.2
-#=GF DR   URL;http://rnafrabase.cs.put.poznan.pl/?act=pdbdetails&id=1S72
-#=GF DR   URL;http://rnafrabase.cs.put.poznan.pl/?act=pdbdetails&id=2J01
-#=GF DR   RFAM:RF00168
+#=GF DR   URL; http://rna.bgsu.edu/FR3D/MotifLibrary/LIB00005/instances.html
+#=GF DR   URL; http://rna.bgsu.edu/rna3dhub/motif/view/IL_85647.2
+#=GF DR   URL; http://rnafrabase.cs.put.poznan.pl/?act=pdbdetails&id=1S72
+#=GF DR   URL; http://rnafrabase.cs.put.poznan.pl/?act=pdbdetails&id=2J01
+#=GF DR   RFAM; RF00168
 #=GF RN   [1]
 #=GF RM   9784367
 #=GF RT   A common motif organizes the structure of multi‐helix loops in 16 S and 23 S ribosomal RNAs.

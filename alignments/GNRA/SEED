@@ -7,10 +7,10 @@
 #=GF SE   Published; PMID:19528080
 #=GF SS   Published; PMID:19528080
 #=GF GA   7.00
-#=GF DR   URL;http://rna.bgsu.edu/FR3D/MotifLibrary/Hairpins/LIB70002_HL_GNRA.html
-#=GF DR   URL;http://en.wikipedia.org/wiki/Tetraloop
-#=GF DR   URL;http://rnafrabase.cs.put.poznan.pl/index.php?act=pdbdetails&id=1S72
-#=GF DR   URL;http://rna.bgsu.edu/rna3dhub/motif/view/HL_67042.4
+#=GF DR   URL; http://rna.bgsu.edu/FR3D/MotifLibrary/Hairpins/LIB70002_HL_GNRA.html
+#=GF DR   URL; http://en.wikipedia.org/wiki/Tetraloop
+#=GF DR   URL; http://rnafrabase.cs.put.poznan.pl/index.php?act=pdbdetails&id=1S72
+#=GF DR   URL; http://rna.bgsu.edu/rna3dhub/motif/view/HL_67042.4
 #=GF RN   [1]
 #=GF RM   7510342
 #=GF RT   Involvement of a GNRA tetraloop in long-range RNA tertiary interactions.
