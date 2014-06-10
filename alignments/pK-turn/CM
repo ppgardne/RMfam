@@ -1,4 +1,4 @@
-INFERNAL1/a [1.1rc1 | June 2012]
+INFERNAL1/a [1.1 | October 2013]
 NAME     pK-turn
 DESC     RNase P RNA pseudoknot kink turn
 STATES   145
@@ -9,7 +9,7 @@ ALPH     RNA
 RF       no
 CONS     yes
 MAP      yes
-DATE     Thu Sep 20 14:46:59 2012
+DATE     Fri May 30 14:59:29 2014
 COM      [1] /share/data/bin/cmbuild -F /share/data/people/ppg15/motifs/pK-turn/CM /share/data/people/ppg15/motifs/pK-turn/SEED
 COM      [2] /share/data/bin/cmcalibrate --mpi --seed 1 /share/data/people/ppg15/motifs/pK-turn/CM
 PBEGIN   0.05
@@ -215,7 +215,7 @@ CM
                                              [ END    37 ]      -      - - - - -
      E   144   143 3    -1     0     0     0     0     0                                                 
 //
-HMMER3/f [i1.1rc1 | June 2012]
+HMMER3/f [i1.1 | October 2013]
 NAME  pK-turn
 DESC  RNase P RNA pseudoknot kink turn
 LENG  47
@@ -226,7 +226,7 @@ MM    no
 CONS  yes
 CS    yes
 MAP   yes
-DATE  Thu Sep 20 14:46:59 2012
+DATE  Fri May 30 14:59:29 2014
 COM   [1] /share/data/bin/cmbuild -F /share/data/people/ppg15/motifs/pK-turn/CM /share/data/people/ppg15/motifs/pK-turn/SEED
 NSEQ  306
 EFFN  306.000000

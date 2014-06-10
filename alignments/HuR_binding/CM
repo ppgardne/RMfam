@@ -1,4 +1,4 @@
-INFERNAL1/a [1.1rc1 | June 2012]
+INFERNAL1/a [1.1 | October 2013]
 NAME     HuR_binding
 DESC     HuR binding site
 STATES   55
@@ -9,7 +9,7 @@ ALPH     RNA
 RF       no
 CONS     yes
 MAP      yes
-DATE     Wed Apr 10 14:30:56 2013
+DATE     Fri May 30 14:36:34 2014
 COM      [1] /share/data/bin/cmbuild -F /share/data/people/ppg15/motifs/HuR_binding/CM /share/data/people/ppg15/motifs/HuR_binding/SEED
 COM      [2] /share/data/bin/cmcalibrate --mpi --seed 1 /share/data/people/ppg15/motifs/HuR_binding/CM
 PBEGIN   0.05
@@ -100,7 +100,7 @@ CM
                                              [ END    12 ]      -      - - - - -
      E    54    53 3    -1     0     0     0     0     0                                                 
 //
-HMMER3/f [i1.1rc1 | June 2012]
+HMMER3/f [i1.1 | October 2013]
 NAME  HuR_binding
 DESC  HuR binding site
 LENG  17
@@ -111,7 +111,7 @@ MM    no
 CONS  yes
 CS    yes
 MAP   yes
-DATE  Wed Apr 10 14:30:56 2013
+DATE  Fri May 30 14:36:34 2014
 COM   [1] /share/data/bin/cmbuild -F /share/data/people/ppg15/motifs/HuR_binding/CM /share/data/people/ppg15/motifs/HuR_binding/SEED
 NSEQ  9
 EFFN  9.000000

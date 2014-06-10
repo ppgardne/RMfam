@@ -1,6 +1,5 @@
 # STOCKHOLM 1.0
 
-#=GF AC   RM00026
 #=GF ID   twist_up
 #=GF AU   Gardner PP
 #=GF SE   Gardner PP
@@ -29,6 +28,8 @@
 1S72_9/29-50          CCGUACCCAUCCCGAACACGG
 #=GR 1S72_9/29-50 SS  ((((...(.....)...))))
 #=GR 1S72_9/29-50 MT  ...xxxxx.....xxxxx...
+3j3e_7/29-48          CGGUUCUCGU-CCGAUCACCG
+3j2l_3/27-47          CCGGUCUCAUUUCGAACCCGG
 #=GC SS_cons          ((((...(.....)...))))
 #=GC tWS              ......<..........>...
 //

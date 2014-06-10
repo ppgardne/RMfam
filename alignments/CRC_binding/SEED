@@ -1,12 +1,12 @@
 # STOCKHOLM 1.0
 
-#=GF AC   RM00004
 #=GF ID   CRC_binding
 #=GF DE   CRC binding motif
+#=GF PI   CA_motif
 #=GF AU   Gardner PP
 #=GF SE   Gardner PP
 #=GF SS   Gardner PP
-#=GF GA   7.00
+#=GF GA   12.00
 #=GF DR   GO:0006401 GO:RNA catabolic process
 #=GF DR   GO:0006109 GO:regulation of carbohydrate metabolic process
 #=GF DR   RFAM:RF01675
@@ -15,6 +15,16 @@
 #=GF RT   Small RNA as global regulator of carbon catabolite repression in Pseudomonas aeruginosa.
 #=GF RA   Sonnleitner E, Abdou L, Haas D
 #=GF RL   Proc Natl Acad Sci U S A. 2009;106:21866-71.
+#=GF RN   [2]
+#=GF RM   23353577
+#=GF RT   CrcZ and CrcX regulate carbon source utilization in Pseudomonas syringae pathovar tomato strain DC3000.
+#=GF RA   Filiatrault MJ, Stodghill PV, Wilson J, Butcher BG, Chen H, Myers CR, Cartinhour SW
+#=GF RL   RNA Biol. 2013;10:245-55.
+#=GF RN   [3]
+#=GF RM   22053874
+#=GF RT   Two small RNAs, CrcY and CrcZ, act in concert to sequester the Crc global regulator in Pseudomonas putida, modulating catabolite repression.
+#=GF RA   Moreno R, Fonseca P, Rojo F
+#=GF RL   Mol Microbiol. 2012;83:24-40.
 #=GF WK   CrcZ
 
 CP002881.1/3575344-3575358   A-ACAACGACAAGAAG

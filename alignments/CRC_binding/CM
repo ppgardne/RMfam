@@ -9,7 +9,7 @@ ALPH     RNA
 RF       no
 CONS     yes
 MAP      yes
-DATE     Wed Apr 10 11:06:51 2013
+DATE     Sat Apr 20 16:47:10 2013
 COM      [1] /share/data/bin/cmbuild -F /share/data/people/ppg15/motifs/CRC_binding/CM /share/data/people/ppg15/motifs/CRC_binding/SEED
 COM      [2] /share/data/bin/cmcalibrate --mpi --seed 1 /share/data/people/ppg15/motifs/CRC_binding/CM
 PBEGIN   0.05
@@ -24,7 +24,7 @@ NSEQ     85
 EFFN     85.000000
 CKSUM    2280797317
 NULL     0.000  0.000  0.000  0.000 
-GA       7.00
+GA       12.00
 EFP7GF   -9.0708 0.77500
 ECMLC    0.38641   -14.26908     3.54121     1600000     1169532  0.001026
 ECMGC    0.34819   -15.08993     6.34406     1600000      697005  0.000574
@@ -109,7 +109,7 @@ MM    no
 CONS  yes
 CS    yes
 MAP   no
-DATE  Wed Apr 10 11:06:51 2013
+DATE  Sat Apr 20 16:47:10 2013
 COM   [1] /share/data/bin/cmbuild -F /share/data/people/ppg15/motifs/CRC_binding/CM /share/data/people/ppg15/motifs/CRC_binding/SEED
 COM   [2] /share/data/bin/cmbuild -F /share/data/people/ppg15/motifs/CRC_binding/CM /share/data/people/ppg15/motifs/CRC_binding/SEED
 NSEQ  85

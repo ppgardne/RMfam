@@ -1,4 +1,4 @@
-INFERNAL1/a [1.1rc1 | June 2012]
+INFERNAL1/a [1.1 | October 2013]
 NAME     CUYG
 DESC     CUYG tetraloop
 STATES   82
@@ -9,7 +9,7 @@ ALPH     RNA
 RF       no
 CONS     yes
 MAP      yes
-DATE     Thu Sep 20 14:25:05 2012
+DATE     Fri May 30 14:17:05 2014
 COM      [1] /share/data/bin/cmbuild -F /share/data/people/ppg15/motifs/CUYG/CM /share/data/people/ppg15/motifs/CUYG/SEED
 COM      [2] /share/data/bin/cmcalibrate --mpi --seed 1 /share/data/people/ppg15/motifs/CUYG/CM
 PBEGIN   0.05
@@ -130,7 +130,7 @@ CM
                                              [ END    15 ]      -      - - - - -
      E    81    80 3    -1     0     0     0     0     0                                                 
 //
-HMMER3/f [i1.1rc1 | June 2012]
+HMMER3/f [i1.1 | October 2013]
 NAME  CUYG
 DESC  CUYG tetraloop
 LENG  26
@@ -141,7 +141,7 @@ MM    no
 CONS  yes
 CS    yes
 MAP   yes
-DATE  Thu Sep 20 14:25:06 2012
+DATE  Fri May 30 14:17:05 2014
 COM   [1] /share/data/bin/cmbuild -F /share/data/people/ppg15/motifs/CUYG/CM /share/data/people/ppg15/motifs/CUYG/SEED
 NSEQ  8
 EFFN  7.386719

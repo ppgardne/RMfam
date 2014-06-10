@@ -1,4 +1,4 @@
-INFERNAL1/a [1.1rc1 | June 2012]
+INFERNAL1/a [1.1 | October 2013]
 NAME     k-turn-1
 DESC     Kink turn, 3' bulge
 STATES   115
@@ -9,7 +9,7 @@ ALPH     RNA
 RF       no
 CONS     yes
 MAP      yes
-DATE     Wed Apr 10 14:32:25 2013
+DATE     Fri May 30 14:37:02 2014
 COM      [1] /share/data/bin/cmbuild -F /share/data/people/ppg15/motifs/k-turn-1/CM /share/data/people/ppg15/motifs/k-turn-1/SEED
 COM      [2] /share/data/bin/cmcalibrate --mpi --seed 1 /share/data/people/ppg15/motifs/k-turn-1/CM
 PBEGIN   0.05
@@ -177,7 +177,7 @@ CM
                                              [ END    29 ]      -      - - - - -
      E   114   113 3    -1     0     0     0     0     0                                                 
 //
-HMMER3/f [i1.1rc1 | June 2012]
+HMMER3/f [i1.1 | October 2013]
 NAME  k-turn-1
 DESC  Kink turn, 3' bulge
 LENG  37
@@ -188,7 +188,7 @@ MM    no
 CONS  yes
 CS    yes
 MAP   yes
-DATE  Wed Apr 10 14:32:25 2013
+DATE  Fri May 30 14:37:02 2014
 COM   [1] /share/data/bin/cmbuild -F /share/data/people/ppg15/motifs/k-turn-1/CM /share/data/people/ppg15/motifs/k-turn-1/SEED
 NSEQ  15
 EFFN  15.000000

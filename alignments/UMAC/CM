@@ -1,4 +1,4 @@
-INFERNAL1/a [1.1rc1 | June 2012]
+INFERNAL1/a [1.1 | October 2013]
 NAME     UMAC
 DESC     UMAC tetraloop
 STATES   58
@@ -9,7 +9,7 @@ ALPH     RNA
 RF       no
 CONS     yes
 MAP      yes
-DATE     Thu Sep 20 15:20:38 2012
+DATE     Fri May 30 16:41:03 2014
 COM      [1] /share/data/bin/cmbuild -F /share/data/people/ppg15/motifs/UMAC/CM /share/data/people/ppg15/motifs/UMAC/SEED
 COM      [2] /share/data/bin/cmcalibrate --mpi --seed 1 /share/data/people/ppg15/motifs/UMAC/CM
 PBEGIN   0.05
@@ -103,7 +103,7 @@ CM
                                              [ END    12 ]      -      - - - - -
      E    57    56 3    -1     0     0     0     0     0                                                 
 //
-HMMER3/f [i1.1rc1 | June 2012]
+HMMER3/f [i1.1 | October 2013]
 NAME  UMAC
 DESC  UMAC tetraloop
 LENG  18
@@ -114,7 +114,7 @@ MM    no
 CONS  yes
 CS    yes
 MAP   yes
-DATE  Thu Sep 20 15:20:38 2012
+DATE  Fri May 30 16:41:03 2014
 COM   [1] /share/data/bin/cmbuild -F /share/data/people/ppg15/motifs/UMAC/CM /share/data/people/ppg15/motifs/UMAC/SEED
 NSEQ  14
 EFFN  13.962402

@@ -1,4 +1,4 @@
-INFERNAL1/a [1.1rc1 | June 2012]
+INFERNAL1/a [1.1 | October 2013]
 NAME     AUF1_binding
 DESC     AUF1 binding site
 STATES   103
@@ -9,7 +9,7 @@ ALPH     RNA
 RF       no
 CONS     yes
 MAP      yes
-DATE     Thu Sep 20 14:21:43 2012
+DATE     Fri May 30 14:13:22 2014
 COM      [1] /share/data/bin/cmbuild -F /share/data/people/ppg15/motifs/AUF1_binding/CM /share/data/people/ppg15/motifs/AUF1_binding/SEED
 COM      [2] /share/data/bin/cmcalibrate --mpi --seed 1 /share/data/people/ppg15/motifs/AUF1_binding/CM
 PBEGIN   0.05
@@ -162,7 +162,7 @@ CM
                                              [ END    26 ]      -      - - - - -
      E   102   101 3    -1     0     0     0     0     0                                                 
 //
-HMMER3/f [i1.1rc1 | June 2012]
+HMMER3/f [i1.1 | October 2013]
 NAME  AUF1_binding
 DESC  AUF1 binding site
 LENG  33
@@ -173,7 +173,7 @@ MM    no
 CONS  yes
 CS    yes
 MAP   yes
-DATE  Thu Sep 20 14:21:43 2012
+DATE  Fri May 30 14:13:22 2014
 COM   [1] /share/data/bin/cmbuild -F /share/data/people/ppg15/motifs/AUF1_binding/CM /share/data/people/ppg15/motifs/AUF1_binding/SEED
 NSEQ  8
 EFFN  7.652344

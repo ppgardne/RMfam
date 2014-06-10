@@ -1,4 +1,4 @@
-INFERNAL1/a [1.1rc1 | June 2012]
+INFERNAL1/a [1.1 | October 2013]
 NAME     ANYA
 DESC     ANYA tetraloop
 STATES   61
@@ -9,7 +9,7 @@ ALPH     RNA
 RF       no
 CONS     yes
 MAP      yes
-DATE     Wed Apr 10 14:22:21 2013
+DATE     Fri May 30 14:12:57 2014
 COM      [1] /share/data/bin/cmbuild -F /share/data/people/ppg15/motifs/ANYA/CM /share/data/people/ppg15/motifs/ANYA/SEED
 COM      [2] /share/data/bin/cmcalibrate --mpi --seed 1 /share/data/people/ppg15/motifs/ANYA/CM
 PBEGIN   0.05
@@ -107,7 +107,7 @@ CM
                                              [ END    13 ]      -      - - - - -
      E    60    59 3    -1     0     0     0     0     0                                                 
 //
-HMMER3/f [i1.1rc1 | June 2012]
+HMMER3/f [i1.1 | October 2013]
 NAME  ANYA
 DESC  ANYA tetraloop
 LENG  19
@@ -118,7 +118,7 @@ MM    no
 CONS  yes
 CS    yes
 MAP   yes
-DATE  Wed Apr 10 14:22:21 2013
+DATE  Fri May 30 14:12:57 2014
 COM   [1] /share/data/bin/cmbuild -F /share/data/people/ppg15/motifs/ANYA/CM /share/data/people/ppg15/motifs/ANYA/SEED
 NSEQ  15
 EFFN  14.578857

@@ -1,4 +1,4 @@
-INFERNAL1/a [1.1rc1 | June 2012]
+INFERNAL1/a [1.1 | October 2013]
 NAME     sarcin-ricin-2
 DESC     Sarcin-ricin motif 2
 STATES   187
@@ -9,7 +9,7 @@ ALPH     RNA
 RF       no
 CONS     yes
 MAP      yes
-DATE     Thu Sep 20 14:56:03 2012
+DATE     Fri May 30 16:10:02 2014
 COM      [1] /share/data/bin/cmbuild -F /share/data/people/ppg15/motifs/sarcin-ricin-2/CM /share/data/people/ppg15/motifs/sarcin-ricin-2/SEED
 COM      [2] /share/data/bin/cmcalibrate --mpi --seed 1 /share/data/people/ppg15/motifs/sarcin-ricin-2/CM
 PBEGIN   0.05
@@ -270,7 +270,7 @@ CM
                                              [ END    50 ]      -      - - - - -
      E   186   185 3    -1     0     0     0     0     0                                                 
 //
-HMMER3/f [i1.1rc1 | June 2012]
+HMMER3/f [i1.1 | October 2013]
 NAME  sarcin-ricin-2
 DESC  Sarcin-ricin motif 2
 LENG  61
@@ -281,7 +281,7 @@ MM    no
 CONS  yes
 CS    yes
 MAP   yes
-DATE  Thu Sep 20 14:56:03 2012
+DATE  Fri May 30 16:10:02 2014
 COM   [1] /share/data/bin/cmbuild -F /share/data/people/ppg15/motifs/sarcin-ricin-2/CM /share/data/people/ppg15/motifs/sarcin-ricin-2/SEED
 NSEQ  56
 EFFN  56.000000

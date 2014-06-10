@@ -1,0 +1,24 @@
+# STOCKHOLM 1.0
+
+#=GF ID   Roquin_binding
+#=GF DE   Roquin binding motif
+#=GF AU   Gardner PP
+#=GF SE   Gardner PP
+#=GF SS   Gardner PP
+#=GF GA   19.00
+#=GF PI   Constitutive Decay Element
+#=GF RN   [1]
+#=GF RM   23663784
+#=GF RT   Roquin promotes constitutive mRNA decay via a conserved class of stem-loop recognition motifs.
+#=GF RA   Leppek K, Schott J, Reitter S, Poetz F, Hammond MC, Stoecklin G
+#=GF RL   Cell. 2013;153:869-81.
+
+Roquin.hg19           UUUUGAUUCCAGUGGAAUCUU
+TNFa.mus              GAUG.UUUUCUGUGAAAACGA
+ICOS.mus              GAAA.AUUUCUGUGAAAUAAA
+Ppp1r10.cons          GUUG.UUUUCUAUGAAAACAG
+Hmgxb3.cons           .CUC.CCUUCUGUGAAGGGGA
+Bmpr1a.cons           GGUG.CUUUCUGUGAAAGCCU
+Pdia6.cons            UGACGAAUUCUAUGAAUUGUA
+#=GC SS_cons          ...(.(((((...))))))..
+//

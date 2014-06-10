@@ -1,4 +1,4 @@
-INFERNAL1/a [1.1rc1 | June 2012]
+INFERNAL1/a [1.1 | October 2013]
 NAME     RBS_B_subtilis
 DESC     Shine-Dalgarno sequences of the Bacillus subtilis sub-type
 STATES   121
@@ -9,7 +9,7 @@ ALPH     RNA
 RF       no
 CONS     yes
 MAP      yes
-DATE     Thu Sep 20 14:51:03 2012
+DATE     Fri May 30 15:04:38 2014
 COM      [1] /share/data/bin/cmbuild -F /share/data/people/ppg15/motifs/RBS_B_subtilis/CM /share/data/people/ppg15/motifs/RBS_B_subtilis/SEED
 COM      [2] /share/data/bin/cmcalibrate --mpi --seed 1 /share/data/people/ppg15/motifs/RBS_B_subtilis/CM
 PBEGIN   0.05
@@ -194,7 +194,7 @@ CM
                                              [ END    40 ]      -      - - - - -
      E   120   119 3    -1     0     0     0     0     0                                                 
 //
-HMMER3/f [i1.1rc1 | June 2012]
+HMMER3/f [i1.1 | October 2013]
 NAME  RBS_B_subtilis
 DESC  Shine-Dalgarno sequences of the Bacillus subtilis sub-type
 LENG  39
@@ -205,7 +205,7 @@ MM    no
 CONS  yes
 CS    yes
 MAP   no
-DATE  Thu Sep 20 14:51:03 2012
+DATE  Fri May 30 15:04:38 2014
 COM   [1] /share/data/bin/cmbuild -F /share/data/people/ppg15/motifs/RBS_B_subtilis/CM /share/data/people/ppg15/motifs/RBS_B_subtilis/SEED
 COM   [2] /share/data/bin/cmbuild -F /share/data/people/ppg15/motifs/RBS_B_subtilis/CM /share/data/people/ppg15/motifs/RBS_B_subtilis/SEED
 NSEQ  202

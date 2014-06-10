@@ -1,4 +1,4 @@
-INFERNAL1/a [1.1rc1 | June 2012]
+INFERNAL1/a [1.1 | October 2013]
 NAME     tandem-GA
 DESC     Tandem GA/AG loop
 STATES   289
@@ -9,7 +9,7 @@ ALPH     RNA
 RF       no
 CONS     yes
 MAP      yes
-DATE     Thu Sep 20 15:01:29 2012
+DATE     Fri May 30 16:16:57 2014
 COM      [1] /share/data/bin/cmbuild -F /share/data/people/ppg15/motifs/tandem-GA/CM /share/data/people/ppg15/motifs/tandem-GA/SEED
 COM      [2] /share/data/bin/cmcalibrate --mpi --seed 1 /share/data/people/ppg15/motifs/tandem-GA/CM
 PBEGIN   0.05
@@ -24,7 +24,7 @@ NSEQ     74
 EFFN     74.000000
 CKSUM    3494244325
 NULL     0.000  0.000  0.000  0.000 
-GA       10.00
+GA       15.00
 EFP7GF   -2.9541 0.72812
 ECMLC    0.50956    -7.67842     3.13808     1600000      297079  0.004039
 ECMGC    0.51044    -7.90311     4.82334     1600000      265003  0.001509
@@ -408,7 +408,7 @@ CM
                                              [ END    86 ]      -      - - - - -
      E   288   287 3    -1     0     0     0     0     0                                                 
 //
-HMMER3/f [i1.1rc1 | June 2012]
+HMMER3/f [i1.1 | October 2013]
 NAME  tandem-GA
 DESC  Tandem GA/AG loop
 LENG  95
@@ -419,7 +419,7 @@ MM    no
 CONS  yes
 CS    yes
 MAP   yes
-DATE  Thu Sep 20 15:01:29 2012
+DATE  Fri May 30 16:16:57 2014
 COM   [1] /share/data/bin/cmbuild -F /share/data/people/ppg15/motifs/tandem-GA/CM /share/data/people/ppg15/motifs/tandem-GA/SEED
 NSEQ  74
 EFFN  72.794067

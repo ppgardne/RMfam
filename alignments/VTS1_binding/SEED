@@ -1,0 +1,46 @@
+# STOCKHOLM 1.0
+
+#=GF ID   VTS1_binding
+#=GF DE   VTS1 binding site
+#=GF AU   Gardner PP
+#=GF SE   Gardner PP
+#=GF SS   Published; PMID:16429155
+#=GF GA   12.00
+#=GF DR   URL;http://www.rcsb.org/pdb/explore/explore.do?pdbId=2B6G
+#=GF DR   URL;http://rnafrabase.cs.put.poznan.pl/?act=pdbdetails&id=2B6G
+#=GF DR   URL;http://rbpdb.ccbr.utoronto.ca/experiments.php?prot_id=2586
+#=GF RN   [1]
+#=GF RM   16375924
+#=GF RT   The NMR and X-ray structures of the Saccharomyces cerevisiae Vts1 SAM domain define a surface for the recognition of RNA hairpins.
+#=GF RA   Aviv T, Amborski AN, Zhao XS, Kwan JJ, Johnson PE, Sicheri F, Donaldson LW
+#=GF RL   J Mol Biol. 2006;356:274-9.
+#=GF RN   [2]
+#=GF RM   16429151
+#=GF RT   Sequence-specific recognition of RNA hairpins by the SAM domain of Vts1p.
+#=GF RA   Aviv T, Lin Z, Ben-Ari G, Smibert CA, Sicheri F
+#=GF RL   Nat Struct Mol Biol. 2006;13:168-76.
+#=GF RN   [3]
+#=GF RM   19561594
+#=GF RT   Rapid and systematic analysis of the RNA recognition specificities of RNA-binding proteins.
+#=GF RA   Ray D, Kazan H, Chan ET, Peña Castillo L, Chaudhry S, Talukder S, Blencowe BJ, Morris Q, Hughes TR
+#=GF RL   Nat Biotechnol. 2009;27:667-70.
+#=GF RN   [4]
+#=GF RM   16429156
+#=GF RT   Shape-specific recognition in the structure of the Vts1p SAM domain with RNA.
+#=GF RA   Oberstrass FC, Lee A, Stefl R, Janis M, Chanfreau G, Allain FH
+#=GF RL   Nat Struct Mol Biol. 2006;13:160-7.
+
+2b6g_B/1-19                  .......g.G.AGGCUCUGGC.AGCU..UUC......
+#=GR 2b6g_B/1-19 SS          .......(.(.((((((..)..))))..)))......
+RBPDB-1                      ...........AGGCUCUGGC.AGUC..U........
+RBPDB-2                      ...........AGGCUCUGG..AGUC..U........
+PMID:16429156_F1             .....GGA.G.AGGCUCUGGC.AGCU..UUUC.C...
+PMID:16429156_F4A-1          .U.GAAUUAG.UGGAGCAGGACUUCC..ACAA.UCA.
+#=GR PMID:16429156_F4A-1 SS  .........(.(((((......))))..)).......
+PMID:16429156_F4A-2          ......CC.AUCUGGGCUGGU.UCCA..GUGG.....
+PMID:16429156_F4A-3          ...A.CUU.UGUUCUCCGGGA.GAGA..AAAA.GU..
+PMID:16429156_F4A-4          .........UCUCUAUCAGGA.AUAG..GA.......
+PMID:16429156_F4A-5          ...........AUUUGCCGGG.CGAA..U........
+PMID:16429156_F4A-6          .U.C.UAA.G.AUUGUCAGGU.ACAGGUUCUUCAGG.
+#=GC SS_cons                 .(.(.(((.(.((((((..)..))))..)))).))).
+//

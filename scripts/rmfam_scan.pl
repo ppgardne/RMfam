@@ -175,7 +175,7 @@ sub run_infernal_search {
  
     print "$exe\n" if (defined $verbose);
     system "$exe" and die "FATAL: failed to execute [$exe]\n[$!]";
-    return ("$$.tblout", "$$.cmsearch");
+    return ("$$.tblout", "$$.cmscan");
 }
 
 sub parse_infernal_table {
@@ -323,7 +323,7 @@ sub print_gff {
 	    }	
 	    my $eString='';
 	    $eString="Evalue=$evalue;" if (defined($evalue) && $evalue ne '-' && $evalue ne 'NA');
-	    print F "$seqid\tCMSEARCH102\tmotif\t$start\t$end\t$score\t$strand\t.\tName=$rmfamid;$eString\n";	    
+	    print F "$seqid\tCMSCAN102\tmotif\t$start\t$end\t$score\t$strand\t.\tName=$rmfamid;$eString\n";	    
 	}
     }
     close(F);
@@ -603,7 +603,7 @@ Usage: $0 <options> cm_file Stockholm_file/fasta_file
     Options
         -h              : show this help
 	-v              : verbose - prints lots of largely unimportant information
-    Cmsearch options:
+    Cmscan options:
 	-t <bits>       : specify cutoff in bits      [DEFAULT is to use curated GA thresholds]
 	--local         : perform local mode search   [DEFAULT]
 	--global        : perform global mode search
@@ -623,28 +623,31 @@ Usage: $0 <options> cm_file Stockholm_file/fasta_file
 	-n|--net        : output in tabular format for network visualisation
 	
     Miscellaneous options:
-	--pid           : restart a job using precomputed cmsearch results
+	--pid           : restart a job using precomputed cmscan results
 	
       TODO:
-        --sort out a sensible use for outfile
-	--use tree weighting on the sum of bit scores metric
+	--try a tree weighting on the sum of bit scores metric
 	--allow a threshold on the sumBits score
-	--add some more caveats to what gets summed for fm <a fuzzy alignment approach - window can be proportional to the specificity of the motif model>
+	--add some more caveats to what gets summed for the "fm" option <a fuzzy alignment approach - window can be proportional to the specificity of the motif model>
 	--record model specificity in the alignment?
-	--add support for HMM and-or PWMs
+	--add support for HMM and-or PWMs 
         --add secondary structure information to the annotated alignment?
-	--add an unstranded option (removes --toponly from cmsearch)
+            --try to include motif secondary structures to annotations 
+              (using the cmscan outfile)
+	--add an unstranded search option (removes --toponly from cmscan) &/or 
+          search the reverse complement
 	--for fasta files present a better summary. Eg. sumBits (not clans), list motifs, ...
 	
 	--test unfiltered runs
 	--try multiple CMs for each family with eg. base-triples, pseudoknots, ...
 	--only report the highest scoring terminator motif (eg. compete "clans")
 	
-	--add a double-strand option...
 	--add a test for concordance with the consensus structure
 
 	--update code for Infernal 1.rc2
 	--add support for Elena-s alignment annotation format
+
+	--where are the missing pseudoknot annotations?
 EOF
 }
 

@@ -1,4 +1,4 @@
-INFERNAL1/a [1.1rc1 | June 2012]
+INFERNAL1/a [1.1 | October 2013]
 NAME     UAA_GAN
 STATES   124
 NODES    32
@@ -8,7 +8,7 @@ ALPH     RNA
 RF       no
 CONS     yes
 MAP      yes
-DATE     Thu Sep 20 15:19:17 2012
+DATE     Fri May 30 16:39:21 2014
 COM      [1] /share/data/bin/cmbuild -F /share/data/people/ppg15/motifs/UAA_GAN/CM /share/data/people/ppg15/motifs/UAA_GAN/SEED
 COM      [2] /share/data/bin/cmcalibrate --mpi --seed 1 /share/data/people/ppg15/motifs/UAA_GAN/CM
 PBEGIN   0.05
@@ -23,7 +23,7 @@ NSEQ     20
 EFFN     20.000000
 CKSUM    3408199898
 NULL     0.000  0.000  0.000  0.000 
-GA       20.00
+GA       18.00
 EFP7GF   -0.7867 0.76731
 ECMLC    0.55715    -5.32802     4.18359     1600000      240252  0.004995
 ECMGC    0.55104    -4.99341     5.79107     1600000      152377  0.002625
@@ -187,7 +187,7 @@ CM
                                              [ END    31 ]      -      - - - - -
      E   123   122 3    -1     0     0     0     0     0                                                 
 //
-HMMER3/f [i1.1rc1 | June 2012]
+HMMER3/f [i1.1 | October 2013]
 NAME  UAA_GAN
 LENG  40
 MAXL  105
@@ -197,7 +197,7 @@ MM    no
 CONS  yes
 CS    yes
 MAP   yes
-DATE  Thu Sep 20 15:19:17 2012
+DATE  Fri May 30 16:39:21 2014
 COM   [1] /share/data/bin/cmbuild -F /share/data/people/ppg15/motifs/UAA_GAN/CM /share/data/people/ppg15/motifs/UAA_GAN/SEED
 NSEQ  20
 EFFN  20.000000

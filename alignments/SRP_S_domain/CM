@@ -1,4 +1,4 @@
-INFERNAL1/a [1.1rc1 | June 2012]
+INFERNAL1/a [1.1 | October 2013]
 NAME     SRP_S_domain
 DESC     Signal recognition particle small S-domain
 STATES   142
@@ -9,7 +9,7 @@ ALPH     RNA
 RF       no
 CONS     yes
 MAP      yes
-DATE     Thu Sep 20 15:00:01 2012
+DATE     Fri May 30 16:15:04 2014
 COM      [1] /share/data/bin/cmbuild -F /share/data/people/ppg15/motifs/SRP_S_domain/CM /share/data/people/ppg15/motifs/SRP_S_domain/SEED
 COM      [2] /share/data/bin/cmcalibrate --mpi --seed 1 /share/data/people/ppg15/motifs/SRP_S_domain/CM
 PBEGIN   0.05
@@ -203,7 +203,7 @@ CM
                                              [ END    28 ]      -      - - - - -
      E   141   140 3    -1     0     0     0     0     0                                                 
 //
-HMMER3/f [i1.1rc1 | June 2012]
+HMMER3/f [i1.1 | October 2013]
 NAME  SRP_S_domain
 DESC  Signal recognition particle small S-domain
 LENG  46
@@ -214,7 +214,7 @@ MM    no
 CONS  yes
 CS    yes
 MAP   yes
-DATE  Thu Sep 20 15:00:01 2012
+DATE  Fri May 30 16:15:04 2014
 COM   [1] /share/data/bin/cmbuild -F /share/data/people/ppg15/motifs/SRP_S_domain/CM /share/data/people/ppg15/motifs/SRP_S_domain/SEED
 NSEQ  216
 EFFN  213.841187
