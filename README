@@ -1,6 +1,6 @@
 RMfam: multiple alignments and probabilistic models of RNA motifs. 
 
-Release 0.1
+Release 0.3
 ------------
 
 0. CONTENTS
@@ -56,14 +56,14 @@ Version     Date        # families    Rfam        PDB
 -------     ----        ----------    -------     -----
   0.1       10/11       14            Rfam 10.1   03/11/11
   0.2       05/12       24            Rfam 10.1   03/11/11
+  0.3	    06/14	34	      Rfam 11.0   01/06/14
 
 5. HOW TO CITE RMfam
 
 If you make use of RMfam in your work we ask that you cite the
 following publications:
 
-Gardner PP et al. (2011) Needles in a haystack: A profile database of
-RNA motifs. Unpublished.
+Gardner PP and Eldai H (2014) Applications for RNA motif annotations. Unpublished.
 
 --------------------------------
-November 2011
+June 2014
