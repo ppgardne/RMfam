@@ -1,0 +1,459 @@
+5S_rRNA	GNRA
+5S_rRNA	sarcin-ricin-2	PMID:21552257
+5S_rRNA	twist_up	PMID:21976732
+ACEA_U3	k-turn-1	PMID:20562215
+alpha_tmRNA	GNRA
+alpha_tmRNA	T-loop
+Archaea_SRP	GNRA
+Archaea_SRP	k-turn-1	PMID:20562215
+Archaea_SRP	SRP_S_domain
+Bacteria_large_SRP	GNRA
+Bacteria_large_SRP	SRP_S_domain
+Bacteria_small_SRP	GNRA
+Bacteria_small_SRP	SRP_S_domain
+Bacteroidales-1	tandem-GA	PMID:21552257
+Betaproteobacteria_toxic_sRNA	Terminator1	
+Betaproteobacteria_toxic_sRNA	Terminator2	
+beta_tmRNA	T-loop
+C4	CUYG	PMID:20230605
+C4	GNRA	PMID:20230605
+C4	UNCG	PMID:20230605
+c-di-GMP-I	GNRA
+c-di-GMP-II	k-turn-2	PMID:20705859,PMID:20562215
+Clostridiales-1	tandem-GA	PMID:21552257
+Cobalamin	k-turn-1	PMID:21552257
+Cobalamin	k-turn-2	PMID:21552257
+CrcZ    CRC_binding		PMID:20080802
+CRISPRDR56	tandem-GA	PMID:21552257
+cspA	Terminator1	
+cspA	Terminator2	
+CsrB	CsrA_binding
+CsrB	Terminator1	
+CsrB	Terminator2	
+CsrC	CsrA_binding
+ctRNA_pGA1	Terminator1	
+ctRNA_pGA1	Terminator2	
+ctRNA_pND324	Terminator1	
+ctRNA_pND324	Terminator2	
+ctRNA_pT181	Terminator1	
+ctRNA_pT181	Terminator2	
+Cyano-2	GNRA
+cyano_tmRNA	T-loop
+Dictyoglomi-1	sarcin-ricin-1	PMID:21552257
+Dictyoglomi-1	sarcin-ricin-2	PMID:21552257
+Dictyostelium_SRP	GNRA
+Dictyostelium_SRP	SRP_S_domain
+DnaX	tandem-GA	PMID:21552257
+Entero_CRE	C-loop	PMID:21552257
+Fungi_SRP	GNRA
+Fungi_SRP	SRP_S_domain
+GcvB	Terminator1	
+GcvB	Terminator2	
+GEMM-II	tandem-GA	PMID:21552257
+GlmZ_SraJ	Terminator1	
+GlmZ_SraJ	Terminator2	
+glnA	sarcin-ricin-1	PMID:21552257
+glnA	sarcin-ricin-2	PMID:21552257
+GOLLD	sarcin-ricin-1	PMID:21552257
+GOLLD	sarcin-ricin-2	PMID:21552257
+group-II-D1D4-1	GNRA
+group-II-D1D4-1	sarcin-ricin-1	PMID:21552257
+group-II-D1D4-1	sarcin-ricin-2	PMID:21552257
+group-II-D1D4-2	GNRA
+group-II-D1D4-3	GNRA
+group-II-D1D4-4	GNRA
+group-II-D1D4-5	GNRA
+group-II-D1D4-6	GNRA
+group-II-D1D4-7	GNRA
+Hammerhead_3	tandem-GA	PMID:21552257
+hammerhead-typeII	tandem-GA	PMID:21552257
+HCV_SLVII	sarcin-ricin-1	PMID:21552257
+HCV_SLVII	sarcin-ricin-2	PMID:21552257
+His_leader	Terminator1	
+His_leader	Terminator2	
+Intron_gpII	Domain-V
+Intron_gpII	GNRA
+Intron_gpI	sarcin-ricin-1	PMID:21552257
+Intron_gpI	sarcin-ricin-2	PMID:21552257
+Intron_gpI	tandem-GA	PMID:21552257
+IRES_Aptho	GNRA
+IRES_cmyc	C-loop	PMID:21552257
+IRES_FGF2	tandem-GA	PMID:21552257
+IRES_HCV	sarcin-ricin-1	PMID:21552257
+IRES_HCV	sarcin-ricin-2	PMID:21552257
+IRES_Kv1_4	tandem-GA	PMID:21552257
+IRES_Picorna	GNRA
+IsrR	Terminator1	
+IsrR	Terminator2	
+L10_leader	k-turn-1	PMID:21552257
+L10_leader	k-turn-2	PMID:21552257
+L10_leader	Terminator1	
+L10_leader	Terminator2	
+L20_leader	Terminator1	
+L20_leader	Terminator2	
+lactis-plasmid	tandem-GA	PMID:21552257
+LR-PK1	tandem-GA	PMID:21552257
+Lysine	k-turn-1	PMID:20562215
+Lysine	k-turn-1	PMID:21552257
+Lysine	k-turn-2	PMID:21552257
+Lysine	sarcin-ricin-2	PMID:21552257
+Lysine	tandem-GA	PMID:21552257
+mascRNA-menRNA	T-loop
+Metazoa_SRP	GNRA
+Metazoa_SRP	k-turn-1	PMID:20562215
+Metazoa_SRP	k-turn-2	PMID:20562215
+Metazoa_SRP	SRP_S_domain
+MicC	Terminator1	
+MicC	Terminator2	
+MicX	Terminator1	
+MicX	Terminator2	
+MOCO_RNA_motif	GNRA
+MOCO_RNA_motif	tandem-GA	PMID:21552257
+OLE	GNRA
+OmrA-B	Terminator1	
+OmrA-B	Terminator2	
+Phe_leader	Terminator1	
+Phe_leader	Terminator2	
+Plant_SRP	GNRA
+Plant_SRP	k-turn-1	PMID:20562215
+Plant_SRP	SRP_S_domain
+Protozoa_SRP	GNRA
+Protozoa_SRP	SRP_S_domain
+PrrB_RsmZ	CsrA_binding
+PrrF	Terminator1	
+PrrF	Terminator2	
+Pseudomon-1	Terminator1	
+Pseudomon-1	Terminator2	
+purD	tandem-GA	PMID:21552257
+Pyrobac-1	tandem-GA	PMID:21552257
+PyrR	Terminator1	
+PyrR	Terminator2	
+Qrr	Terminator1	
+Qrr	Terminator2	
+QUAD	C-loop	PMID:21552257
+rimP	Terminator1	
+rimP	Terminator2	
+rli38	Terminator1	
+rli38	Terminator2	
+RNAI	Terminator1	
+RNAI	Terminator2	
+RNase_MRP	GNRA
+RNase_MRP	k-turn-1	PMID:20562215
+RNase_MRP	k-turn-1	PMID:21552257
+RNase_MRP	k-turn-2	PMID:21552257
+RNaseP_arch	GNRA		PMID:8610158
+RNaseP_arch	k-turn-1	PMID:20562215
+RNaseP_bact_a	docking_elbow	PMID:23580544
+RNaseP_bact_a	GNRA		PMID:8610158
+RNaseP_bact_a	k-turn-1	PMID:20562215
+RNaseP_bact_a	pK-turn
+RNaseP_bact_a	T-loop	PMID:12756321
+RNaseP_bact_a	U-turn	PMID:15459389
+RNaseP_bact_a	UNCG	PMID:10500154
+RNaseP_bact_b	docking_elbow	PMID:23580544
+RNaseP_bact_b	GNRA		PMID:8610158
+RNaseP_bact_b	k-turn-1	PMID:20562215
+RNaseP_bact_b	sarcin-ricin-1	PMID:21552257
+RNaseP_bact_b	sarcin-ricin-2	PMID:21552257
+RNase_P	GNRA	PMID:8610158
+RNaseP_nuc	GNRA	PMID:8610158
+RNaseP_nuc	k-turn-1	PMID:20562215
+rnk_leader	Terminator1	
+rnk_leader	Terminator2	
+rnk_pseudo	Terminator1	
+rnk_pseudo	Terminator2	
+RsaE	Terminator1	
+RsaE	Terminator2	
+rsmX	CsrA_binding
+rsmX	Terminator1	
+rsmX	Terminator2	
+RsmY	CsrA_binding
+RtT	tandem-GA	PMID:21552257
+RyeB	Terminator1	
+RyeB	Terminator2	
+SAM	k-turn-1
+sanguinis-hairpin	tandem-GA	PMID:21552257
+SCARNA17	tandem-GA	PMID:21552257
+SCARNA18	k-turn-1	PMID:21552257
+SCARNA18	k-turn-2	PMID:21552257
+serC	GNRA
+sn2317	k-turn-1	PMID:21552257
+sn2317	k-turn-2	PMID:21552257
+sn668	k-turn-1	PMID:21552257
+sn668	k-turn-2	PMID:21552257
+snoMe28SAm2634	k-turn-1	PMID:21552257
+snoMe28SAm2634	k-turn-2	PMID:21552257
+snoMe28SCm788	k-turn-1	PMID:21552257
+snoMe28SCm788	k-turn-2	PMID:21552257
+snoPyro_CD	k-turn-1	PMID:21552257
+snoPyro_CD	k-turn-2	PMID:21552257
+snoR11	k-turn-1	PMID:21552257
+snoR11	k-turn-2	PMID:21552257
+snoR1	k-turn-1	PMID:21552257
+snoR1	k-turn-2	PMID:21552257
+snoR20a	k-turn-1	PMID:21552257
+snoR20a	k-turn-2	PMID:21552257
+snoR21b	k-turn-1	PMID:21552257
+snoR21b	k-turn-2	PMID:21552257
+snoR21	k-turn-1	PMID:21552257
+snoR21	k-turn-2	PMID:21552257
+snoR24	k-turn-1	PMID:21552257
+snoR24	k-turn-2	PMID:21552257
+snoR26	k-turn-1	PMID:21552257
+snoR26	k-turn-2	PMID:21552257
+snoR27	k-turn-1	PMID:21552257
+snoR27	k-turn-2	PMID:21552257
+snoR2	k-turn-1	PMID:21552257
+snoR2	k-turn-2	PMID:21552257
+snoR30	k-turn-1	PMID:21552257
+snoR30	k-turn-2	PMID:21552257
+snoR31_Z110_Z27	tandem-GA	PMID:21552257
+snoR38	k-turn-1	PMID:21552257
+snoR38	k-turn-2	PMID:21552257
+snoR41	k-turn-1	PMID:21552257
+snoR41	k-turn-2	PMID:21552257
+snoR53Y	k-turn-1	PMID:21552257
+snoR53Y	k-turn-2	PMID:21552257
+snoR64	k-turn-1	PMID:21552257
+snoR64	k-turn-2	PMID:21552257
+snoR64	tandem-GA	PMID:21552257
+snoR66	k-turn-1	PMID:21552257
+snoR66	k-turn-2	PMID:21552257
+snoR69Y	k-turn-1	PMID:21552257
+snoR69Y	k-turn-2	PMID:21552257
+snoR77	k-turn-1	PMID:21552257
+snoR77	k-turn-2	PMID:21552257
+snoR77Y	k-turn-1	PMID:21552257
+snoR77Y	k-turn-2	PMID:21552257
+SNORA28	k-turn-1	PMID:21552257
+SNORA28	k-turn-2	PMID:21552257
+SNORA2	k-turn-1	PMID:21552257
+SNORA2	k-turn-2	PMID:21552257
+SNORA3	k-turn-1	PMID:21552257
+SNORA3	k-turn-2	PMID:21552257
+SNORA62	k-turn-1	PMID:21552257
+SNORA62	k-turn-2	PMID:21552257
+SNORA73	k-turn-1
+SNORD103	k-turn-1	PMID:21552257
+SNORD103	k-turn-2	PMID:21552257
+SNORD109A	tandem-GA	PMID:21552257
+SNORD110	k-turn-1	PMID:21552257
+SNORD110	k-turn-2	PMID:21552257
+SNORD112	k-turn-1	PMID:21552257
+SNORD112	k-turn-2	PMID:21552257
+SNORD113	k-turn-1	PMID:21552257
+SNORD113	k-turn-2	PMID:21552257
+SNORD113	tandem-GA	PMID:21552257
+SNORD113	tandem-GA	PMID:21552257
+SNORD11	tandem-GA	PMID:21552257
+SNORD121A	k-turn-1	PMID:21552257
+SNORD121A	k-turn-2	PMID:21552257
+SNORD124	k-turn-1	PMID:21552257
+SNORD124	k-turn-2	PMID:21552257
+SNORD126	k-turn-1	PMID:21552257
+SNORD126	k-turn-2	PMID:21552257
+SNORD14	k-turn-1	PMID:20562215
+SNORD14	k-turn-1	PMID:21552257
+SNORD14	k-turn-2	PMID:21552257
+SNORD15	k-turn-1	PMID:21552257
+SNORD15	k-turn-2	PMID:21552257
+SNORD16	k-turn-1	PMID:21552257
+SNORD16	k-turn-2	PMID:21552257
+SNORD19	k-turn-1	PMID:21552257
+SNORD19	k-turn-2	PMID:21552257
+SNORD22	k-turn-1	PMID:21552257
+SNORD22	k-turn-2	PMID:21552257
+SNORD23	k-turn-1
+SNORD23	k-turn-1	PMID:21552257
+SNORD23	k-turn-2	PMID:21552257
+SNORD24	k-turn-1	PMID:21552257
+SNORD24	k-turn-2	PMID:21552257
+SNORD25	k-turn-1	PMID:21552257
+SNORD25	k-turn-2	PMID:21552257
+SNORD27	k-turn-1	PMID:21552257
+SNORD27	k-turn-2	PMID:21552257
+SNORD29	k-turn-1	PMID:21552257
+SNORD29	k-turn-2	PMID:21552257
+SNORD33	k-turn-1	PMID:21552257
+SNORD33	k-turn-2	PMID:21552257
+SNORD34	k-turn-1	PMID:21552257
+SNORD34	k-turn-2	PMID:21552257
+SNORD36	k-turn-1	PMID:21552257
+SNORD36	k-turn-2	PMID:21552257
+SNORD43	k-turn-1	PMID:21552257
+SNORD43	k-turn-2	PMID:21552257
+SNORD45	k-turn-1	PMID:21552257
+SNORD45	k-turn-2	PMID:21552257
+SNORD47	k-turn-1	PMID:21552257
+SNORD47	k-turn-2	PMID:21552257
+SNORD50	k-turn-1	PMID:21552257
+SNORD50	k-turn-2	PMID:21552257
+SNORD52	k-turn-1	PMID:21552257
+SNORD52	k-turn-2	PMID:21552257
+SNORD53	k-turn-1	PMID:21552257
+SNORD53	k-turn-2	PMID:21552257
+SNORD56	k-turn-1	PMID:21552257
+SNORD56	k-turn-2	PMID:21552257
+SNORD58	k-turn-1	PMID:21552257
+SNORD58	k-turn-2	PMID:21552257
+SNORD59	k-turn-1	PMID:21552257
+SNORD59	k-turn-2	PMID:21552257
+SNORD60	k-turn-1	PMID:21552257
+SNORD60	k-turn-2	PMID:21552257
+SNORD61	k-turn-1	PMID:21552257
+SNORD61	k-turn-2	PMID:21552257
+SNORD63	k-turn-1	PMID:21552257
+SNORD63	k-turn-2	PMID:21552257
+SNORD66	k-turn-1	PMID:21552257
+SNORD66	k-turn-2	PMID:21552257
+SNORD70	k-turn-1	PMID:21552257
+SNORD70	k-turn-2	PMID:21552257
+SNORD71	tandem-GA	PMID:21552257
+SNORD72	k-turn-1	PMID:21552257
+SNORD72	k-turn-2	PMID:21552257
+SNORD75	k-turn-1	PMID:21552257
+SNORD75	k-turn-2	PMID:21552257
+SNORD82	tandem-GA	PMID:21552257
+SNORD88	k-turn-1	PMID:21552257
+SNORD88	k-turn-2	PMID:21552257
+SNORD89	k-turn-1	PMID:21552257
+SNORD89	k-turn-2	PMID:21552257
+SNORD91	k-turn-1	PMID:21552257
+SNORD91	k-turn-2	PMID:21552257
+SNORD92	k-turn-1	PMID:21552257
+SNORD92	k-turn-2	PMID:21552257
+SNORD93	k-turn-1	PMID:21552257
+SNORD93	k-turn-2	PMID:21552257
+SNORD94	k-turn-1	PMID:21552257
+SNORD94	k-turn-2	PMID:21552257
+SNORD95	k-turn-1	PMID:21552257
+SNORD95	k-turn-2	PMID:21552257
+SNORD96	k-turn-1	PMID:21552257
+SNORD96	k-turn-2	PMID:21552257
+SNORD99	tandem-GA	PMID:21552257
+SNORND10	tandem-GA	PMID:21552257
+snoTBR17	tandem-GA	PMID:21552257
+snoU18	tandem-GA	PMID:21552257
+snoU2-30	k-turn-1	PMID:21552257
+snoU2-30	k-turn-2	PMID:21552257
+snoU40	tandem-GA	PMID:21552257
+snoU54	k-turn-1	PMID:21552257
+snoU54	k-turn-2	PMID:21552257
+snoU61	k-turn-1	PMID:21552257
+snoU61	k-turn-2	PMID:21552257
+snoU6-47	k-turn-1	PMID:21552257
+snoU6-47	k-turn-2	PMID:21552257
+snoU6-53	k-turn-1	PMID:21552257
+snoU6-53	k-turn-2	PMID:21552257
+snoU83B	k-turn-1	PMID:21552257
+snoU83B	k-turn-2	PMID:21552257
+snoU83	k-turn-1	PMID:21552257
+snoU83	k-turn-2	PMID:21552257
+snoU97	k-turn-1	PMID:21552257
+snoU97	k-turn-2	PMID:21552257
+snoZ107_R	k-turn-1	PMID:21552257
+snoZ107_R	k-turn-2	PMID:21552257
+snoZ118	k-turn-1	PMID:21552257
+snoZ118	k-turn-2	PMID:21552257
+snoZ152	k-turn-1	PMID:21552257
+snoZ152	k-turn-2	PMID:21552257
+snoZ157	k-turn-1	PMID:21552257
+snoZ157	k-turn-2	PMID:21552257
+snoZ162	k-turn-1	PMID:21552257
+snoZ162	k-turn-2	PMID:21552257
+snoZ163	k-turn-1	PMID:21552257
+snoZ163	k-turn-2	PMID:21552257
+snoZ168	k-turn-1	PMID:21552257
+snoZ168	k-turn-2	PMID:21552257
+snoZ169	k-turn-1	PMID:21552257
+snoZ169	k-turn-2	PMID:21552257
+snoZ182	k-turn-1	PMID:21552257
+snoZ182	k-turn-2	PMID:21552257
+snoZ196	k-turn-1	PMID:21552257
+snoZ196	k-turn-2	PMID:21552257
+snoZ223	k-turn-1	PMID:21552257
+snoZ223	k-turn-2	PMID:21552257
+snoZ267	k-turn-1	PMID:21552257
+snoZ267	k-turn-2	PMID:21552257
+snoZ278	k-turn-1	PMID:21552257
+snoZ278	k-turn-2	PMID:21552257
+snoZ30	k-turn-1	PMID:21552257
+snoZ30	k-turn-2	PMID:21552257
+snoZ43	k-turn-1	PMID:21552257
+snoZ43	k-turn-2	PMID:21552257
+snR10	k-turn-1	PMID:21552257
+snR10	k-turn-2	PMID:21552257
+snR75	tandem-GA	PMID:21552257
+snR8	tandem-GA	PMID:21552257
+Spot_42	Terminator1	
+Spot_42	Terminator2	
+sR4	k-turn-1	PMID:21552257
+sR4	k-turn-2	PMID:21552257
+sR4	tandem-GA	PMID:21552257
+sraA	Terminator1	
+sraA	Terminator2	
+SSU_rRNA_archaea	GNRA
+SSU_rRNA_archaea	k-turn-1	PMID:20562215
+SSU_rRNA_archaea	right_angle-2	PMID:22999957
+SSU_rRNA_archaea	T-loop
+SSU_rRNA_archaea	U-turn	PMID:10891269
+SSU_rRNA_bacteria	GNRA
+SSU_rRNA_bacteria	k-turn-1	PMID:20562215
+SSU_rRNA_bacteria	right_angle-2	PMID:22999957
+SSU_rRNA_bacteria	T-loop
+SSU_rRNA_bacteria	UNCG	PMID:11071808
+SSU_rRNA_bacteria	U-turn	PMID:10891269
+SSU_rRNA_eukarya	GNRA
+SSU_rRNA_eukarya	k-turn-1	PMID:20562215
+SSU_rRNA_eukarya	right_angle-2	PMID:22999957
+SSU_rRNA_eukarya	tandem-GA
+SSU_rRNA_eukarya	T-loop
+STnc100	Terminator1	
+STnc100	Terminator2	
+STnc130	Terminator1	
+STnc130	Terminator2	
+STnc150	Terminator1	
+STnc150	Terminator2	
+STnc240	Terminator1	
+STnc240	Terminator2	
+STnc370	Terminator1	
+STnc370	Terminator2	
+STnc40	Terminator1	
+STnc40	Terminator2	
+STnc430	Terminator1	
+STnc430	Terminator2
+STnc490k	Terminator1	
+suhB	Terminator1	
+suhB	Terminator2	
+T-box	docking_elbow	PMID:23580544
+T-box	k-turn-1	PMID:21552257
+T-box	k-turn-2	PMID:20562215
+T-box	k-turn-2	PMID:21552257
+T-box	sarcin-ricin-1	PMID:21552257
+T-box	sarcin-ricin-2	PMID:21552257
+T-box	tandem-GA	PMID:21552257
+Telomerase-vert	k-turn-1
+Termite-leu	Terminator1	
+Termite-leu	Terminator2	
+Thr_leader	Terminator1	
+Thr_leader	Terminator2	
+tmRNA	GNRA
+tmRNA	U-turn	PMID:16595798
+tmRNA	T-loop	PMID:11904186
+tRNA-Sec	T-loop
+tRNA	T-loop
+Trp_leader	Terminator1	
+Trp_leader	Terminator2	
+TwoAYGGAY	CsrA_binding
+TwoAYGGAY	tandem-GA	PMID:21552257
+U3	k-turn-1	PMID:21552257
+U3	k-turn-2	PMID:21552257
+U3	tandem-GA	PMID:21552257
+U4atac	k-turn-1	PMID:21552257
+U4atac	k-turn-2	PMID:10545122,PMID:20562215
+U4atac	k-turn-2	PMID:21552257
+U4	k-turn-2	PMID:10545122,PMID:20562215
+U6	Domain-V
+VrrA	Terminator1	
+VrrA	Terminator2	
+ykoK	GNRA
