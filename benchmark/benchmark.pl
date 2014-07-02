@@ -161,6 +161,57 @@ foreach my $row (@mappings){
 close(UT); 
 
 ######################################################################
+#Benchmark 2:
+#echo -e "db\tseq\tbits\teval\tmotif" > RMfam/benchmark/benchmark2.txt && cat */seq-scores.dat | egrep '^SEED|^PDB-shuffle' | sort -k3nr >> RMfam/benchmark/benchmark2.txt
+
+open(B2, "< benchmark2.txt");
+my @b2=<B2>;
+close(B2);
+#my ($tp,$tn,$fp,$fn)=(0,$totalFalses,0,$totalTrues); 
+my (%totalFalses, %totalTrues);
+foreach my $b2 (@b2){
+    next if $b2 =~ /^db/; 
+    chomp($b2);
+    
+    my @b=split(/\t/, $b2);
+    ($totalFalses{$b[4]}, $totalTrues{$b[4]})=(0,0) if (not defined($totalTrues{$b[4]})); 
+    
+    if($b2=~/^SEED-shuffled/){
+	$totalFalses{$b[4]}++;	
+    }
+    elsif($b2=~/^SEED\t/){
+	$totalTrues{$b[4]}++;
+    }
+}
+
+my (%tp,%tn,%fp,%fn);
+foreach my $k (keys %totalTrues){
+    ($tp{$k},$tn{$k},$fp{$k},$fn{$k})=(0,$totalFalses{$k},0,$totalTrues{$k}); 
+}
+
+open(UT, "> ROC_benchmark2\.dat");
+print UT "bits\tTP\tTN\tFP\tFN\tMCC\tSENS\tSPEC\tPPV\tNPV\tACC\tFDR\tmotif\n";
+foreach my $row (@b2){
+    chomp($row);
+    my @row = split(/\t/, $row); 
+    next if $row =~ /^db/;
+    next if (not defined($row[4]));
+    if($row[0] eq "SEED"){
+	$tp{$row[4]}++;
+	$fn{$row[4]}--;
+    }
+    else{
+	$fp{$row[4]}++; 
+	$tn{$row[4]}--;
+    }
+    
+    my($mcc, $sens, $spec, $ppv, $npv, $acc, $fdr)=acc($tp{$row[4]},$tn{$row[4]},$fp{$row[4]},$fn{$row[4]}); 
+    printf UT "$row[2]\t$tp{$row[4]}\t$tn{$row[4]}\t$fp{$row[4]}\t$fn{$row[4]}\t%0.2f\t%0.2f\t%0.2f\t%0.2f\t%0.2f\t%0.2f\t%0.2f\t$row[4]\n", $mcc, $sens, $spec, $ppv, $npv, $acc, $fdr; 
+     
+}
+close(UT);
+
+######################################################################
 #PLOT RESULTS
 
 system("R CMD BATCH --no-save plotROC.R");

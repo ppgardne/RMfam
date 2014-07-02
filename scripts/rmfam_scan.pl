@@ -30,6 +30,7 @@ my( $local,
     $alnOut,
     $netOut,
     $pid,
+    $clean,
     $verbose,
     $help
     );
@@ -55,6 +56,7 @@ my $minNumberHits     = 2;   #minimum number of sequences covered by a motif bef
 	     "n|net"         => \$netOut,
 	     "pid=s"         => \$pid,
 	     "o=s"           => \$outfile,
+	     "c|clean"       => \$clean,
 	     "v"             => \$verbose,
 	     "h"             => \$help
 	     );
@@ -115,6 +117,14 @@ if( defined $netOut ) {
     #--scores: fraction seqs in alignment, sumBits, 
     my $nOut = print_network($infile,$features,$idCounts,$sumBits,$weightedSumBits, $noSeqs, $fractionMotifs, $minNumberHits, $sumWeights); 
     print "Network data written to [$nOut]\n" if( $verbose );
+}
+
+#CLEANUP FILES!
+if(defined($clean)){
+    unlink( $ffafile ) if (-s $ffafile);
+    unlink( $resfile ) if (-s $resfile);
+    unlink( $cmsfile ) if (-s $cmsfile);
+    unlink( "$$.annotated.stk" ) if (-s "$$.annotated.stk");
 }
 
 exit(0);
@@ -603,6 +613,7 @@ Usage: $0 <options> cm_file Stockholm_file/fasta_file
     Options
         -h              : show this help
 	-v              : verbose - prints lots of largely unimportant information
+	-c|--clean      : delete unnecessary results files
     Cmscan options:
 	-t <bits>       : specify cutoff in bits      [DEFAULT is to use curated GA thresholds]
 	--local         : perform local mode search   [DEFAULT]

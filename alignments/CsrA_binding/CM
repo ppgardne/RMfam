@@ -9,9 +9,9 @@ ALPH     RNA
 RF       no
 CONS     yes
 MAP      yes
-DATE     Sun Jun  1 19:25:36 2014
-COM      [1] cmbuild -F CM SEED
-COM      [2] cmcalibrate --seed 1 CM
+DATE     Mon Jun 30 15:17:24 2014
+COM      [1] /share/data/bin/cmbuild -F /share/data/people/ppg15/motifs/CsrA_binding/CM /share/data/people/ppg15/motifs/CsrA_binding/SEED
+COM      [2] /share/data/bin/cmcalibrate --mpi --seed 1 /share/data/people/ppg15/motifs/CsrA_binding/CM
 PBEGIN   0.05
 PEND     0.05
 WBETA    1e-07
@@ -97,8 +97,8 @@ MM    no
 CONS  yes
 CS    yes
 MAP   yes
-DATE  Sun Jun  1 19:25:36 2014
-COM   [1] cmbuild -F CM SEED
+DATE  Mon Jun 30 15:17:24 2014
+COM   [1] /share/data/bin/cmbuild -F /share/data/people/ppg15/motifs/CsrA_binding/CM /share/data/people/ppg15/motifs/CsrA_binding/SEED
 NSEQ  1247
 EFFN  32.285267
 CKSUM 3796081296

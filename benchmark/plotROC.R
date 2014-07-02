@@ -75,4 +75,53 @@ lines(rocSSSB$sngl_seq_sumBits, rocSSSB$MCC, col="red",lwd=8)
 legend("topright",c("alignment sum bits", "sequence sum bits"),col=c("blue","red"),lwd=12,cex=0.7,ncol=1)
 dev.off()
 
+######################################################################
+#benchmark2:
+#cat ROC_benchmark2.dat | cut -f 13 | sort -d | uniq | awk '{print "\42"$1"\42,"}'
+motif<-c(
+"ANYA",
+"AUF1_binding",
+"C-loop",
+"CRC_binding",
+"CsrA_binding",
+"CUYG",
+"docking_elbow",
+"Domain-V",
+"GNRA",
+"HuR_binding",
+"k-turn-1",
+"k-turn-2",
+"pK-turn",
+"RBS_B_subtilis",
+"RBS_E_coli",
+"RBS_H_pylori",
+"right_angle-2",
+"right_angle-3",
+"Roquin_binding",
+"sarcin-ricin-1",
+"sarcin-ricin-2",
+"SRP_S_domain",
+"tandem-GA",
+"Terminator1",
+"Terminator2",
+"T-loop",
+"TRIT",
+"twist_up",
+"UAA_GAN",
+"UMAC",
+"UNCG",
+"U-turn",
+"vapC_target",
+"VTS1_binding"
+);
+rocB2      <-read.table("ROC_benchmark2.dat",          header = T, sep = "\t")
+
+pdf(file="ROC_benchmark2.pdf", width=20, height=20)
+op<-par(mfrow=c(1,1),cex=5.0)
+plot(c(1,0), c(0,1), col="black",lwd=12, type="l",ylim=c(0,1),xlim=c(0,1),xlab="Specificity",ylab="Sensitivity",main="ROC curve: benchmark2")      
+for(i in 1:length(motif)){
+      lines(rocB2$SPEC[rocB2$motif==motif[i]], rocB2$SENS[rocB2$motif==motif[i]], lty=i, col=i, lwd=12)
+}
+legend("bottomleft", motif, col=1:length(motif), lty=1:length(motif), cex=0.3, ncol=3)
+dev.off()
 

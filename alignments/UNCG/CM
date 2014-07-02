@@ -9,9 +9,9 @@ ALPH     RNA
 RF       no
 CONS     yes
 MAP      yes
-DATE     Mon Jun  2 05:00:25 2014
-COM      [1] cmbuild -F CM SEED
-COM      [2] cmcalibrate CM
+DATE     Tue Jul  1 13:31:43 2014
+COM      [1] /share/data/bin/cmbuild -F /share/data/people/ppg15/motifs/UNCG/CM /share/data/people/ppg15/motifs/UNCG/SEED
+COM      [2] /share/data/bin/cmcalibrate --mpi --seed 1 /share/data/people/ppg15/motifs/UNCG/CM
 PBEGIN   0.05
 PEND     0.05
 WBETA    1e-07
@@ -26,10 +26,10 @@ CKSUM    1202672221
 NULL     0.000  0.000  0.000  0.000 
 GA       8.00
 EFP7GF   -4.1331 0.81392
-ECMLC    0.61471    -4.02140     5.06290     1600000      319421  0.003757
-ECMGC    0.42680   -12.53066     5.25998     1600000      793761  0.000504
-ECMLI    0.62538    -3.14929     5.51396     1600000      270472  0.004437
-ECMGI    0.43328   -11.60660     5.47179     1600000      654212  0.000611
+ECMLC    0.61315    -3.92439     5.18136     1600000      319095  0.003761
+ECMGC    0.45102   -11.49745     5.33978     1600000      794379  0.000504
+ECMLI    0.64448    -2.70359     5.69897     1600000      269791  0.004448
+ECMGI    0.45634   -10.69949     5.52779     1600000      657790  0.000608
 CM
                                              [ ROOT    0 ]      -      - - - - -
      S     0    -1 0     1     6     1     1    84   158 -11.161 -11.100  -0.357  -9.876 -10.156  -2.209 
@@ -114,8 +114,8 @@ MM    no
 CONS  yes
 CS    yes
 MAP   yes
-DATE  Mon Jun  2 05:00:25 2014
-COM   [1] cmbuild -F CM SEED
+DATE  Tue Jul  1 13:31:43 2014
+COM   [1] /share/data/bin/cmbuild -F /share/data/people/ppg15/motifs/UNCG/CM /share/data/people/ppg15/motifs/UNCG/SEED
 NSEQ  31
 EFFN  27.900757
 CKSUM 1202672221

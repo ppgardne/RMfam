@@ -1,4 +1,4 @@
-INFERNAL1/a [1.1rc1 | June 2012]
+INFERNAL1/a [1.1 | October 2013]
 NAME     CRC_binding
 DESC     CRC binding motif
 STATES   49
@@ -9,7 +9,7 @@ ALPH     RNA
 RF       no
 CONS     yes
 MAP      yes
-DATE     Sat Apr 20 16:47:10 2013
+DATE     Mon Jun 30 15:16:58 2014
 COM      [1] /share/data/bin/cmbuild -F /share/data/people/ppg15/motifs/CRC_binding/CM /share/data/people/ppg15/motifs/CRC_binding/SEED
 COM      [2] /share/data/bin/cmcalibrate --mpi --seed 1 /share/data/people/ppg15/motifs/CRC_binding/CM
 PBEGIN   0.05
@@ -98,7 +98,7 @@ CM
                                              [ END    16 ]      -      - - - - -
      E    48    47 3    -1     0     0     0     0     0                                                 
 //
-HMMER3/f [i1.1rc1 | June 2012]
+HMMER3/f [i1.1 | October 2013]
 NAME  CRC_binding
 DESC  CRC binding motif
 LENG  15
@@ -109,7 +109,7 @@ MM    no
 CONS  yes
 CS    yes
 MAP   no
-DATE  Sat Apr 20 16:47:10 2013
+DATE  Mon Jun 30 15:16:58 2014
 COM   [1] /share/data/bin/cmbuild -F /share/data/people/ppg15/motifs/CRC_binding/CM /share/data/people/ppg15/motifs/CRC_binding/SEED
 COM   [2] /share/data/bin/cmbuild -F /share/data/people/ppg15/motifs/CRC_binding/CM /share/data/people/ppg15/motifs/CRC_binding/SEED
 NSEQ  85
