@@ -333,7 +333,7 @@ sub print_gff {
 	    }	
 	    my $eString='';
 	    $eString="Evalue=$evalue;" if (defined($evalue) && $evalue ne '-' && $evalue ne 'NA');
-	    print F "$seqid\tCMSCAN102\tmotif\t$start\t$end\t$score\t$strand\t.\tName=$rmfamid;$eString\n";	    
+	    print F "$seqid\tCMSCAN\tmotif\t$start\t$end\t$score\t$strand\t.\tName=$rmfamid;$eString\n";	    
 	}
     }
     close(F);

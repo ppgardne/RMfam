@@ -88,8 +88,9 @@
    RF01733                 atoC                 GNRA           0.62           47.90           5.07
    RF01067                 ATPC               T-loop           0.08           28.70           0.74
    RF01067                 ATPC                 UNCG           0.08           36.90           1.65
-   RF01690 Bacillaceae-1-revcomp         CsrA_binding           0.91           1110.30           19.05
-   RF01690 Bacillaceae-1-revcomp               U-turn           0.07           50.10           0.97
+   RF01690 Bacillaceae-1-revcomp         CsrA_binding           0.99           2377.60           23.21
+   RF01690 Bacillaceae-1-revcomp                 GNRA           0.06           43.20           0.12
+   RF01690 Bacillaceae-1-revcomp               U-turn           0.05           62.60           0.99
    RF01690        Bacillaceae-1               U-turn           0.04           20.00           0.33
    RF01691     Bacillus-plasmid                 GNRA           0.22           43.00           2.05
    RF01854   Bacteria_large_SRP                 GNRA           0.52           122.50           4.48
