@@ -20,6 +20,7 @@ either a covariance model or a profile HMM. RMfam is modelled loosely
 on the Rfam and Pfam databases and draws a lot of ideas from these
 resources. 
 
+
 RMfam is licensed under a Creative Commons Attribution 3.0 Unported License
 (http://creativecommons.org/licenses/by/3.0/).
 
