@@ -27,11 +27,6 @@
 #=GF RT   FR3D: finding local and composite recurrent structural motifs in RNA 3D structures.
 #=GF RA   Sarver M, Zirbel CL, Stombaugh J, Mokdad A, Leontis NB
 #=GF RL   J Math Biol. 2008;56:215-52.
-#=GF RN   [4]
-#=GF RM   7897662
-#=GF RT   The sarcin/ricin loop, a modular RNA.
-#=GF RA   Szewczak AA, Moore PB
-#=GF RL   J Mol Biol. 1995;247:81-98.
 #cWW-cWW-tSH-tHH-cSH-tWH-tHS-cWW
 
 2zkr_0/7-48             GGCGACCCGCUGAAUUUAA....GCA....UAUUAGUCAGCGGAGGAAAA..

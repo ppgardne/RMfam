@@ -2,11 +2,10 @@
 
 #=GF ID   CsrA_binding
 #=GF DE   CsrA/RsmA binding motif
-#=GF AU   Gardner PP; Eldai HM
+#=GF AU   Gardner PP
 #=GF SE   Gardner PP
 #=GF SS   Gardner PP
 #=GF GA   11.00
-#=GF DR   URL;https://en.wikipedia.org/wiki/CsrA_protein
 #=GF DR   SO:0000377 SO:CsrB_RsmB_RNA
 #=GF DR   GO:0006401 GO:RNA catabolic process
 #=GF DR   GO:0006109 GO:regulation of carbohydrate metabolic process
