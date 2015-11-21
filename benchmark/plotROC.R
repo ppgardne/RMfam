@@ -168,14 +168,42 @@ maxMCCs<-sort(sumMaxMCC,decreasing=T,index.return=T)
 
 maxMCC<-array(data = maxMCC[,maxMCCs$ix], dim = c(3,length(motif)))
 colnames(maxMCC)<-motif[maxMCCs$ix]	  
+motifR<-motif[maxMCCs$ix]	  
 
-pdf(file="figures/maxMCC_benchmark2.pdf", width=20, height=30)
-op<-par(mfrow=c(1,1),cex=5.0,las=1,mar=c(5, 4+2, 4, 2+1)+0.1)#bottom, left, top, right
-barplot(maxMCC, ylab="", xlim=c(0,3), xlab="max(MCC)", main="MCC values for RMfam motifs",col=c("rosybrown","red","blue"),horiz = TRUE, cex.names=0.75 )#,names.arg=emptyColnames) cex.names=1.4, cex.axis = 1.6, 
-legend("topright",c("Rfam alignments (sum-bits)", "Rfam sequences (bits)", "RMfam sequences (bits)"),fill=c("blue","red","rosybrown"),ncol=1,cex=0.6) #,cex=1.2
+pdf(file="figures/maxMCC_benchmark2.pdf", width=37, height=20)
+op<-par(mfrow=c(1,2),cex=3.0,las=1)#bottom, left, top, right
+plot(rocSB$SPEC, rocSB$SENS, col="blue", lwd=12, type="l",ylim=c(0,1),xlim=c(0,1),xlab="Specificity",ylab="Sensitivity",main="ROC plots for 3 RMfam benchmarks")      
+lines(rocSSSB$SPEC, rocSSSB$SENS, col="red",lwd=8)
+lines(rocB2ALL$SPEC, rocB2ALL$SENS, col="rosybrown",lwd=8)
+points(rocSB$SPEC[rocSB$MCC==max(rocSB$MCC)], rocSB$SENS[rocSB$MCC==max(rocSB$MCC)], col="blue",  pch="x",lwd=16)
+points(rocSSSB$SPEC[rocSSSB$MCC==max(rocSSSB$MCC)], rocSSSB$SENS[rocSSSB$MCC==max(rocSSSB$MCC)], col="red",pch="x",lwd=12)
+points(rocB2ALL$SPEC[rocB2ALL$MCC==max(rocB2ALL$MCC)], rocB2ALL$SENS[rocB2ALL$MCC==max(rocB2ALL$MCC)], col="rosybrown",pch="x",lwd=12)
+lines(c(0.93,0.6),c(0.76,0.6), col="blue",lwd=4)
+text(0.6,0.6,'sum-bits=145\nmaxMCC=0.68',pos=2,col="blue",cex=1.0)
+lines(c(1,0.8),c(0.48,0.4), col="rosybrown",lwd=4)
+text(0.8,0.4,'bits=18.5\nmaxMCC=0.66',pos=2,col="rosybrown",cex=1.0)
+lines(c(0.9,0.99),c(0.22,0.22), col="red",lwd=4)
+text(0.9,0.22,'bits=19\nmaxMCC=0.38',pos=2,col="red",cex=1.0)
+legend(0.025,0.2,c("Rfam alignments (sum-bits)", "Rfam sequences (bits)", "RMfam sequences (bits)"),fill=c("blue","red","rosybrown"),cex=1.0,ncol=1)
+op<-par(mar=c(5, 4+2, 4, 2+1)+0.1)
+barplot(maxMCC, ylab="", xlim=c(0,1), xlab="max(MCC)", main="max(MCC) values for RMfam motifs",col=c("rosybrown","red","blue"),horiz = TRUE, cex.names=0.85, beside=TRUE )
 dev.off()
 
 
+pdf(file="figures/maxMCC_benchmark2-2.pdf", width=40, height=20)
+op<-par(mfrow=c(1,3),cex=3.0,las=1,mar=c(5, 4+4, 4, 2+1)+0.1)#bottom, left, top, right
+barplot(maxMCC[1,], ylab="", xlim=c(0,1), xlab="max(MCC)", main="RMfam sequences (bits)",col=c("rosybrown"),horiz = TRUE, axisnames = FALSE)
+axis(2, 1.2*(1:length(motifR))-0.5, motifR,cex=0.75,tick=FALSE)
+op<-par(mar=c(5, 0+0, 4, 2+1)+0.1)#bottom, left, top, right
+barplot(maxMCC[2,], ylab="", xlim=c(0,1), xlab="max(MCC)", main="Rfam sequences (bits)",col=c("red"), horiz = TRUE, axisnames = FALSE )
+legend("topright",c("Rfam alignments (sum-bits)", "Rfam sequences (bits)", "RMfam sequences (bits)"),fill=c("blue","red","rosybrown"),ncol=1) #,cex=1.2
+barplot(maxMCC[3,], ylab="", xlim=c(0,1), xlab="max(MCC)", main="Rfam alignments (sum-bits)",col=c("blue"),horiz = TRUE, axisnames = FALSE )
+dev.off()
+
+######################################################################
+######################################################################
+######################################################################
+######################################################################
 
 for(i in 1:length(motif)){
 

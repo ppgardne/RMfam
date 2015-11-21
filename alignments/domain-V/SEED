@@ -20,6 +20,11 @@
 #=GF RT   Role of the snRNAs in spliceosomal active site.
 #=GF RA   Valadkhan S
 #=GF RL   RNA Biol. ;7:345-53.
+#=GF RN   [3]
+#=GF RM   18773908
+#=GF RT   The GANC tetraloop: a novel motif in the group IIC intron structure.
+#=GF RA   Keating KS, Toor N, Pyle AM
+#=GF RL   J Mol Biol. 2008;383:475-81.
 #=GF WK   U6_spliceosomal_RNA
 #=GF WK   Group_II_intron
 
@@ -88,6 +93,6 @@ Y08501.2/169475-169512            GAGC-CUAGU--GA-U-AGGAG--AC-UA-UC--UAGCUUGGUUC
 X72616.1/122-155                  GAGC-CGUA--CGA-G---GCA--G---C-UC-A-CGUACGGUUC
 AB281599.1/897-934                GAGC-CGUAU--GA-A-UGGAG--AC-AU-UC-A-CGUACGGUUU
 AJ277126.1/35792-35829            GAGC-CCGGU--GC-G-GUGAA--AG-UC-GC-A-CGCCGGGUUC
-#=GC SS_cons                      ((((-(((.-..((-(---...-..---)-))-.-...)))))))
+#=GC SS_cons                      ((((-(((.-..((-(-((...-..)-))-))-.-...)))))))
 #=GC RF                           gAGC.cguaU..gC.u.ggGAA..Ac.ua.Gc.A.UGuacgGUUc
 //
