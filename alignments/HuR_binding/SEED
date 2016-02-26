@@ -3,29 +3,26 @@
 #=GF ID   HuR_binding
 #=GF DE   HuR binding site
 #=GF AU   Gardner PP
-#=GF SE   Published; PMID:14981256
-#=GF SS   Published; PMID:14981256
+#=GF SE   Gardner PP
+#=GF SS   Gardner PP
 #=GF GA   12.00
 #=GF RN   [1]
-#=GF RM   14981256
-#=GF RT   Identification of a target RNA motif for RNA-binding protein HuR.
-#=GF RA   López de Silanes I, Zhan M, Lal A, Yang X, Gorospe M
-#=GF RL   Proc Natl Acad Sci U S A. 2004;101:2987-92.
-#=GF RN   [2]
-#=GF RM   23376935
-#=GF RT   Hyper conserved elements in vertebrate mRNA 3'-UTRs reveal a translational network of RNA-binding proteins controlled by HuR.
-#=GF RA   Dassi E, Zuccotti P, Leo S, Provenzani A, Assfalg M, D'Onofrio M, Riva P, Quattrone A
-#=GF RL   Nucleic Acids Res. 2013;
+#=GF RM   21723171
+#=GF RT   Transcriptome-wide analysis of regulatory interactions of the RNA-binding protein HuR.
+#=GF RA   Lebedeva S, Jens M, Theil K, Schwanhausser B, Selbach M, Landthaler M, Rajewsky N
+#=GF RL   Mol Cell. 2011;43:340-52.
 
-
-HuR          AUGUAU---UGUUUAUACAU
-PTMA         GGAAAUUUGUUUGUAUUUUU
-MTA1         UUGAAG--GUGCCAUUUUAA
-PPP1CB       GUUUAA---UUAUUUUGAGC
-FKBP1A       UUCAUU---UUGG-GGUGAA
-UBE2N        GGGGUG---UGGG-UGUUUU
-FLJ10300     UGUAUA---UUC--UGUAUA
-PC4          UUAAUG---UGCAUUAUUAA
-TFPI2        UGGUGA---UUUAUUCACCA
-#=GC SS_cons ((((((........))))))
+pmid21723171.F4.K1   UUUUUUU
+pmid21723171.F4.K2   UUUAUUU
+pmid21723171.F4.K3   UUUGUUU
+pmid21723171.F4.AUR1 UAUUUAU
+pmid21723171.F4.AUR2 AUUUUUA
+pmid21723171.F4.AUR3 AUUUAUU
+pmid21723171.F4.AUR4 AAUUUUA
+pmid21723171.F4.AUR5 AAUAUUU
+pmid21723171.F4.PPT1 UUUCUUU
+pmid21723171.F4.PPT2 UUUUUUC
+pmid21723171.F4.PPT3 UUUCCUU
+pmid21723171.F4.PPT4 UCUCUUU
+#=GC SS_cons         .......
 //
